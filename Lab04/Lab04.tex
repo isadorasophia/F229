@@ -1,37 +1,15 @@
-% University/School Laboratory Report
-% LaTeX Template
-% Version 3.1 (25/3/14)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Linux and Unix Users Group at Virginia Tech Wiki 
-% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-
-%	packages and such!
-
-\documentclass{article}
+\documentclass[a4paper]{article}
 
 \usepackage{mathptmx} % math functions!
 \usepackage{amsmath} % moar math
-
 \usepackage[11pt]{moresize} % different letters sizes
 \usepackage{float} % enables accurate location of tables
-
 \usepackage[utf8]{inputenc} % so you can type accented letters
-
 \usepackage{caption} % to make personalized captions
-
 \usepackage{graphicx} % required for the inclusion of images
-
 \setlength{\parindent}{1cm} % paragraph indenting
-
 \usepackage[margin=1.45in]{geometry} % margin correction here
+\usepackage[brazilian]{babel} %Para traduzir os textos
 
 
 \title{Máquina de Atwood \\ Experimento 4} % main title
@@ -89,12 +67,60 @@ Na realização deste experimento foram utilizados os seguintes materiais:
 
 \begin{table}[!ht]
 	\begin{center}
-		\caption*{\textbf{Tabela 1:} Modelo de tabela}
+		\caption{Modelo de tabela}
 		\begin{tabular}{| l | l |}
 			\cline{2-2} \multicolumn{0}{c|}{ } & \multicolumn{1}{c|}{\textbf{Massa ($Kg$)}} \\  \cline{1-2}
 			\multicolumn{0}{|c|}{\textbf{Medida}} & 1,2790\\ \hline
 			\multicolumn{0}{|c|}{\textbf{Erro Instrumental}} & 0,0001\\ \hline
 		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[!ht]
+	\begin{center}
+	\caption{Massas dos pesos obtidas experimentalmente}
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+    ~ & \textbf{Massa 1} ($kg$) & $\Delta_{Massa 1}$ & \textbf{Massa 2} ($kg$) & $\Delta_{Massa 2}$ \\ \hline
+    \textbf{1} & 0,9611  & 0,0002  & 0,8934  & 0,0001  \\ \hline
+    \textbf{2} & 0,9513  & 0,0002  & 0,9032  & 0,0001  \\ \hline
+    \textbf{3} & 0,942   & 0,0002  & 0,9125  & 0,0001  \\ \hline
+    \textbf{4} & 0,9518  & 0,0002  & 0,9027  & 0,0001  \\ \hline
+    \textbf{5} & 0,9321  & 0,0002  & 0,9224  & 0,0001  \\ \hline
+    \end{tabular}
+    \end{center}
+\end{table}
+
+\begin{table}[!ht]
+	\begin{center}
+	\caption{Massa total $M$ do sistema Peso+Discos}
+	\begin{tabular}{|l|l|}
+	\hline
+	\textbf{Massa $M$ ($g$)} & 1854,5\\ \hline
+	$\Delta$ & 0,3\\ \hline
+	\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[!ht]
+	\begin{center}
+	\caption{Altura $h$ da Massa 1 ao chão}
+	\begin{tabular}{|l|l|}
+	\hline
+	Altura ($cm$) & 84,6 \\ \hline
+	\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[!ht]
+	\begin{center}
+	\caption{Informações da Roldana}
+	\begin{tabular}{|l|l|}
+	\hline
+	Massa Roldana ($g$) & 2053,3 \\ \hline
+	Diâmetro da Roldana ($mm$) & 999 \\ \hline
+	$\Delta_{Diametro}$ & 0,05	\\ \hline
+	\end{tabular}
 	\end{center}
 \end{table}
 
