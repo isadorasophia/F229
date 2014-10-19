@@ -1,9 +1,19 @@
 \documentclass[a4paper]{article}
 
+% algumas packages para arrumar as tables co a margin:
+% allows for temporary adjustment of side margins
+\usepackage{changepage}
+
+% provides filler text
+\usepackage{lipsum}
+
+% just makes the table prettier (see \toprule, \bottomrule, etc. commands below)
+\usepackage{booktabs}
+
 \usepackage[brazilian]{babel} %Para traduzir os textos
 \usepackage[utf8]{inputenc} %Para poder usar acentos
 \usepackage[a4paper]{geometry} %Para ajustar a parte geometrica da folha
-\geometry{verbose,tmargin=2cm,bmargin=3cm,lmargin=1.2cm,rmargin=2cm} %Parte de margens
+\geometry{verbose,tmargin=2cm,bmargin=3cm,lmargin=3cm,rmargin=3cm} %Parte de margens
 \setlength{\parindent}{0.5cm}
 \usepackage{wrapfig} %Biblioteca Matematica/Grafica
 \usepackage{mathptmx} %Biblioteca Matematica/Grafica
@@ -39,7 +49,7 @@
 	\end{tabular}
 \end{center}
 
-\newpage{}
+%não precisamos de uma página inteira de capa, certo?
 
 \section{Resumo}
 Neste experimento, estudamos uma \emph{Máquina de Atwood}, um sistema físico que consiste de: um cilindro de latão funcionando como polia, ou seja, com liberdade de girar em torno de um eixo fixo; um fio que será considerado leve - ou seja, com massa irrelevante -, inestensível - isto é, inelástico; dois corpos (1 e 2) que são pendurados na polia por meio do fio anteriormente citado, onde:
@@ -110,25 +120,26 @@ Calculando primeiro cada um dos 5 $\Delta m$'s tem-se:
 	\end{tabular}
 \end{table}
 
-
 \begin{table}[!ht]
-	\begin{centering}
-	\caption{Massas obtidas experimentalmente}
-	\par\end{centering}
-	\centering{}%
-	\begin{tabular}{|c|c|c|c|c|c|}
-	\hline 
-	N & 1 & 2 & 3 & 4 & 5\tabularnewline	\hline 
-	$m_{1}$$[Kg]$ & $\widetilde{m_{1}}+a+b+c+d+e$ & $\widetilde{m_{1}}+a+b+c+d$ & $\widetilde{m_{1}}+a+b+c$ & $\widetilde{m_{1}}+a+b+c+e$ & $\widetilde{m_{1}}+a+c+e$\tabularnewline		\hline 
-	$m_{1}$$[Kg]$ & $(9,611\pm0,002)\cdot10^{-1}$ & $(9,513\pm0,002)\cdot10^{-1}$ & $(9,420\pm0,002)\cdot10^{-1}$ & $(9,518\pm0,002)\cdot10^{-1}$ & $(9,321\pm0,002)\cdot10^{-1}$\tabularnewline	\hline 
-	$m_{2}$$[Kg]$  & $\widetilde{m_{2}}$ & $\widetilde{m_{2}}+e$ & $\widetilde{m_{2}}+d+e$$(\pm)\cdot10^{-1}$ & $\widetilde{m_{2}}+d$ & $\widetilde{m_{2}}+b+d$\tabularnewline	\hline 
-	$m_{2}$$[Kg]$ & $(8,934\pm0,001)\cdot10^{-1}$ & $(9,032\pm0,001)\cdot10^{-1}$ & $(9,125\pm0,001)\cdot10^{-1}$ & $(9,027\pm0,001)\cdot10^{-1}$ & $(9,224\pm0,002)\cdot10^{-1}$\tabularnewline	\hline 
-	$\Delta m$ & $(6,77\pm0,03)\cdot10^{-2}$ & $(4,81\pm0,03)\cdot10^{-2}$ & $(2,95\pm0,03)\cdot10^{-2}$ & $(4,91\pm0,03)\cdot10^{-2}$ & $(9,7\pm0,3)\cdot10^{-3}$\tabularnewline	\hline 
-	\end{tabular}
+	\begin{adjustwidth}{-2.2cm}{-1cm}
+		\begin{centering}
+		\caption{Massas obtidas experimentalmente}
+		\par\end{centering}
+		\centering{}%
+		\begin{tabular}{|c|c|c|c|c|c|}
+		\hline 
+		N & 1 & 2 & 3 & 4 & 5\tabularnewline	\hline 
+		$m_{1}$ & $\widetilde{m_{1}}+a+b+c+d+e$ & $\widetilde{m_{1}}+a+b+c+d$ & $\widetilde{m_{1}}+a+b+c$ & $\widetilde{m_{1}}+a+b+c+e$ & $\widetilde{m_{1}}+a+c+e$\tabularnewline		\hline 
+		$m_{1}$$[Kg]$ & $(9,611\pm0,002)\cdot10^{-1}$ & $(9,513\pm0,002)\cdot10^{-1}$ & $(9,420\pm0,002)\cdot10^{-1}$ & $(9,518\pm0,002)\cdot10^{-1}$ & $(9,321\pm0,002)\cdot10^{-1}$\tabularnewline	\hline 
+		$m_{2}$  & $\widetilde{m_{2}}$ & $\widetilde{m_{2}}+e$ & $\widetilde{m_{2}}+d+e$$(\pm)\cdot10^{-1}$ & $\widetilde{m_{2}}+d$ & $\widetilde{m_{2}}+b+d$\tabularnewline	\hline 
+		$m_{2}$$[Kg]$ & $(8,934\pm0,001)\cdot10^{-1}$ & $(9,032\pm0,001)\cdot10^{-1}$ & $(9,125\pm0,001)\cdot10^{-1}$ & $(9,027\pm0,001)\cdot10^{-1}$ & $(9,224\pm0,002)\cdot10^{-1}$\tabularnewline	\hline 
+		$\Delta m$ & $(6,77\pm0,03)\cdot10^{-2}$ & $(4,81\pm0,03)\cdot10^{-2}$ & $(2,95\pm0,03)\cdot10^{-2}$ & $(4,91\pm0,03)\cdot10^{-2}$ & $(9,7\pm0,3)\cdot10^{-3}$\tabularnewline	\hline 
+		\end{tabular}
+	\end{adjustwidth}
 \end{table}
 
 
-Para o calculo do erro em $m_{i}$:
+Para o cálculo do erro em $m_{i}$:
 
 \begin{align}
 	\sigma_{m_{i}}^{2}={\displaystyle \sum_{k=1}^{n_{i}}\left(\left(\cfrac{\partial m_{i}}{\partial m_{k}}\right)^{2}\centerdot(\sigma_{m_{k}})^{2}\right)}
