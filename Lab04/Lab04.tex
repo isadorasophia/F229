@@ -1,38 +1,18 @@
-% University/School Laboratory Report
-% LaTeX Template
-% Version 3.1 (25/3/14)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Linux and Unix Users Group at Virginia Tech Wiki 
-% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-
-%	packages and such!
-
 \documentclass{article}
-
-\usepackage{mathptmx} % math functions!
-\usepackage{amsmath} % moar math
-
-\usepackage[11pt]{moresize} % different letters sizes
-\usepackage{float} % enables accurate location of tables
-
-\usepackage[utf8]{inputenc} % so you can type accented letters
-
-\usepackage{caption} % to make personalized captions
-
-\usepackage{graphicx} % required for the inclusion of images
-
-\setlength{\parindent}{1cm} % paragraph indenting
-
-\usepackage[margin=1.45in]{geometry} % margin correction here
-
+\usepackage{mathptmx}
+\renewcommand{\ttdefault}{mathptmx}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=0.7cm,rmargin=0.7cm}
+\setlength{\parindent}{1cm}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\makeatletter
+\providecommand{\tabularnewline}{\\}
+\usepackage[11pt]{moresize}% different letters sizes
+\usepackage{float}% enables accurate location of tables
+\usepackage{caption}% to make personalized captions
 
 \title{Máquina de Atwood \\ Experimento 4} % main title
 \author{F 229 \\ \textsc{Grupo 1}}
@@ -99,6 +79,279 @@ Na realização deste experimento foram utilizados os seguintes materiais:
 \end{table}
 
 \section{Análise dos resultados}
+
+Para determinar o momento de inercia $I$ e o torque da força de atrito
+$\tau_{a}$ através da equação (1), precisamos escolher quem será
+$X$ e $Y$ e depois, se necessário linearizar a fórmula, mas nesse
+caso, se fizermos: $\underset{Y}{\underbrace{\Delta m}}=\underset{a}{\underbrace{\cfrac{2h}{gR^{2}}(I+MR^{2})}}\underset{X}{\underbrace{\ensuremath{\cfrac{1}{t^{2}}}}}+\underset{b}{\underbrace{\cfrac{\tau_{a}}{gR}}}$
+a equção já fica em sua forma linearizada. Assim, variando $\Delta m$
+e $t$ obtemos os valores de $I$ e $\tau_{a}$ a partir de $a$,
+$b$, $h$, $g$, $R$, e $M=m_{1}+m_{2}$.
+
+Mas para obter $a$ e $b$ precisa-se realizar o Método dos Mínimos
+Quadrados, e para isso precisamos achar um valor de $t$ para cada
+valor de $\Delta m$.
+
+Calculando primeiro cada um dos 5 $\Delta m$'s tem-se:
+
+\begin{table}[!ht]
+\begin{centering}
+\caption{Correspondencia adotada entre os símbolos e as massas experimentalmente
+medidas}
+
+\par\end{centering}
+
+\centering{}%
+\begin{tabular}{|c|c|}
+\hline 
+Símbolos & Massas $[Kg]$\tabularnewline
+\hline 
+$a$ & $(9,6\pm0,1)\centerdot10^{-3}$\tabularnewline
+\hline 
+$b$ & $(1,97\pm0,01)\centerdot10^{-2}$\tabularnewline
+\hline 
+$c$ & $(1,93\pm0,01)\centerdot10^{-2}$\tabularnewline
+\hline 
+$d$ & $(9,3\pm0,1)\centerdot10^{-3}$\tabularnewline
+\hline 
+$e$ & $(9,8\pm0,1)\centerdot10^{-3}$\tabularnewline
+\hline 
+$\widetilde{m}_{1}$ & $(8,934\pm0,001)\centerdot10^{-1}$\tabularnewline
+\hline 
+$\widetilde{m}_{2}$ & $(8,934\pm0,001)\centerdot10^{-1}$\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!ht]
+\begin{centering}
+\caption{Massas obtidas experimentalmente}
+
+\par\end{centering}
+
+\centering{}%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+N & 1 & 2 & 3 & 4 & 5\tabularnewline
+\hline 
+$m_{1}$$[Kg]$ & $\widetilde{m_{1}}+a+b+c+d+e$ & $\widetilde{m_{1}}+a+b+c+d$ & $\widetilde{m_{1}}+a+b+c$ & $\widetilde{m_{1}}+a+b+c+e$ & $\widetilde{m_{1}}+a+c+e$\tabularnewline
+\hline 
+$m_{1}$$[Kg]$ & $(9,611\pm0,002)\cdot10^{-1}$ & $(9,513\pm0,002)\cdot10^{-1}$ & $(9,420\pm0,002)\cdot10^{-1}$ & $(9,518\pm0,002)\cdot10^{-1}$ & $(9,321\pm0,002)\cdot10^{-1}$\tabularnewline
+\hline 
+$m_{2}$$[Kg]$  & $\widetilde{m_{2}}$ & $\widetilde{m_{2}}+e$ & $\widetilde{m_{2}}+d+e$$(\pm)\cdot10^{-1}$ & $\widetilde{m_{2}}+d$ & $\widetilde{m_{2}}+b+d$\tabularnewline
+\hline 
+$m_{2}$$[Kg]$ & $(8,934\pm0,001)\cdot10^{-1}$ & $(9,032\pm0,001)\cdot10^{-1}$ & $(9,125\pm0,001)\cdot10^{-1}$ & $(9,027\pm0,001)\cdot10^{-1}$ & $(9,224\pm0,002)\cdot10^{-1}$\tabularnewline
+\hline 
+$\Delta m$ & $(6,77\pm0,03)\cdot10^{-2}$ & $(4,81\pm0,03)\cdot10^{-2}$ & $(2,95\pm0,03)\cdot10^{-2}$ & $(4,91\pm0,03)\cdot10^{-2}$ & $(9,7\pm0,3)\cdot10^{-3}$\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+Para o calculo do erro em $m_{i}$:
+
+$\sigma_{m_{i}}^{2}={\displaystyle \sum_{k=1}^{n_{i}}\left(\left(\cfrac{\partial m_{i}}{\partial m_{k}}\right)^{2}\centerdot(\sigma_{m_{k}})^{2}\right)}$
+mas todos os $\sigma_{m_{k}}$'s são iguais, pois se trata do erro
+experimental, então:
+
+$\sigma_{m_{i}}^{2}={\displaystyle \sum_{k=1}^{n_{i}}\left(\left(\cfrac{\partial m_{i}}{\partial m_{k}}\right)^{2}\centerdot(\sigma_{m})^{2}\right)}={\displaystyle \sum_{k=1}^{n_{i}}\left(\left(\cfrac{\partial m_{i}}{\partial m_{k}}\right)^{2}\right)}\centerdot(\sigma_{m})^{2}$.
+Sabemos também que $m_{i}={\displaystyle \sum_{j=1}^{t}(m_{j})}$
+portanto:
+
+$\cfrac{\partial m_{i}}{\partial m_{k}}=\cfrac{\partial}{\partial m_{k}}\left({\displaystyle \sum_{j=1}^{t}(m_{j})}\right)={\displaystyle \sum_{j=1}^{t}\left(\cfrac{\partial m_{j}}{\partial m_{k}}\right)=1}$porque
+$\cfrac{\partial m_{j}}{\partial m_{k}}=0$ exceto quando $j=k$,
+quando $\cfrac{\partial m_{j}}{\partial m_{k}}=\cfrac{\partial m_{k}}{\partial m_{k}}=1$
+
+Assim:
+
+$\sigma_{m_{i}}^{2}={\displaystyle \sum_{k=1}^{n_{i}}\left(\left(\cfrac{\partial m_{i}}{\partial m_{k}}\right)^{2}\right)}\centerdot(\sigma_{m})^{2}=\sigma_{m_{i}}^{2}={\displaystyle \sum_{k=1}^{n_{i}}\left(1^{2}\right)}\centerdot(\sigma_{m})^{2}={\displaystyle n}\centerdot(\sigma_{m})^{2}\Leftrightarrow$
+\[
+\sigma_{m_{i}}=\sigma_{m}\sqrt{n_{i}}
+\]
+
+
+Para $\Delta m$ o resultado é ainda mais interessante:
+
+$\Delta m=m_{1}-m_{2}$ portanto o erro é 
+
+$\sigma_{\Delta m}^{2}=\sigma_{m_{1}}^{2}\left(\cfrac{\partial\Delta m}{\partial m_{1}}\right)^{2}+\sigma_{m_{2}}^{2}\left(\cfrac{\partial\Delta m}{\partial m_{2}}\right)^{2}=\sigma_{m_{1}}^{2}\left(1\right)^{2}+\sigma_{m_{2}}^{2}\left(-1\right)^{2}=\sigma_{m_{1}}^{2}+\sigma_{m_{2}}^{2}=\sigma_{m}^{2}\centerdot n_{1}+\sigma_{m}^{2}\centerdot n_{2}=\sigma_{m}^{2}(n_{1}+n_{2})$
+
+$\sigma_{\Delta m}=\sigma_{m}\sqrt{n_{1}+n_{2}}=\sigma_{m}\sqrt{n}$
+que é constante porque o número de massas ultilizadas não muda.
+
+Agora temos que achar um valor único de $t$ para associar com cada
+valor de $\Delta m$
+
+Como fizemos 5 medidas de $t$ pra cada $\Delta m$, então para achar
+o valor único pra $t$ e seu erro devemos fazer:
+
+\[
+t=\overline{t}\pm\sigma_{t}
+\]
+ 
+
+onde:
+
+$\overline{t}=\cfrac[r]{\overset{{\scriptstyle 5}}{\underset{{\scriptstyle i=1}}{\sum}}t_{i}}{5}$
+é a média aritmética e 
+
+$\sigma_{t}=\sqrt{{\displaystyle \sigma_{t_{inst}}^{2}+\sigma_{t_{estat}}^{2}}}=\sqrt{{\displaystyle \sigma_{t_{inst}}^{2}+}\cfrac[r]{1}{5}\cfrac[l]{1}{4}\overset{{\scriptstyle 5}}{\underset{{\scriptstyle i=1}}{\sum}}(t_{i}+\overline{t})^{2}}$
+é o erro total.
+
+Ou seja:
+
+\begin{table}[!ht]
+\begin{centering}
+\caption{Tempos de descida medidos experimentalmente}
+
+\par\end{centering}
+
+\centering{}%
+\begin{tabular}{|c|c|c|c|c|c|}
+\cline{2-6} 
+\multicolumn{1}{c|}{} & $\Delta m_{1}$ & $\Delta m_{2}$ & $\Delta m_{3}$ & $\Delta m_{4}$ & $\Delta m_{5}$\tabularnewline
+\hline 
+$t_{1}\pm\sigma_{t_{inst}}$$[s]$ & $2,66\pm0,01$ & $3,22\pm0,01$ & $4,28\pm0,01$ & $3,25\pm0,01$ & $7,72\pm0,01$\tabularnewline
+\hline 
+$t_{2}\pm\sigma_{t_{inst}}$$[s]$ & $2,56\pm0,01$ & $3,25\pm0,01$ & $4,28\pm0,01$ & $3,22\pm0,01$ & $7,32\pm0,01$\tabularnewline
+\hline 
+$t_{3}\pm\sigma_{t_{inst}}$$[s]$ & $2,68\pm0,01$ & $3,12\pm0,01$ & $4,19\pm0,01$ & $3,19\pm0,01$ & $7,78\pm0,01$\tabularnewline
+\hline 
+$t_{4}\pm\sigma_{t_{inst}}$$[s]$ & $2,59\pm0,01$ & $3,25\pm0,01$ & $4,18\pm0,01$ & $3,19\pm0,01$ & $7,56\pm0,01$\tabularnewline
+\hline 
+$t_{5}\pm\sigma_{t_{inst}}$$[s]$ & $2,65\pm0,01$ & $2,28\pm0,01$ & $4,22\pm0,01$ & $3,22\pm0,01$ & $7,53\pm0,01$\tabularnewline
+\hline 
+$t=\overline{t}\pm\sigma_{t}$$[s]$ & $2,63\pm0,02$ & $3,22\pm0,03$ & $4,21\pm0,02$ & $3,21\pm0,02$ & $7,58\pm0,08$\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+Agora temos uma relação bem clara entre $\Delta m$ e $t$:
+
+Fazendo $Y=\Delta m$ e $X=\cfrac{1}{t^{2}}$ os erros ficam:
+
+$\sigma_{Y}^{2}=\sigma_{\Delta m}^{2}\Leftrightarrow\sigma_{Y}=\sigma_{\Delta m}$
+e 
+
+$\sigma_{X}^{2}=\sigma_{t}^{2}\left(\cfrac{\partial X}{\partial t}\right)^{2}\Leftrightarrow\sigma_{X}=\left|-2t^{-3}\sigma_{t}\right|=\cfrac{2}{t^{3}}\sigma_{t}$
+mas esse erro não será usado porque o Métodos dos Mínimos Quadrados
+que está sendo usado não consdidera erro em $X$.
+
+Fazendo o Método dos Mínimos Quadrados com esses dados obtem-se o
+gráfico da reta:\begin{wrapfigure}{o}{0.5\columnwidth}%
+
+
+\caption{Gráfico de $\Delta m\times\frac{1}{t^{2}}$}
+
+
+\end{wrapfigure}%
+
+
+Cujos coeficientes angular e linear são respectivamente:
+
+\begin{eqnarray*}
+\begin{cases}
+a=\cfrac{2h}{gR^{2}}(I+MR^{2}) & (angular)\\
+b=\cfrac{\tau_{a}}{gR} & (linear)
+\end{cases} & \Leftrightarrow & \begin{cases}
+agR^{2} & =2h(I+MR^{2})\\
+bgR & =\tau_{a}
+\end{cases}\Leftrightarrow
+\end{eqnarray*}
+
+
+\begin{eqnarray*}
+\Leftrightarrow & \begin{cases}
+\cfrac[r]{agR^{2}}{2h}=I+MR^{2}\\
+\tau_{a}=bgR
+\end{cases}\Leftrightarrow & \begin{cases}
+I=\cfrac[r]{agR^{2}}{2h}-MR^{2}\\
+\tau_{a}=bgR
+\end{cases}
+\end{eqnarray*}
+
+
+Para calcular os erros tem-se:
+
+\[
+\sigma_{I}^{2}=\sigma_{a}^{2}\left(\cfrac[r]{\partial I}{\partial a}\right)^{2}+\sigma_{g}^{2}\left(\cfrac[r]{\partial I}{\partial g}\right)^{2}+\sigma_{R}^{2}\left(\cfrac{\partial I}{\partial R}\right)^{2}+\sigma_{h}^{2}\left(\cfrac[r]{\partial I}{\partial h}\right)^{2}+\sigma_{M}^{2}\left(\cfrac{\partial I}{\partial M}\right)^{2}
+\]
+
+
+\[
+\sigma_{I}=\sqrt{\sigma_{a}^{2}\left(\cfrac[r]{gR^{2}}{2h}\right)^{2}+\sigma_{g}^{2}\left(\cfrac[r]{aR^{2}}{2h}\right)^{2}+\sigma_{R}^{2}\left(\cfrac{Rag}{h}-2RM\right)^{2}+\sigma_{h}^{2}\left(\cfrac[r]{-agR^{2}}{2h^{2}}\right)^{2}+\sigma_{M}^{2}\left(-R^{2}\right)^{2}}
+\]
+
+
+Já para o torque da força de atrito o processo é um pouco mais simples:
+
+\[
+\sigma_{\tau_{a}}^{2}=\sigma_{b}^{2}\left(\cfrac[r]{\partial I}{\partial b}\right)^{2}+\sigma_{g}^{2}\left(\cfrac[r]{\partial I}{\partial g}\right)^{2}+\sigma_{h}^{2}\left(\cfrac[r]{\partial I}{\partial h}\right)^{2}
+\]
+
+
+\[
+\sigma_{\tau_{a}}=\sqrt{(\sigma_{b}gh)^{2}+(b\sigma_{g}h)^{2}+(bg\sigma_{h})^{2}}
+\]
+
+
+Portanto:
+
+$I=\overline{I}\pm\sigma_{I}=(2,00\pm0,07)\centerdot10^{-1}$$Kg\centerdot m^{2}$
+
+$\tau_{a}=\overline{\tau_{a}}\pm\sigma_{\tau_{a}}=(1,5\pm0,2)\centerdot10^{-2}$$N\centerdot m$
+
+Para termos um parâmetro de comparação podemos usar a massa e o raio
+do cilindro de metal para calcular o valor do Momento de Inércia teórico
+$I_{T}$e comparar com o que obtivemos experimentalmente:
+
+$I_{T}=M_{polia}\centerdot R^{2}=2,05330\centerdot(4,995\centerdot10^{-1})^{2}=2,5615\centerdot10^{-1}$
+
+Para o erro, como não foi informado o erro para $M_{polia}$supomos
+somente o erro instrumental de $10^{-4}$$Kg$ da mesma balança analítica:
+
+\[
+\sigma_{I_{T}}^{2}=\sigma_{M_{polia}}^{2}\left(\cfrac{\partial I}{\partial M_{polia}}\right)^{2}+\sigma_{R}^{2}\left(\cfrac{\partial I}{\partial R}\right)^{2}
+\]
+
+
+\[
+\sigma_{I_{T}}=\sqrt{\sigma_{M_{polia}}^{2}\left(R^{2}\right)^{2}+\sigma_{R}^{2}\left(2MR\right)^{2}}
+\]
+
+
+Ou seja, temos que:
+
+$I_{T}=(2,6\pm0,5)\centerdot10^{-1}$ $Kg\centerdot m^{2}$
+
+$I=$$(2,00\pm0,07)\centerdot10^{-1}$$Kg\centerdot m^{2}$
+
+Se usarmos todas as casas decimais e não somente as mostradas aqui
+temos:
+
+\[
+I_{T}-\sigma_{I_{T}}=2,05\centerdot10^{-1}Kg\centerdot m^{2}\leq2,07\centerdot10^{-1}Kg\centerdot m^{2}=I+\sigma_{I}
+\]
+
+
+Isso significa que nosso resultado pode ser considerado dentro do
+esperado por esse tipo de parâmetro, mas não pelo parâmetro formalizado
+em aula, que não considera as casas decimais de erro não significativas.
+
+Mas alguns fatores podem justificar o valor longe, ainda que muito
+perto do esperado, tais como:
+\begin{itemize}
+	\item O fio não ser inextensível;
+	\item É possível que o fio escorregue no cilindro de latão;
+\end{itemize}
+O que pode ser feito para resolver esses problemas é:
+\begin{itemize}
+	\item Considerar o fio extensivel, o que pode complicar bastante as contas;
+	\item Usar uma superficie que tenha um alto coeficiente de atrito estatico
+com o fio;
+\end{itemize}
 
 \section{Conclusão}
 
