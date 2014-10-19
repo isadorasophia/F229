@@ -13,6 +13,7 @@
 \usepackage[11pt]{moresize}% different letters sizes
 \usepackage{float}% enables accurate location of tables
 \usepackage{caption}% to make personalized captions
+\usepackage{graphicx} %Para inclusão de imagens
 \usepackage{amsfonts}
 \usepackage[T1]{fontenc}
 
@@ -74,32 +75,23 @@ Na realização deste experimento foram utilizados os seguintes materiais:
 	\item Cronômetro.
  \end {enumerate} 
 
-\begin{table}[!ht]
-	\begin{center}
-		\caption*{\textbf{Tabela 1:} Modelo de tabela}
-		\begin{tabular}{| l | l |}
-			\cline{2-2} \multicolumn{0}{c|}{ } & \multicolumn{1}{c|}{\textbf{Massa ($Kg$)}} \\  \cline{1-2}
-			\multicolumn{0}{|c|}{\textbf{Medida}} & 1,2790\\ \hline
-			\multicolumn{0}{|c|}{\textbf{Erro Instrumental}} & 0,0001\\ \hline
-		\end{tabular}
-	\end{center}
-\end{table}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.25]{Atwood_machine.jpg}
+	\caption{Montagem do experimento}
+\end{figure}
 
-\section{Análise dos resultados}
-
-Para determinar o momento de inercia $I$ e o torque da força de atrito $\tau_{a}$ através da equação (1), precisamos escolher quem será $X$ e $Y$ e depois, se necessário linearizar a fórmula, mas nesse caso, se fizermos: $\underset{Y}{\underbrace{\Delta m}}=\underset{a}{\underbrace{\cfrac{2h}{gR^{2}}(I+MR^{2})}}\underset{X}{\underbrace{\ensuremath{\cfrac{1}{t^{2}}}}}+\underset{b}{\underbrace{\cfrac{\tau_{a}}{gR}}}$ a equção já fica em sua forma linearizada. Assim, variando $\Delta m$ e $t$ obtemos os valores de $I$ e $\tau_{a}$ a partir de $a$, $b$, $h$, $g$, $R$, e $M=m_{1}+m_{2}$.
-Mas para obter $a$ e $b$ precisa-se realizar o Método dos Mínimos Quadrados, e para isso precisamos achar um valor de $t$ para cada valor de $\Delta m$.
-
-Calculando primeiro cada um dos 5 $\Delta m$'s tem-se:
+Para a montarmos a Máquina de Atwood, prendemos dois pesos de suspensão, $m_1$ e $m_2$ com um fio (barbante de algodão), e o encaixamos sobre um cilindro de latão de modo que o lado de maior peso fizesse o lado de menor peso descer.Para essas duas massas $m_1$ e $m_2$, variávamos um conjunto de 5 pequenas massas ($a , b ,  c ,  d ,  e$) de modo que $m_1$ sempre estivesse com o maior peso maior que $m_2$ mas que o conjunto sempre mantivesse a massa $M$ total constante.
+Depois disso, medimos a distância $h$ do solo até a massa elevada (que em nosso caso será $m_1$),e para cada variação de massa $\Delta_{m} = {m_1} - {m_2}$ mediamos 5 vezes o tempo de queda com um cronômetro.
 
 \begin{table}[!ht]
 	\begin{centering}
-	\caption{Correspondencia adotada entre os símbolos e as massas experimentalmente medidas}
+	\caption{Massas experimentalmente medidas}
 	\par\end{centering}
 	\centering{}%
 	\begin{tabular}{|c|c|}
 	\hline 
-	Símbolos & Massas $[Kg]$\tabularnewline		\hline 
+	Nome & Massa $[Kg]$\tabularnewline		\hline 
 	$a$ & $(9,6\pm0,1)\centerdot10^{-3}$\tabularnewline		\hline 
 	$b$ & $(1,97\pm0,01)\centerdot10^{-2}$\tabularnewline	\hline 
 	$c$ & $(1,93\pm0,01)\centerdot10^{-2}$\tabularnewline	\hline 
@@ -109,7 +101,6 @@ Calculando primeiro cada um dos 5 $\Delta m$'s tem-se:
 	$\widetilde{m}_{2}$ & $(8,934\pm0,001)\centerdot10^{-1}$\tabularnewline 	\hline 
 	\end{tabular}
 \end{table}
-
 
 \begin{table}[!ht]
 	\begin{centering}
@@ -126,6 +117,27 @@ Calculando primeiro cada um dos 5 $\Delta m$'s tem-se:
 	$\Delta m$ & $(6,77\pm0,03)\cdot10^{-2}$ & $(4,81\pm0,03)\cdot10^{-2}$ & $(2,95\pm0,03)\cdot10^{-2}$ & $(4,91\pm0,03)\cdot10^{-2}$ & $(9,7\pm0,3)\cdot10^{-3}$\tabularnewline	\hline 
 	\end{tabular}
 \end{table}
+
+\begin{table}[!ht]
+	\begin{centering}
+	\caption{Tempos de queda medidos experimentalmente para cada $\Delta m$}
+	\par\end{centering}
+	\centering{}%
+	\begin{tabular}{|c|c|c|c|c|c|}
+	\cline{2-6} 
+	\multicolumn{1}{c|}{} & $\Delta m_{1}$ & $\Delta m_{2}$ & $\Delta m_{3}$ & $\Delta m_{4}$ & $\Delta m_{5}$\tabularnewline	\hline 
+	$t_{1}\pm\sigma_{t_{inst}}$$[s]$ & $2,66\pm0,01$ & $3,22\pm0,01$ & $4,28\pm0,01$ & $3,25\pm0,01$ & $7,72\pm0,01$\tabularnewline		\hline		$t_{2}\pm\sigma_{t_{inst}}$$[s]$ & $2,56\pm0,01$ & $3,25\pm0,01$ & $4,28\pm0,01$ & $3,22\pm0,01$ & $7,32\pm0,01$\tabularnewline		\hline 
+	$t_{3}\pm\sigma_{t_{inst}}$$[s]$ & $2,68\pm0,01$ & $3,12\pm0,01$ & $4,19\pm0,01$ & $3,19\pm0,01$ & $7,78\pm0,01$\tabularnewline		\hline 
+	$t_{4}\pm\sigma_{t_{inst}}$$[s]$ & $2,59\pm0,01$ & $3,25\pm0,01$ & $4,18\pm0,01$ & $3,19\pm0,01$ & $7,56\pm0,01$\tabularnewline		\hline 
+	$t_{5}\pm\sigma_{t_{inst}}$$[s]$ & $2,65\pm0,01$ & $2,28\pm0,01$ & $4,22\pm0,01$ & $3,22\pm0,01$ & $7,53\pm0,01$\tabularnewline		\hline 
+	\end{tabular}
+\end{table}
+	
+
+\section{Análise dos resultados}
+
+Para determinar o momento de inercia $I$ e o torque da força de atrito $\tau_{a}$ através da equação (1), precisamos escolher quem será $X$ e $Y$ e depois, se necessário linearizar a fórmula, mas nesse caso, se fizermos: $\underset{Y}{\underbrace{\Delta m}}=\underset{a}{\underbrace{\cfrac{2h}{gR^{2}}(I+MR^{2})}}\underset{X}{\underbrace{\ensuremath{\cfrac{1}{t^{2}}}}}+\underset{b}{\underbrace{\cfrac{\tau_{a}}{gR}}}$ a equção já fica em sua forma linearizada. Assim, variando $\Delta m$ e $t$ obtemos os valores de $I$ e $\tau_{a}$ a partir de $a$, $b$, $h$, $g$, $R$, e $M=m_{1}+m_{2}$.
+Mas para obter $a$ e $b$ precisa-se realizar o Método dos Mínimos Quadrados, e para isso precisamos achar um valor de $t$ para cada valor de $\Delta m$ calculada na Tabela 2.
 
 
 Para o calculo do erro em $m_{i}$:
@@ -166,22 +178,17 @@ Agora temos que achar um valor único de $t$ para associar com cada valor de $\D
 
 $$t=\overline{t}\pm\sigma_{t}$$ 
 
-onde $\overline{t}$ é a média aritmética $\cfrac[r]{\overset{{\scriptstyle 5}}{\underset{{\scriptstyle i=1}}{\sum}}t_{i}}{5}$; e $\sigma_{t}$ é o erro total $\sqrt{{\displaystyle \sigma_{t_{inst}}^{2}+\sigma_{t_{estat}}^{2}}}=\sqrt{{\displaystyle \sigma_{t_{inst}}^{2}+}\cfrac[r]{1}{5}\cfrac[l]{1}{4}\overset{{\scriptstyle 5}}{\underset{{\scriptstyle i=1}}{\sum}}(t_{i}+\overline{t})^{2}}$ 
+onde $\overline{t}$ é a média aritmética $\cfrac[r]{\overset{{\scriptstyle 5}}{\underset{{\scriptstyle i=1}}{\sum}}t_{i}}{5}$; e $\sigma_{t}$ é o erro total $\sqrt{{\displaystyle \sigma_{t_{inst}}^{2}+\sigma_{t_{estat}}^{2}}}=\sqrt{{\displaystyle \sigma_{t_{inst}}^{2}+}\cfrac[r]{1}{5}\cfrac[l]{1}{4}\overset{{\scriptstyle 5}}{\underset{{\scriptstyle i=1}}{\sum}}(t_{i}+\overline{t})^{2}}$. Utilizando os valores da Tabela 3 , obtemos os seguintes valores para $t=\overline{t}\pm\sigma_{t}$
 
-Ou seja:
 \begin{table}[!ht]
 	\begin{centering}
-	\caption{Tempos de descida medidos experimentalmente}
+	\caption{Valores da média do tempo para cada valor de $\Delta M$}
 	\par\end{centering}
 	\centering{}%
 	\begin{tabular}{|c|c|c|c|c|c|}
 	\cline{2-6} 
-	\multicolumn{1}{c|}{} & $\Delta m_{1}$ & $\Delta m_{2}$ & $\Delta m_{3}$ & $\Delta m_{4}$ & $\Delta m_{5}$\tabularnewline	\hline 
-	$t_{1}\pm\sigma_{t_{inst}}$$[s]$ & $2,66\pm0,01$ & $3,22\pm0,01$ & $4,28\pm0,01$ & $3,25\pm0,01$ & $7,72\pm0,01$\tabularnewline		\hline		$t_{2}\pm\sigma_{t_{inst}}$$[s]$ & $2,56\pm0,01$ & $3,25\pm0,01$ & $4,28\pm0,01$ & $3,22\pm0,01$ & $7,32\pm0,01$\tabularnewline		\hline 
-	$t_{3}\pm\sigma_{t_{inst}}$$[s]$ & $2,68\pm0,01$ & $3,12\pm0,01$ & $4,19\pm0,01$ & $3,19\pm0,01$ & $7,78\pm0,01$\tabularnewline		\hline 
-	$t_{4}\pm\sigma_{t_{inst}}$$[s]$ & $2,59\pm0,01$ & $3,25\pm0,01$ & $4,18\pm0,01$ & $3,19\pm0,01$ & $7,56\pm0,01$\tabularnewline		\hline 
-	$t_{5}\pm\sigma_{t_{inst}}$$[s]$ & $2,65\pm0,01$ & $2,28\pm0,01$ & $4,22\pm0,01$ & $3,22\pm0,01$ & $7,53\pm0,01$\tabularnewline		\hline 
-	$t=\overline{t}\pm\sigma_{t}$$[s]$ & $2,63\pm0,02$ & $3,22\pm0,03$ & $4,21\pm0,02$ & $3,21\pm0,02$ & $7,58\pm0,08$\tabularnewline	\hline 
+	\multicolumn{1}{c|}{} & $\Delta m_{1}$ & $\Delta m_{2}$ & $\Delta m_{3}$ & $\Delta m_{4}$ & $\Delta m_{5}$\tabularnewline	\hline
+	$t=\overline{t}\pm\sigma_{t}$$[s]$ & $2,63\pm0,02$ & $3,22\pm0,03$ & $4,21\pm0,02$ & $3,21\pm0,02$ & $7,58\pm0,08$\tabularnewline	\hline
 	\end{tabular}
 \end{table}
 
@@ -190,8 +197,8 @@ Agora temos uma relação bem clara entre $\Delta m$ e $t$:
 Fazendo $X=\cfrac{1}{t^{2}}$ o erro fica
 
 $$\sigma_{X}^{2}=\sigma_{t}^{2}\left(\cfrac{\partial X}{\partial t}\right)^{2}\Leftrightarrow\sigma_{X}=\left|-2t^{-3}\sigma_{t}\right|=\cfrac{2}{t^{3}}\sigma_{t}$$
-
-que não será usado porque o Métodos dos Mínimos Quadrados que está sendo usado não considera erro em $X$, e $Y=\Delta m$ o erro será:
+No entanto, não será usado porque o Métodos dos Mínimos Quadrados que está sendo usado não considera erro em $X$.
+Fazendo $Y=\Delta m$ o erro será:
 
 \begin{align}
 \sigma_{Y}^{2}=\sigma_{\Delta m}^{2}\Leftrightarrow\sigma_{Y}=\sigma_{\Delta m}
@@ -281,6 +288,7 @@ $$
 
 Nosso resultado pode ser considerado dentro do esperado por esse tipo de parâmetro, mas não pelo parâmetro formalizado em aula, que não considera as casas decimais de erro não significativos. Alguns fatores podem justificar o valor longe, ainda que muito perto do esperado, tais como:
 \begin{itemize}
+	\item O imprecisão do tempo de disparo do cronômetro
 	\item O fio não ser inextensível;
 	\item O escorregamento do fio no cilindro de latão;
 \end{itemize}
