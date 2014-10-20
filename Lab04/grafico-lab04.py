@@ -1,4 +1,4 @@
-%matploblib inline
+%matplotlib inline
 from pylab import *
 import numpy as np
 import matplotlib.ticker as tkr
@@ -32,7 +32,7 @@ ax.set_ylabel(r'$\Delta m$ $(Kg)$', fontsize=12)
 
 plt.plot(pX, pY, 'bo', markersize = 3)
 
-plt.errorbar(pX, pY, yerr=0.0003, xerr=0, fmt='none')
+plt.errorbar(pX, pY, yerr=0.0003, xerr=0, fmt='none', capsize=1)
 
 plt.xlim(0,0.160)
 plt.ylim(0,0.080)
