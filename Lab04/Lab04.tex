@@ -34,7 +34,6 @@
 \author{F 229 \\ \textsc{Grupo 1}}
 \date{XX de XX, 2014}
 
-
 \begin{document} % actually starts the document here
 \maketitle
 
@@ -50,7 +49,19 @@
 	\end{tabular}
 \end{center}
 
-%não precisamos de uma página inteira de capa, certo?
+%%Seria legal se alguém conseguir colocar os logos no footer da pagina, ou então no header...
+
+\begin{figure}[!ht]
+	\begin{minipage}[b]{0.45\linewidth}
+	\includegraphics[scale=0.25]{logo-unicamp-name-line-blk-blk-0480.jpg}
+	\end{minipage}
+	\hspace{0.5cm}
+	\begin{minipage}[b]{0.45\linewidth}
+	\includegraphics[scale=0.25]{logo-ifgw.png}
+	\end{minipage}
+\end{figure}
+
+\newpage
 
 \section{Resumo}
 Neste experimento, estudamos uma \emph{Máquina de Atwood}, um sistema físico que consiste de: um cilindro de latão funcionando como polia, ou seja, com liberdade de girar em torno de um eixo fixo; um fio que será considerado leve - ou seja, com massa irrelevante -, inestensível - isto é, inelástico; dois corpos (1 e 2) que são pendurados na polia por meio do fio anteriormente citado, onde:
@@ -257,7 +268,7 @@ $$ \sigma_{I}^{2}=\sigma_{a}^{2}\left(\cfrac[r]{\partial I}{\partial a}\right)^{
 \begin{align}
 \sigma_{I}=\sqrt{\sigma_{a}^{2}\left(\cfrac[r]{gR^{2}}{2h}\right)^{2}+\sigma_{g}^{2}\left(\cfrac[r]{aR^{2}}{2h}\right)^{2}+\sigma_{R}^{2}\left(\cfrac{Rag}{h}-2RM\right)^{2}+\sigma_{h}^{2}\left(\cfrac[r]{-agR^{2}}{2h^{2}}\right)^{2}+\sigma_{M}^{2}\left(-R^{2}\right)^{2}}\end{align}
 
-Já para o torque da força de atrito o processo é um pouco mais simples:
+Já para o torque da força de atrito fazemos o seguinte:
 
 
 $$\sigma_{\tau_{a}}^{2}=\sigma_{b}^{2}\left(\cfrac[r]{\partial I}{\partial b}\right)^{2}+\sigma_{g}^{2}\left(\cfrac[r]{\partial I}{\partial g}\right)^{2}+\sigma_{h}^{2}\left(\cfrac[r]{\partial I}{\partial h}\right)^{2}$$
