@@ -1,55 +1,92 @@
-\documentclass[a4paper]{article} %Faz com que a saída padrao seja a4
+\documentclass[a4paper]{article}
 
+% algumas packages para arrumar as tables co a margin:
+% allows for temporary adjustment of side margins
+\usepackage{changepage}
 
-\usepackage[brazilian]{babel} %Para sair ja escrito, tabela e não table
-\usepackage[utf8]{inputenc} % Para usar acentos
-\usepackage{mathptmx} % math functions!
-\usepackage{amsmath} % moar math
-\usepackage[11pt]{moresize} % different letters sizes
-\usepackage{float} % enables accurate location of tables
-\usepackage{caption} % to make personalized captions
-\usepackage{graphicx} % required for the inclusion of images
-\usepackage[margin=0.8in]{geometry} %Faz uma correção das margens
+% provides filler text
+\usepackage{lipsum}
 
+% just makes the table prettier (see \toprule, \bottomrule, etc. commands below)
+\usepackage{booktabs}
 
-\setlength{\parindent}{10mm}
+\usepackage[brazilian]{babel} %Para traduzir os textos
+\usepackage[utf8]{inputenc} %Para poder usar acentos
+\usepackage[a4paper]{geometry} %Para ajustar a parte geometrica da folha
+\geometry{verbose,tmargin=2cm,bmargin=3cm,lmargin=3cm,rmargin=3cm} %Parte de margens
+\setlength{\parindent}{0.5cm}
+\usepackage{wrapfig} %Biblioteca Matematica/Grafica
+\usepackage{mathptmx} %Biblioteca Matematica/Grafica
+\renewcommand{\ttdefault}{mathptmx} %Biblioteca Matematica/Grafica
+\usepackage{amsmath} %Biblioteca Matematica/Grafica
+\usepackage{amssymb} %Biblioteca Matematica/Grafica
+\usepackage[11pt]{moresize}% different letters sizes
+\usepackage{float}% enables accurate location of tables
+\usepackage{caption}% to make personalized captions
+\usepackage{graphicx} %Para inclusÃ£o de imagens
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
 
+\makeatletter
+\providecommand{\tabularnewline}{\\} %define
 
-\title{Experimento 0X \\ nome do experimento}
+\title{MÃ¡quina de Atwood \\ Experimento 4} % main title
 \author{F 229 \\ \textsc{Grupo 1}}
-\date{00 de Setembro, 2014}
+\date{22 de Outubro, 2014}
 
-
-\begin{document}
+\begin{document} % actually starts the document here
 \maketitle
 
+% members of the group
 \begin{center}
 	\begin{tabular}{l r l}
-		Integrantes: & Henrique Noronha Facioli & 157986 \\
-		& Guilherme Lucas da Silva & 155618 \\
-		& Beatriz Sechin Zazulla & 154779 \\
-		& Lucas Alves Racoci & 156331 \\
-		& Isadora Sophia Garcia Rodopoulos & 158018 \\
+		Integrantes:\\\\
+		 Henrique Noronha Facioli & RA: 157986 \\
+		 Guilherme Lucas da Silva & RA: 155618 \\
+		 Beatriz Sechin Zazulla & RA: 154779 \\
+		 Lucas Alves Racoci & RA: 156331 \\
+		 Isadora Sophia Garcia Rodopoulos & RA :158018 \\
 	\end{tabular}
 \end{center}
 
+%%Seria legal se alguÃ©m conseguir colocar os logos no footer da pagina, ou entÃ£o no header...
 
-\section{Resumo} 
+\begin{figure}[!ht]
+	\begin{minipage}[b]{0.45\linewidth}
+	\includegraphics[scale=0.25]{logo-unicamp-name-line-blk-blk-0480.jpg}
+	\end{minipage}
+	\hspace{0.5cm}
+	\begin{minipage}[b]{0.45\linewidth}
+	\includegraphics[scale=0.25]{logo-ifgw.png}
+	\end{minipage}
+\end{figure}
+
+\newpage
+
+\section{Resumo}
 
 \section{Objetivo}
 
 \section{Procedimentos e coleta de dados}
 
- \subsection{Materiais utilizados}
+\subsection{Materiais}
 
-\begin{enumerate} 
-	\item materiais
-\end{enumerate} 
- 
- \subsection{Procedimento}
- 
-\section{Análise e Resultados}
+\begin{enumerate}
+	\item Items
+ \end {enumerate}
 
-\section{Conclusão}
+\subsection{Procedimento}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics
+	\caption{Imagem Experimento}
+\end{figure}
+
+
+
+\section{AnÃ¡lise dos resultados}
+
+\section{ConclusÃ£o}
 
 \end{document}
