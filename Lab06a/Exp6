@@ -17,7 +17,7 @@
 % just makes the table prettier (see \toprule, \bottomrule, etc. commands below)
 \usepackage{booktabs}
 
-\usepackage[brazilian]{babel} %Para traduzir os textos
+\usepackage[english, brazil]{babel} %Para traduzir os textos
 \usepackage[utf8]{inputenc} %Para poder usar acentos
 \usepackage[a4paper]{geometry} %Para ajustar a parte geometrica da folha
 \geometry{verbose,tmargin=2cm,bmargin=3cm,lmargin=15mm,rmargin=15mm} %Parte de margens
@@ -46,33 +46,36 @@
 
 \title{Calorimetria \\ Experimento 6a} % main title
 \author{F 229 \\ \textsc{Grupo 1}}
-\date{19 de Outubro, 2014}
+\date{19 de Novembro, 2014}
 
 \begin{document} % actually starts the document here
 \maketitle
 
 % members of the group
 \begin{center}
-	\begin{tabular}{l r l}
-		Integrantes:\\\\
-		 Henrique Noronha Facioli & RA: 157986 \\
-		 Guilherme Lucas da Silva & RA: 155618 \\
-		 Beatriz Sechin Zazulla & RA: 154779 \\
-		 Lucas Alves Racoci & RA: 156331 \\
-		 Isadora Sophia Garcia Rodopoulos & RA :158018 \\
+	\begin{tabular}{rr}
+		                     Integrantes: & \tabularnewline
+		                                  & \tabularnewline
+		Henrique Noronha Facioli          & RA: 157986 \tabularnewline
+		Guilherme Lucas da Silva          & RA: 155618 \tabularnewline
+		Beatriz Sechin Zazulla            & RA: 154779 \tabularnewline
+		Lucas Alves Racoci                & RA: 156331 \tabularnewline
+		Isadora Sophia Garcia Rodopoulos  & RA :158018 \tabularnewline
 	\end{tabular}
-\end{center}
+\par\end{center}
 
 %%Seria legal se alguém conseguir colocar os logos no footer da pagina, ou então no header...
 
 \begin{figure}[!ht]
-	\begin{minipage}[b]{0.45\linewidth}%
-		\includegraphics[clip,scale=0.25]{logo-unicamp-name-line-blk-blk-0480} %
-	\end{minipage}
+	\begin{centering}
+		\includegraphics[clip,scale=0.4]{logo-ifgw} 
+	\par\end{centering}
 
-	\begin{minipage}[b]{0.45\linewidth}%
-		\includegraphics[clip,scale=0.25]{logo-ifgw} %
-	\end{minipage}
+	\vspace*{1cm}
+
+	\begin{centering}
+		\includegraphics[clip,scale=0.3]{logo-unicamp-name-line-blk-blk-0480}
+	\par\end{centering}
 \end{figure}
 
 \newpage{}
@@ -94,37 +97,32 @@
 		Procedimentos
 
 \section{Análise dos resultados}
-
-
+		
 	\subsection{Gráfico de Calibração do Termopar}
 
-
 		\subsubsection{Achando a relação entre valores de$\Delta V$ e valores de $\Delta T$}
-
 			\begin{table}[H]
 				\caption{Valores obtidos de diferença de potencial elétrico em função da maior
 				temperatura}
-
-
-				\begin{tabular}{|c|c|}
+				\begin{center}\begin{tabular}{|c|c|}
 					\hline 
 					Temperatura ($T$)  & Diferença de Potencial ($\Delta V$)\tabularnewline
 					\hline 
-					$(8,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(4,84\pm0,01)$$\unit{V}$\tabularnewline
+					$(8,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(4,84\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(8,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(4,45\pm0,01)$$\unit{V}$\tabularnewline
+					$(8,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(4,45\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(7,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(4,02\pm0,01)$$\unit{V}$\tabularnewline
+					$(7,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(4,02\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(7,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(3,82\pm0,01)$$\unit{V}$\tabularnewline
+					$(7,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(3,82\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(6,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(3,52\pm0,01)$$\unit{V}$\tabularnewline
+					$(6,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(3,52\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(6,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(3,23\pm0,01)$$\unit{V}$\tabularnewline
+					$(6,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(3,23\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(5,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(2,95\pm0,01)$$\unit{V}$\tabularnewline
+					$(5,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(2,95\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-				\end{tabular}
+				\end{tabular}\end{center}
 			\end{table}
 
 
@@ -135,7 +133,7 @@
 				\caption{Calculo de $\Delta T$}
 
 
-				\begin{tabular}{|c|}
+				\begin{centering}\begin{tabular}{|c|}
 					\hline 
 					Diferença de Temperatura ($\Delta T$) \tabularnewline
 					\hline 
@@ -153,8 +151,9 @@
 					\hline 
 					$\left((5,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
 					\hline 
-					\end{tabular}$\Longleftrightarrow$%
-					\begin{tabular}{|c|}
+				\end{tabular}
+				$\Longleftrightarrow$
+				\begin{tabular}{|c|}
 					\hline 
 					Diferença de Temperatura ($\Delta T$) \tabularnewline
 					\hline 
@@ -172,39 +171,155 @@
 					\hline 
 					$(5,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
 					\hline 
-				\end{tabular}$\Longleftrightarrow$
-
-				\begin{tabular}{|c|c|}
+				\end{tabular}\par\end{centering}
+				\[
+				\Updownarrow
+				\]
+				\centering{}\begin{tabular}{|c|c|}
 					\hline 
 					Diferença de Temperatura ($\Delta T$)  & Diferença de Potencial ($\Delta V$)\tabularnewline
 					\hline 
-					$(8,48\pm0,07)\cdot10^{1}\unit{K}$ & $(4,84\pm0,01)$$\unit{V}$\tabularnewline
+					$(8,48\pm0,07)\cdot10^{1}\unit{K}$  & $(4,84\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(7,98\pm0,07)\cdot10^{1}\unit{K}$ & $(4,45\pm0,01)$$\unit{V}$\tabularnewline
+					$(7,98\pm0,07)\cdot10^{1}\unit{K}$  & $(4,45\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(7,48\pm0,07)\cdot10^{1}\unit{K}$ & $(4,02\pm0,01)$$\unit{V}$\tabularnewline
+					$(7,48\pm0,07)\cdot10^{1}\unit{K}$  & $(4,02\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(6,98\pm0,07)\cdot10^{1}\unit{K}$ & $(3,82\pm0,01)$$\unit{V}$\tabularnewline
+					$(6,98\pm0,07)\cdot10^{1}\unit{K}$  & $(3,82\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(6,48\pm0,07)\cdot10^{1}\unit{K}$ & $(3,52\pm0,01)$$\unit{V}$\tabularnewline
+					$(6,48\pm0,07)\cdot10^{1}\unit{K}$  & $(3,52\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(5,98\pm0,07)\cdot10^{1}\unit{K}$ & $(3,23\pm0,01)$$\unit{V}$\tabularnewline
+					$(5,98\pm0,07)\cdot10^{1}\unit{K}$  & $(3,23\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
-					$(5,48\pm0,07)\cdot10^{1}\unit{K}$ & $(2,95\pm0,01)$$\unit{V}$\tabularnewline
+					$(5,48\pm0,07)\cdot10^{1}\unit{K}$  & $(2,95\pm0,01)$$\unit{V}$\tabularnewline
 					\hline 
 				\end{tabular}
 			\end{table}
 
-
-
 		\subsubsection{Método dos Mínimos Quadrados}
 
+			Para realizar o método dos mínimos quadrados faremos $y=\Delta V$
+			e $x=\Delta T$
+
+			Sabe-se que $\underset{y}{\underbrace{\Delta V}}=\underset{a}{\underbrace{\left(S_{a}(T)-S_{B}(T)\right)}}\underset{x}{\underbrace{\Delta T}}+\underset{b}{\underbrace{0}}$.
+
+			Como nesse caso o erro em $y=\Delta V$ é constante, o método dos
+			mínimos quadrados usado será o que é dado pelas fórmulas:
+
+			\[
+			\begin{cases}
+				a & =\frac{\left(
+					{\displaystyle {\displaystyle N\cdot}{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+						\left(x_{i}y_{i}\right)-
+					{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+						\left(x_{i}\right)
+					{\scriptscriptstyle {\textstyle \overset{n}{\cdot\underset{i=1}{\sum}}}}
+						\left(y_{i}\right)\right)}
+					{{\displaystyle {\displaystyle N\cdot}{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+						\left(x_{i}^{2}\right)-\left(
+					{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+						\left(x_{i}\right)
+				\right)^{2}}
+				\pm\sigma_{y}\sqrt{\cfrac{
+					{\displaystyle {\displaystyle {\displaystyle N}}}}{{\displaystyle {\displaystyle N\cdot}
+					{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+					\left(x_{i}^{2}\right)-\left(
+						{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+							\left(x_{i}\right)
+						\right)^{2}}}\\
+				b & =\frac{\left(
+					{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+						\left(y_{i}\right)\cdot
+					{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+						\left(x_{i}^{2}\right)-
+					{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+						\left(x_{i}y_{i}\right)
+					{\scriptscriptstyle {\textstyle \overset{n}{\cdot\underset{i=1}{\sum}}}}
+						\left(x_{i}\right)\right)}
+					{N\cdot{\displaystyle 
+					{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+						\left(x_{i}^{2}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+							\left(x_{i}\right)
+						\right)^{2}}
+						\pm\sigma_{y}\sqrt{\cfrac{
+						{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+							\left(x_{i}^{2}\right)}
+						{{\displaystyle {\displaystyle N\cdot}
+						{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+						\left(x_{i}^{2}\right)-
+						\left(
+							{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
+								\left(x_{i}\right)
+						\right)^{2}}}
+			\end{cases}
+			\]
+
+
+			Que pode ser calculado mais facilmente atravez de uma tabela auxiliar
+			como a seguinte:
+			\begin{table}
+				\caption{Tabela auxiliar para o cálculo dos mínimos quadrados:}
+
+				\begin{center}\begin{tabular}{|c|c|c|c|c|}
+					\hline 
+					N & $y=\Delta V$ & $x=\Delta T$ & $xy$ & $x^{2}$\tabularnewline
+					\hline 
+					$1$ & \selectlanguage{english}%
+					$4,84\cdot10^{-3}\unit{V}$\selectlanguage{brazil}%
+					 & $8,48\cdot10^{1}\unit{K}$ & $4,10\cdot10^{-1}\unit{K\cdot V}$ & $7,19\cdot10^{3}\unit{K^{2}}$\tabularnewline
+					\hline 
+					$2$ & \selectlanguage{english}%
+					$4,45\cdot10^{-3}\unit{V}$\selectlanguage{brazil}%
+					 & $7,98\cdot10^{1}\unit{K}$ & $3,55\cdot10^{-1}\unit{K\cdot V}$ & $6,37\cdot10^{3}\unit{K^{2}}$\tabularnewline
+					\hline 
+					$3$ & \selectlanguage{english}%
+					$4,02\cdot10^{-3}\unit{V}$\selectlanguage{brazil}%
+					 & $7,48\cdot10^{1}\unit{K}$ & $3,01\cdot10^{-1}\unit{K\cdot V}$ & $5,60\cdot10^{3}\unit{K^{2}}$\tabularnewline
+					\hline 
+					$4$ & \selectlanguage{english}%
+					$3,82\cdot10^{-3}\unit{V}$\selectlanguage{brazil}%
+					 & $6,98\cdot10^{1}\unit{K}$ & $2,67\cdot10^{-1}\unit{K\cdot V}$ & $4,87\cdot10^{3}\unit{K^{2}}$\tabularnewline
+					\hline 
+					$5$ & \selectlanguage{english}%
+					$3,52\cdot10^{-3}\unit{V}$\selectlanguage{brazil}%
+					 & $6,48\cdot10^{1}\unit{K}$ & $2,28\cdot10^{-1}\unit{K\cdot V}$ & $4,20\cdot10^{3}\unit{K^{2}}$\tabularnewline
+					\hline 
+					$6$ & \selectlanguage{english}%
+					$3,23\cdot10^{-3}\unit{V}$\selectlanguage{brazil}%
+					 & $5,98\cdot10^{1}\unit{K}$ & $1,93\cdot10^{-1}\unit{K\cdot V}$ & $3,58\cdot10^{3}\unit{K^{2}}$\tabularnewline
+					\hline 
+					$7$ & \selectlanguage{english}%
+					$2,95\cdot10^{-3}\unit{V}$\selectlanguage{brazil}%
+					 & $5,48\cdot10^{1}\unit{K}$ & $1,62\cdot10^{-1}\unit{K\cdot V}$ & $3,00\cdot10^{3}\unit{K^{2}}$\tabularnewline
+					\hline 
+					$\Sigma$ & \selectlanguage{english}%
+					$2,68\cdot10^{-2}\unit{V}$\selectlanguage{brazil}%
+					 & $4,89\cdot10^{2}\unit{K}$ & $1,92\unit{K\cdot V}$ & $3,48\cdot10^{4}\unit{K^{2}}$\tabularnewline
+					\hline 
+				\end{tabular}\par\end{center}
+
+			\end{table}
+
+
+			Assim obtemos:
+
+			\[
+				\begin{cases}
+					a & =\left(6,15\pm0,04\right)\cdot10^{-5}\unit{\frac{V}{K}}\\
+					b & =\left(0\pm0\right)\cdot\unit{V}
+				\end{cases}
+			\]
 
 		\subsubsection{Construção do Gráfico}
 
+			\begin{figure}
+				\caption{Gráfico da curva de calibração do termopar de $\Delta V$ por $\Delta T$}
+					\begin{centering}
+						\includegraphics[scale=0.5]{image}
+					\par\end{centering}
+			\end{figure}
 
 	\subsection{Constante de Tempo do Calorímetro}
-
 
 	\subsection{Capacidade Térmica do Calorímetro}
 
@@ -214,12 +329,12 @@
 			Começemos com a fórmula:
 
 			\[
-			Q_{resultante}={\displaystyle \sum Q_{parciais}=0}\Leftrightarrow
+				Q_{resultante}={\displaystyle \sum Q_{parciais}=0}\Leftrightarrow
 			\]
 
 
 			\[
-			Q_{calor\acute{\imath}metro}+Q_{\acute{a}gua_{fria}}+Q_{\acute{a}gua_{quente}}=0
+				Q_{calor\acute{\imath}metro}+Q_{\acute{a}gua_{fria}}+Q_{\acute{a}gua_{quente}}=0
 			\]
 
 
@@ -256,32 +371,32 @@
 			Então:
 
 			\[
-			\sigma_{C}=\sqrt{\left(\left(-c_{\acute{a}gua}\right)^{2}+\left(c_{\acute{a}gua}\centerdot\dfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}}\right)^{2}\right)\sigma_{M}^{2}+2\centerdot\left(\left(c_{\acute{a}gua}\centerdot M_{q}\centerdot\cfrac{1}{\Delta T_{f\rightarrow e}}\right)^{2}+\left(-c_{\acute{a}gua}\centerdot M_{q}\centerdot\cfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}^{2}}\right)^{2}\right)\sigma_{T}^{2}}
+				\sigma_{C}=\sqrt{\left(\left(-c_{\acute{a}gua}\right)^{2}+\left(c_{\acute{a}gua}\centerdot\dfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}}\right)^{2}\right)\sigma_{M}^{2}+2\centerdot\left(\left(c_{\acute{a}gua}\centerdot M_{q}\centerdot\cfrac{1}{\Delta T_{f\rightarrow e}}\right)^{2}+\left(-c_{\acute{a}gua}\centerdot M_{q}\centerdot\cfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}^{2}}\right)^{2}\right)\sigma_{T}^{2}}
 			\]
 
 
 			\[
-			=c_{\acute{a}gua}\centerdot\sqrt{\left(1+\left(\dfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}}\right)^{2}\right)\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\left(\left(\cfrac{1}{\Delta T_{f\rightarrow e}}\right)^{2}+\left(\cfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}^{2}}\right)^{2}\right)\sigma_{T}^{2}}
+				=c_{\acute{a}gua}\centerdot\sqrt{\left(1+\left(\dfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}}\right)^{2}\right)\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\left(\left(\cfrac{1}{\Delta T_{f\rightarrow e}}\right)^{2}+\left(\cfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}^{2}}\right)^{2}\right)\sigma_{T}^{2}}
 			\]
 
 
 			\[
-			=c_{\acute{a}gua}\centerdot\sqrt{\left(\dfrac{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}{\Delta T_{f\rightarrow e}^{2}}\right)\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\left(\cfrac{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}{\Delta T_{f\rightarrow e}^{4}}\right)\sigma_{T}^{2}}
+				=c_{\acute{a}gua}\centerdot\sqrt{\left(\dfrac{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}{\Delta T_{f\rightarrow e}^{2}}\right)\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\left(\cfrac{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}{\Delta T_{f\rightarrow e}^{4}}\right)\sigma_{T}^{2}}
 			\]
 
 
 			\[
-			=c_{\acute{a}gua}\centerdot\sqrt{\left(\dfrac{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}{\Delta T_{f\rightarrow e}^{4}}\right)\left(\Delta T_{f\rightarrow e}^{2}\centerdot\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\sigma_{T}^{2}\right)}
+				=c_{\acute{a}gua}\centerdot\sqrt{\left(\dfrac{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}{\Delta T_{f\rightarrow e}^{4}}\right)\left(\Delta T_{f\rightarrow e}^{2}\centerdot\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\sigma_{T}^{2}\right)}
 			\]
 
 
 			\[
-			=\cfrac{c_{\acute{a}gua}}{\Delta T_{f\rightarrow e}^{2}}\centerdot\sqrt{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}\sqrt{\Delta T_{f\rightarrow e}^{2}\centerdot\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\sigma_{T}^{2}}
+				=\cfrac{c_{\acute{a}gua}}{\Delta T_{f\rightarrow e}^{2}}\centerdot\sqrt{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}\sqrt{\Delta T_{f\rightarrow e}^{2}\centerdot\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\sigma_{T}^{2}}
 			\]
 
 
 			\[
-			=c_{\acute{a}gua}\centerdot\cfrac{\sqrt{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}\sqrt{\left(\Delta T_{f\rightarrow e}\centerdot\sigma_{M}\right)^{2}+2\centerdot\left(M_{q}\centerdot\sigma_{T}\right)^{2}}}{\Delta T_{f\rightarrow e}^{2}}
+				=c_{\acute{a}gua}\centerdot\cfrac{\sqrt{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}\sqrt{\left(\Delta T_{f\rightarrow e}\centerdot\sigma_{M}\right)^{2}+2\centerdot\left(M_{q}\centerdot\sigma_{T}\right)^{2}}}{\Delta T_{f\rightarrow e}^{2}}
 			\]
 
 
@@ -291,15 +406,13 @@
 			C=c_{\acute{a}gua}\centerdot\left(\left(M_{q}\centerdot\dfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}}-M_{f}\right)\pm\left(\cfrac{\sqrt{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}\sqrt{\left(\Delta T_{f\rightarrow e}\centerdot\sigma_{M}\right)^{2}+2\centerdot\left(M_{q}\centerdot\sigma_{T}\right)^{2}}}{\Delta T_{f\rightarrow e}^{2}}\right)\right)
 			\]
 
-
-
 		\subsubsection{Resultado das Medidas}
 
 			\begin{table}
 				\caption{Valores brutos obtidos e conversão para as únidades a serem ultilizads}
 
 
-				\begin{tabular}{|c|c|r|r|}
+				\begin{center}\begin{tabular}{|c|c|r|r|}
 					\hline 
 					Nomes dos Dados Obtidos  & Símbolo Associado  & Valor Obtido  & Valor Ultilizado\tabularnewline
 					\hline 
@@ -335,7 +448,7 @@
 					$(8,50\pm0,05)\centerdot10^{1}\unit{^{\circ}C}$\selectlanguage{brazil}%
 					\tabularnewline
 					\hline 
-				\end{tabular}
+				\end{tabular}\end{center}
 			\end{table}
 
 
@@ -462,8 +575,6 @@
 				\unit{K}\end{array}
 			\end{cases}
 			\]
-
-
 
 		\subsubsection{Substituição das Medidas Obtidas na Fórmula Literal}
 
