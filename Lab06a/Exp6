@@ -1,0 +1,479 @@
+%
+%
+% Esse Latex renderizou aqui : https://www.sharelatex.com/
+% Então eu suponho que não há nenhum erro de compilação
+%
+%
+
+\documentclass[a4paper]{article}
+
+% algumas packages para arrumar as tables co a margin:
+% allows for temporary adjustment of side margins
+\usepackage{changepage}
+
+% provides filler text
+\usepackage{lipsum}
+
+% just makes the table prettier (see \toprule, \bottomrule, etc. commands below)
+\usepackage{booktabs}
+
+\usepackage[brazilian]{babel} %Para traduzir os textos
+\usepackage[utf8]{inputenc} %Para poder usar acentos
+\usepackage[a4paper]{geometry} %Para ajustar a parte geometrica da folha
+\geometry{verbose,tmargin=2cm,bmargin=3cm,lmargin=15mm,rmargin=15mm} %Parte de margens
+\setlength{\parindent}{10mm}
+\usepackage{wrapfig} %Biblioteca Matematica/Grafica
+\usepackage{mathptmx} %Biblioteca Matematica/Grafica
+\renewcommand{\ttdefault}{mathptmx} %Biblioteca Matematica/Grafica
+\usepackage{amsmath} %Biblioteca Matematica/Grafica
+\usepackage{amssymb} %Biblioteca Matematica/Grafica
+\usepackage[11pt]{moresize}% different letters sizes
+\usepackage{float}% enables accurate location of tables
+\usepackage{caption}% to make personalized captions
+\usepackage{graphicx} %Para inclusão de imagens
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+
+%Packages do Lyx:
+	\usepackage{units}
+
+	%% Because html converters don't know tabularnewline
+	\providecommand{\tabularnewline}{\\}
+%Fim dos Packages do Lyx
+
+\makeatletter
+\providecommand{\tabularnewline}{\\} %define
+
+\title{Calorimetria \\ Experimento 6a} % main title
+\author{F 229 \\ \textsc{Grupo 1}}
+\date{19 de Outubro, 2014}
+
+\begin{document} % actually starts the document here
+\maketitle
+
+% members of the group
+\begin{center}
+	\begin{tabular}{l r l}
+		Integrantes:\\\\
+		 Henrique Noronha Facioli & RA: 157986 \\
+		 Guilherme Lucas da Silva & RA: 155618 \\
+		 Beatriz Sechin Zazulla & RA: 154779 \\
+		 Lucas Alves Racoci & RA: 156331 \\
+		 Isadora Sophia Garcia Rodopoulos & RA :158018 \\
+	\end{tabular}
+\end{center}
+
+%%Seria legal se alguém conseguir colocar os logos no footer da pagina, ou então no header...
+
+\begin{figure}[!ht]
+	\begin{minipage}[b]{0.45\linewidth}%
+		\includegraphics[clip,scale=0.25]{logo-unicamp-name-line-blk-blk-0480} %
+	\end{minipage}
+
+	\begin{minipage}[b]{0.45\linewidth}%
+		\includegraphics[clip,scale=0.25]{logo-ifgw} %
+	\end{minipage}
+\end{figure}
+
+\newpage{}
+
+\section{Resumo}
+	Resumo here
+
+\section{Objetivo}
+	Objetivo here
+
+\section{Procedimentos e coleta de dados}
+	\subsection{Materiais utilizados}
+		\begin{enumerate}
+			\item materiais 
+		\end{enumerate}
+
+	\subsection{Procedimento}
+
+		Procedimentos
+
+\section{Análise dos resultados}
+
+
+	\subsection{Gráfico de Calibração do Termopar}
+
+
+		\subsubsection{Achando a relação entre valores de$\Delta V$ e valores de $\Delta T$}
+
+			\begin{table}[H]
+				\caption{Valores obtidos de diferença de potencial elétrico em função da maior
+				temperatura}
+
+
+				\begin{tabular}{|c|c|}
+					\hline 
+					Temperatura ($T$)  & Diferença de Potencial ($\Delta V$)\tabularnewline
+					\hline 
+					$(8,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(4,84\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(8,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(4,45\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(7,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(4,02\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(7,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(3,82\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(6,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(3,52\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(6,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(3,23\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(5,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$ & $(2,95\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+				\end{tabular}
+			\end{table}
+
+
+			À partir dessa tabela e da menor temperatura $T_{gelo}=(2\pm5)\cdot10^{-1}$$\unit{^{\circ}C}$que
+			acontecia num bequer cheio de gelo tem-se que:
+
+			\begin{table}[H]
+				\caption{Calculo de $\Delta T$}
+
+
+				\begin{tabular}{|c|}
+					\hline 
+					Diferença de Temperatura ($\Delta T$) \tabularnewline
+					\hline 
+					$\left((8,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					\hline 
+					$\left((8,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					\hline 
+					$\left((7,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					\hline 
+					$\left((7,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					\hline 
+					$\left((6,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					\hline 
+					$\left((6,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					\hline 
+					$\left((5,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					\hline 
+					\end{tabular}$\Longleftrightarrow$%
+					\begin{tabular}{|c|}
+					\hline 
+					Diferença de Temperatura ($\Delta T$) \tabularnewline
+					\hline 
+					$(8,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+					\hline 
+					$(7,98\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+					\hline 
+					$(7,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+					\hline 
+					$(6,98\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+					\hline 
+					$(6,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+					\hline 
+					$(5,98\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+					\hline 
+					$(5,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+					\hline 
+				\end{tabular}$\Longleftrightarrow$
+
+				\begin{tabular}{|c|c|}
+					\hline 
+					Diferença de Temperatura ($\Delta T$)  & Diferença de Potencial ($\Delta V$)\tabularnewline
+					\hline 
+					$(8,48\pm0,07)\cdot10^{1}\unit{K}$ & $(4,84\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(7,98\pm0,07)\cdot10^{1}\unit{K}$ & $(4,45\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(7,48\pm0,07)\cdot10^{1}\unit{K}$ & $(4,02\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(6,98\pm0,07)\cdot10^{1}\unit{K}$ & $(3,82\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(6,48\pm0,07)\cdot10^{1}\unit{K}$ & $(3,52\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(5,98\pm0,07)\cdot10^{1}\unit{K}$ & $(3,23\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+					$(5,48\pm0,07)\cdot10^{1}\unit{K}$ & $(2,95\pm0,01)$$\unit{V}$\tabularnewline
+					\hline 
+				\end{tabular}
+			\end{table}
+
+
+
+		\subsubsection{Método dos Mínimos Quadrados}
+
+
+		\subsubsection{Construção do Gráfico}
+
+
+	\subsection{Constante de Tempo do Calorímetro}
+
+
+	\subsection{Capacidade Térmica do Calorímetro}
+
+
+		\subsubsection{Equação Literal para Obtenção da Capacidade Térmica ($C$)}
+
+			Começemos com a fórmula:
+
+			\[
+			Q_{resultante}={\displaystyle \sum Q_{parciais}=0}\Leftrightarrow
+			\]
+
+
+			\[
+			Q_{calor\acute{\imath}metro}+Q_{\acute{a}gua_{fria}}+Q_{\acute{a}gua_{quente}}=0
+			\]
+
+
+			Sendo $T_{f}$ a temperatura da água fria, $T_{q}$ a temperatura
+			da água quente, $T_{e}$a temperatura de equilibrio termodinâmico
+			e $C$ é a capacidade térmica do calorímetro:
+
+			\[
+			\begin{cases}
+				Q_{calor\acute{\imath}metro} & =C\centerdot(T_{e}-T_{f})\\
+				Q_{\acute{a}gua_{fria}} & =M_{f}c_{\acute{a}gua}\centerdot(T_{e}-T_{f})\\
+				Q_{\acute{a}gua_{quente}} & =M_{q}c_{\acute{a}gua}\centerdot(T_{e}-T_{q})
+			\end{cases}
+			\]
+
+
+			Portanto substituindo isso na equação anterior:
+
+			$C\centerdot(T_{e}-T_{f})+M_{f}\centerdot c_{\acute{a}gua}\centerdot(T_{e}-T_{f})+M_{q}\centerdot c_{\acute{a}gua}\centerdot(T_{e}-T_{q})=0\Longleftrightarrow$
+
+			$C\centerdot(T_{e}-T_{f})=M_{q}\centerdot c_{\acute{a}gua}\centerdot(T_{q}-T_{e})-M_{f}\centerdot c_{\acute{a}gua}\centerdot(T_{e}-T_{f})\Longleftrightarrow$
+
+			$C=c_{\acute{a}gua}\centerdot\dfrac{M_{q}\centerdot(T_{q}-T_{e})-M_{f}\centerdot(T_{e}-T_{f})}{T_{e}-T_{f}}=c_{\acute{a}gua}\centerdot\left(M_{q}\centerdot\dfrac{T_{q}-T_{e}}{T_{e}-T_{f}}-M_{f}\right)=c_{\acute{a}gua}\centerdot\left(M_{q}\centerdot\dfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}}-M_{f}\right)$
+
+			Para calcular o erro na capacidade térmica do calorímetro $\sigma_{C}$
+			teríamos que usar a fórmula:
+
+			$\sigma_{C}^{2}=\left(\cfrac{\partial C}{\partial M_{f}}\right)^{2}\sigma_{M_{f}}^{2}+\left(\cfrac{\partial C}{\partial M_{q}}\right)^{2}\sigma_{M_{q}}^{2}+\left(\cfrac{\partial C}{\partial(\Delta T_{e\rightarrow q})}\right)^{2}\sigma_{\Delta T_{e\rightarrow q}}^{2}+\left(\cfrac{\partial C}{\partial(\Delta T_{f\rightarrow e})}\right)^{2}\sigma_{\Delta T_{f\rightarrow e}}^{2}$
+
+			Mas sabemos que $\sigma_{\Delta T_{e\rightarrow q}}^{2}=\sigma_{\Delta T_{f\rightarrow e}}^{2}=\sigma_{\Delta T}^{2}=\left(\cfrac{\partial(T_{2}-T_{1})}{\partial T_{1}}\right)^{2}\sigma_{T}^{2}+\left(\cfrac{\partial(T_{2}-T_{1})}{\partial T_{2}}\right)^{2}\sigma_{T}^{2}=\left(\left(-1\right)^{2}+1^{2}\right)\sigma_{T}^{2}=2\centerdot\sigma_{T}^{2}$.
+
+			Também sabemos que $\sigma_{M_{q}}=\sigma_{M_{f}}=\sigma_{M}$.
+
+			Então:
+
+			\[
+			\sigma_{C}=\sqrt{\left(\left(-c_{\acute{a}gua}\right)^{2}+\left(c_{\acute{a}gua}\centerdot\dfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}}\right)^{2}\right)\sigma_{M}^{2}+2\centerdot\left(\left(c_{\acute{a}gua}\centerdot M_{q}\centerdot\cfrac{1}{\Delta T_{f\rightarrow e}}\right)^{2}+\left(-c_{\acute{a}gua}\centerdot M_{q}\centerdot\cfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}^{2}}\right)^{2}\right)\sigma_{T}^{2}}
+			\]
+
+
+			\[
+			=c_{\acute{a}gua}\centerdot\sqrt{\left(1+\left(\dfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}}\right)^{2}\right)\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\left(\left(\cfrac{1}{\Delta T_{f\rightarrow e}}\right)^{2}+\left(\cfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}^{2}}\right)^{2}\right)\sigma_{T}^{2}}
+			\]
+
+
+			\[
+			=c_{\acute{a}gua}\centerdot\sqrt{\left(\dfrac{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}{\Delta T_{f\rightarrow e}^{2}}\right)\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\left(\cfrac{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}{\Delta T_{f\rightarrow e}^{4}}\right)\sigma_{T}^{2}}
+			\]
+
+
+			\[
+			=c_{\acute{a}gua}\centerdot\sqrt{\left(\dfrac{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}{\Delta T_{f\rightarrow e}^{4}}\right)\left(\Delta T_{f\rightarrow e}^{2}\centerdot\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\sigma_{T}^{2}\right)}
+			\]
+
+
+			\[
+			=\cfrac{c_{\acute{a}gua}}{\Delta T_{f\rightarrow e}^{2}}\centerdot\sqrt{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}\sqrt{\Delta T_{f\rightarrow e}^{2}\centerdot\sigma_{M}^{2}+2\centerdot M_{q}^{2}\centerdot\sigma_{T}^{2}}
+			\]
+
+
+			\[
+			=c_{\acute{a}gua}\centerdot\cfrac{\sqrt{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}\sqrt{\left(\Delta T_{f\rightarrow e}\centerdot\sigma_{M}\right)^{2}+2\centerdot\left(M_{q}\centerdot\sigma_{T}\right)^{2}}}{\Delta T_{f\rightarrow e}^{2}}
+			\]
+
+
+			Portanto:
+
+			\[
+			C=c_{\acute{a}gua}\centerdot\left(\left(M_{q}\centerdot\dfrac{\Delta T_{e\rightarrow q}}{\Delta T_{f\rightarrow e}}-M_{f}\right)\pm\left(\cfrac{\sqrt{\Delta T_{f\rightarrow e}^{2}+\Delta T_{e\rightarrow q}^{2}}\sqrt{\left(\Delta T_{f\rightarrow e}\centerdot\sigma_{M}\right)^{2}+2\centerdot\left(M_{q}\centerdot\sigma_{T}\right)^{2}}}{\Delta T_{f\rightarrow e}^{2}}\right)\right)
+			\]
+
+
+
+		\subsubsection{Resultado das Medidas}
+
+			\begin{table}
+				\caption{Valores brutos obtidos e conversão para as únidades a serem ultilizads}
+
+
+				\begin{tabular}{|c|c|r|r|}
+					\hline 
+					Nomes dos Dados Obtidos  & Símbolo Associado  & Valor Obtido  & Valor Ultilizado\tabularnewline
+					\hline 
+					\emph{Massa do Béquer Vazio}  & $M_{b\acute{e}quer}$  & $(1,033\pm0,001)\centerdot10^{2}\unit{g}$  & $(1,033\pm0,001)\centerdot10^{-1}\unit{Kg}$\tabularnewline
+					\hline 
+					\emph{Massa do Béquer com Água Fria}  & $M_{b\acute{e}quer}+M_{f}$  & \selectlanguage{english}%
+					$(3,021\pm0,001)\centerdot10^{2}\unit{g}$\selectlanguage{brazil}%
+					 & \selectlanguage{english}%
+					$(3,021\pm0,001)\centerdot10^{-1}\unit{Kg}$\selectlanguage{brazil}%
+					\tabularnewline
+					\hline 
+					\emph{Massa do Béquer com Água Quente}  & $M_{b\acute{e}quer}+M_{q}$  & \selectlanguage{english}%
+					$(2,721\pm0,001)\centerdot10^{2}\unit{g}$\selectlanguage{brazil}%
+					 & \selectlanguage{english}%
+					$(2,721\pm0,001)\centerdot10^{-1}\unit{Kg}$\selectlanguage{brazil}%
+					\tabularnewline
+					\hline 
+					Temperatura da Água Fria  & $T_{f}$  & \selectlanguage{english}%
+					$(3,10\pm0,05)\centerdot10^{1}\unit{^{\circ}C}$\selectlanguage{brazil}%
+					 & \selectlanguage{english}%
+					$(3,10\pm0,05)\centerdot10^{1}\unit{^{\circ}C}$\selectlanguage{brazil}%
+					\tabularnewline
+					\hline 
+					Temperatura da Água em Equilíbrio  & $T_{e}$  & \selectlanguage{english}%
+					$(5,50\pm0,05)\centerdot10^{1}\unit{^{\circ}C}$\selectlanguage{brazil}%
+					 & \selectlanguage{english}%
+					$(5,50\pm0,05)\centerdot10^{1}\unit{^{\circ}C}$\selectlanguage{brazil}%
+					\tabularnewline
+					\hline 
+					Temperatura da Água Quente  & $T_{q}$  & \selectlanguage{english}%
+					$(8,50\pm0,05)\centerdot10^{1}\unit{^{\circ}C}$\selectlanguage{brazil}%
+					 & \selectlanguage{english}%
+					$(8,50\pm0,05)\centerdot10^{1}\unit{^{\circ}C}$\selectlanguage{brazil}%
+					\tabularnewline
+					\hline 
+				\end{tabular}
+			\end{table}
+
+
+			Temos portanto:
+
+			\[
+			\begin{cases}
+				\begin{cases}
+					M_{f} & =\left[M_{b\acute{e}quer}+M_{f}\right]-\left[M_{b\acute{e}quer}\right]\\
+					M_{q} & =\left[M_{b\acute{e}quer}+M_{q}\right]-\left[M_{b\acute{e}quer}\right]
+				\end{cases} & \underleftrightarrow{matricialmente}\\
+				\begin{cases}
+					\Delta T_{e\rightarrow q} & =T_{q}-T_{e}\\
+					\Delta T_{f\rightarrow e} & =T_{e}-T_{f}
+				\end{cases} & \underleftrightarrow{matricialmente}
+			\end{cases}\Longleftrightarrow
+			\]
+
+
+			\[
+			\begin{cases}
+			\left[\begin{array}{c}
+				M_{f}\\
+				M_{q}
+			\end{array}\right] & =\left(\left[\begin{array}{c}
+					\left(3,021\pm0,001\right)\\
+					\left(2,721\pm0,001\right)
+				\end{array}\right]-\left[\begin{array}{c}
+					\left(1,033\pm0,001\right)\\
+					\left(1,033\pm0,001\right)
+			\end{array}\right]\right)\cdot\left[\begin{array}{c}
+				10^{-1}\unit{Kg}\end{array}\right]\\
+			\left[\begin{array}{c}
+				\Delta T_{e\rightarrow q}\\
+				\Delta T_{f\rightarrow e}
+			\end{array}\right] & =\left[\begin{array}{c}
+				T_{q}\\
+				T_{e}
+			\end{array}\right]\cdot\left[\begin{array}{c}
+				\unit{^{\circ}C}\end{array}\right]-\left[\begin{array}{c}
+				T_{e}\\
+				T_{f}
+			\end{array}\right]\cdot\left[\begin{array}{c}
+				\unit{^{\circ}C}\end{array}\right]
+			\end{cases}\Longleftrightarrow
+			\]
+
+
+			\[
+			\begin{cases}
+				\left[\begin{array}{c}
+					M_{f}\\
+					M_{q}
+				\end{array}\right] & =\left[\begin{array}{c}
+					1,988\pm0,001\cdot\sqrt{2}\\
+					1,688\pm0,001\cdot\sqrt{2}
+				\end{array}\right]\cdot\left[\begin{array}{c}
+					10^{-1}\unit{Kg}\end{array}\right]\\
+				\left[\begin{array}{c}
+					\Delta T_{e\rightarrow q}\\
+					\Delta T_{f\rightarrow e}
+				\end{array}\right] & =\left(\left[\begin{array}{c}
+						T_{q}\\
+						T_{e}
+					\end{array}\right]-\left[\begin{array}{c}
+						T_{e}\\
+						T_{f}
+				\end{array}\right]\right)\cdot\left[\begin{array}{c}
+					K
+				\end{array}\right]
+			\end{cases}\Longleftrightarrow
+			\]
+
+
+			\[
+			\begin{cases}
+				\left[\begin{array}{c}
+					M_{f}\\
+					M_{q}
+				\end{array}\right] & =\left[\begin{array}{c}
+					1,988\pm0,001\\
+					1,688\pm0,001
+				\end{array}\right]\cdot\left[10^{-1}\unit{Kg}\right]\\
+				\left[\begin{array}{c}
+					\Delta T_{e\rightarrow q}\\
+					\Delta T_{f\rightarrow e}
+				\end{array}\right] & =\left(\left[\begin{array}{c}
+						8,50\pm0,05\\
+						5,50\pm0,05
+					\end{array}\right]-\left[\begin{array}{c}
+						5,50\pm0,05\\
+						3,10\pm0,05
+				\end{array}\right]\right)\cdot\left[10^{1}\begin{array}{c}
+				\begin{array}{c}
+				\unit{K}\end{array}\end{array}\right]
+			\end{cases}\Longleftrightarrow
+			\]
+
+
+			\[
+			\begin{cases}
+				\left[\begin{array}{c}
+					M_{f}\\
+					M_{q}
+				\end{array}\right] & =\left[\begin{array}{c}
+					1,988\pm0,001\\
+					1,688\pm0,001
+				\end{array}\right]\cdot\left[10^{-1}Kg\right]\\
+				\left[\begin{array}{c}
+					\Delta T_{e\rightarrow q}\\
+					\Delta T_{f\rightarrow e}
+				\end{array}\right] & =\left(\left[\begin{array}{c}
+					3,00\pm0,05\\
+					2,40\pm0,05
+				\end{array}\right]\right)\cdot\left[\begin{array}{c}
+					10^{1}\begin{array}{c}
+					K\end{array}\end{array}\right]
+			\end{cases}\Longleftrightarrow\begin{cases}
+				M_{f}=\left(1,988\pm0,001\right)\cdot10^{-1}\unit{Kg}\\
+				M_{q}=\left(1,688\pm0,001\right)\cdot10^{-1}\unit{Kg}\\
+				\Delta T_{e\rightarrow q}=\left(3,00\pm0,05\right)\cdot10^{1}\begin{array}{c}
+				\unit{K}\end{array}\\
+				\Delta T_{f\rightarrow e}=\left(2,40\pm0,05\right)\cdot10^{1}\begin{array}{c}
+				\unit{K}\end{array}
+			\end{cases}
+			\]
+
+
+
+		\subsubsection{Substituição das Medidas Obtidas na Fórmula Literal}
+
+			Substituindo os valores de $M_{f}$, $M_{q}$, $\Delta T_{e\rightarrow q}$,
+			$\Delta T_{f\rightarrow e}$, e usando $c_{\acute{a}gua}=4,184\cdot10^{3}\unit{\frac{J}{Kg\cdot K}}$
+			temos:
+
+			$C=\left(5\pm3\right)\cdot10\unit{\frac{J}{K}}$ou $1,8\pm0,8\unit{\frac{cal}{K}}$
+
+\section{Conclusão}
+	Conclusão here 
+
+\end{document}
