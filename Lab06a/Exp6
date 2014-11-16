@@ -74,11 +74,31 @@
 \newpage{}
 
 \section{Resumo}
-	Resumo here
+	Neste experimento, estudamos o calorímetro, um instrumento usado na medição
+	de processos que envolvam trocam de calor, ou seja, mudança de temperatura, estado ou 
+	qualquer outro processo que seja alterado pelo calor no sistema. Dividido em duas partes, 
+	a primeira do experimento (alvo desse relatório) consistiu em achar a o gráfico de 
+	calibração do termopar, mergulhando um fio do termopar em um recipiente com água 
+	próximo a zero grau Celsius, outro no calorímetro com água aquecida, medindo, então, 
+	pares de diferença de potencial em Volts e temperatura em Celsius. Além disso, obtemos 
+	a capacidade térmica do calorímetro, misturando duas quantidades de água em 
+	temperaturas diferentes dentro do calorímetro e observando sua temperatura de 
+	equilíbrio. Por último, construímos um gráfico linearizado para a obtenção da constante de 
+	tempo do calorímetro, com os dados de temperatura em função do tempo obtidos no 
+	laboratório, com o auxílio de um termômetro de mercúrio e um cronômetro, 
+	respectivamente.
 
 \section{Objetivo}
-	Objetivo here
-
+	Esse experimento tem como principal objetivo o estudo do calorímetro. Para que
+	esse estudo fosse bem sucedido, determinados três aspectos do mesmo: o gráfico de 
+	calibração do termopar, a partir dos valores de volts, dados pelo termopar, e de 
+	temperatura, obtidos a partir do termômetro. Assim, o gráfico será plotado em função de V 
+	x T. Além desse gráfico, também procuramos a constante de tempo do calorímetro. Essa 
+	constante é necessária, uma vez que o instrumento que possuímos no laboratório não é 
+	ideal, ou seja, a temperatura em seu interior cai conforme o tempo passa. A constante do 
+	tempo mostra o quanto o calorímetro não é ideal. Por último, procuramos pela capacidade 
+	térmica, a partir da temperatura de equilíbrio de uma mistura de água quente e fria.
+	
 \section{Procedimentos e coleta de dados}
 	\subsection{Materiais utilizados}
 		\begin{enumerate}
@@ -101,25 +121,25 @@
 					\hline 
 					Temperatura ($T$)  & Diferença de Potencial ($\Delta V$)\tabularnewline
 					\hline 
-					$(8,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(4,84\pm0,01)$$\unit{V}$\tabularnewline
+					$(8,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(4,84\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(8,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(4,45\pm0,01)$$\unit{V}$\tabularnewline
+					$(8,00\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(4,45\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(7,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(4,02\pm0,01)$$\unit{V}$\tabularnewline
+					$(7,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(4,02\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(7,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(3,82\pm0,01)$$\unit{V}$\tabularnewline
+					$(7,00\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(3,82\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(6,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(3,52\pm0,01)$$\unit{V}$\tabularnewline
+					$(6,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(3,52\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(6,00\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(3,23\pm0,01)$$\unit{V}$\tabularnewline
+					$(6,00\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(3,23\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(5,50\pm0,05)\cdot10^{1}$$\unit{^{\circ}C}$  & $(2,95\pm0,01)$$\unit{V}$\tabularnewline
+					$(5,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(2,95\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
 				\end{tabular}\end{center}
 			\end{table}
 
 
-			À partir dessa tabela e da menor temperatura $T_{gelo}=(2\pm5)\cdot10^{-1}$$\unit{^{\circ}C}$que
+			À partir dessa tabela e da menor temperatura $T_{gelo}=(2\pm5)\cdot10^{-1}\unit{^{\circ}C}$que
 			acontecia num bequer cheio de gelo tem-se que:
 
 			\begin{table}[H]
@@ -130,19 +150,19 @@
 					\hline 
 					Diferença de Temperatura ($\Delta T$) \tabularnewline
 					\hline 
-					$\left((8,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					$\left((8,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
 					\hline 
-					$\left((8,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					$\left((8,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
 					\hline 
-					$\left((7,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					$\left((7,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
 					\hline 
-					$\left((7,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					$\left((7,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
 					\hline 
-					$\left((6,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					$\left((6,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
 					\hline 
-					$\left((6,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					$\left((6,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
 					\hline 
-					$\left((5,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}$$\unit{^{\circ}C}$\tabularnewline
+					$\left((5,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
 					\hline 
 				\end{tabular}
 				$\Longleftrightarrow$
@@ -172,19 +192,19 @@
 					\hline 
 					Diferença de Temperatura ($\Delta T$)  & Diferença de Potencial ($\Delta V$)\tabularnewline
 					\hline 
-					$(8,48\pm0,07)\cdot10^{1}\unit{K}$  & $(4,84\pm0,01)$$\unit{V}$\tabularnewline
+					$(8,48\pm0,07)\cdot10^{1}\unit{K}$  & $(4,84\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(7,98\pm0,07)\cdot10^{1}\unit{K}$  & $(4,45\pm0,01)$$\unit{V}$\tabularnewline
+					$(7,98\pm0,07)\cdot10^{1}\unit{K}$  & $(4,45\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(7,48\pm0,07)\cdot10^{1}\unit{K}$  & $(4,02\pm0,01)$$\unit{V}$\tabularnewline
+					$(7,48\pm0,07)\cdot10^{1}\unit{K}$  & $(4,02\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(6,98\pm0,07)\cdot10^{1}\unit{K}$  & $(3,82\pm0,01)$$\unit{V}$\tabularnewline
+					$(6,98\pm0,07)\cdot10^{1}\unit{K}$  & $(3,82\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(6,48\pm0,07)\cdot10^{1}\unit{K}$  & $(3,52\pm0,01)$$\unit{V}$\tabularnewline
+					$(6,48\pm0,07)\cdot10^{1}\unit{K}$  & $(3,52\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(5,98\pm0,07)\cdot10^{1}\unit{K}$  & $(3,23\pm0,01)$$\unit{V}$\tabularnewline
+					$(5,98\pm0,07)\cdot10^{1}\unit{K}$  & $(3,23\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
-					$(5,48\pm0,07)\cdot10^{1}\unit{K}$  & $(2,95\pm0,01)$$\unit{V}$\tabularnewline
+					$(5,48\pm0,07)\cdot10^{1}\unit{K}$  & $(2,95\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
 					\hline 
 				\end{tabular}
 			\end{table}
@@ -201,56 +221,15 @@
 
 			\[
 			\begin{cases}
-				a & =\frac{\left(
-					{\displaystyle {\displaystyle N\cdot}{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-						\left(x_{i}y_{i}\right)-
-					{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-						\left(x_{i}\right)
-					{\scriptscriptstyle {\textstyle \overset{n}{\cdot\underset{i=1}{\sum}}}}
-						\left(y_{i}\right)\right)}
-					{{\displaystyle {\displaystyle N\cdot}{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-						\left(x_{i}^{2}\right)-\left(
-					{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-						\left(x_{i}\right)
-				\right)^{2}}
-				\pm\sigma_{y}\sqrt{\cfrac{
-					{\displaystyle {\displaystyle {\displaystyle N}}}}{{\displaystyle {\displaystyle N\cdot}
-					{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-					\left(x_{i}^{2}\right)-\left(
-						{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-							\left(x_{i}\right)
-						\right)^{2}}}\\
-				b & =\frac{\left(
-					{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-						\left(y_{i}\right)\cdot
-					{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-						\left(x_{i}^{2}\right)-
-					{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-						\left(x_{i}y_{i}\right)
-					{\scriptscriptstyle {\textstyle \overset{n}{\cdot\underset{i=1}{\sum}}}}
-						\left(x_{i}\right)\right)}
-					{N\cdot{\displaystyle 
-					{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-						\left(x_{i}^{2}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-							\left(x_{i}\right)
-						\right)^{2}}
-						\pm\sigma_{y}\sqrt{\cfrac{
-						{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-							\left(x_{i}^{2}\right)}
-						{{\displaystyle {\displaystyle N\cdot}
-						{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-						\left(x_{i}^{2}\right)-
-						\left(
-							{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}
-								\left(x_{i}\right)
-						\right)^{2}}}
+				a & =\frac{\left({\displaystyle {\displaystyle N\cdot}{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}y_{i}\right)-{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}\right){\scriptscriptstyle {\textstyle \overset{n}{\cdot\underset{i=1}{\sum}}}}\left(y_{i}\right)\right)}{{\displaystyle {\displaystyle N\cdot}{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}\right)\right)^{2}}\pm\sigma_{y}\sqrt{\cfrac{{\displaystyle {\displaystyle {\displaystyle N}}}}{{\displaystyle {\displaystyle N\cdot}{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}\right)\right)^{2}}}\\
+				b & =\frac{\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(y_{i}\right)\cdot{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}\right)-{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}y_{i}\right){\scriptscriptstyle {\textstyle \overset{n}{\cdot\underset{i=1}{\sum}}}}\left(x_{i}\right)\right)}{N\cdot{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}\right)\right)^{2}}\pm\sigma_{y}\sqrt{\cfrac{{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}\right)}{{\displaystyle {\displaystyle N\cdot}{\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}\right)\right)^{2}}}
 			\end{cases}
 			\]
 
 
 			Que pode ser calculado mais facilmente atravez de uma tabela auxiliar
 			como a seguinte:
-			\begin{table}[H]
+			\begin{table}
 				\caption{Tabela auxiliar para o cálculo dos mínimos quadrados:}
 
 				\begin{center}\begin{tabular}{|c|c|c|c|c|}
