@@ -60,15 +60,13 @@
 %%Seria legal se alguém conseguir colocar os logos no footer da pagina, ou então no header...
 
 \begin{figure}[!ht]
-	\begin{centering}
-		\includegraphics[clip,scale=0.4]{logo-ifgw} 
-	\par\end{centering}
-
-	\vspace*{1cm}
-
-	\begin{centering}
-		\includegraphics[clip,scale=0.3]{logo-unicamp-name-line-blk-blk-0480}
-	\par\end{centering}
+	\begin{minipage}[b]{0.45\linewidth}
+		\includegraphics[scale=0.25]{logo-unicamp-name-line-blk-blk-0480.jpg}
+	\end{minipage}
+	\hspace{0.5cm}
+	\begin{minipage}[b]{0.45\linewidth}
+		\includegraphics[scale=0.25]{logo-ifgw.png}
+	\end{minipage}
 \end{figure}
 
 \newpage{}
@@ -100,119 +98,144 @@
 	térmica, a partir da temperatura de equilíbrio de uma mistura de água quente e fria.
 	
 \section{Procedimentos e coleta de dados}
+	Para realizar o experimento necessitamos dos seguintes materiais:
 	\subsection{Materiais utilizados}
 		\begin{enumerate}
-			\item materiais 
+			\item Calorímetro
+			\item Termômetro de mercurio
+			\item Cronômetro
+			\item Termopar
+			\item Milivoltimetro
 		\end{enumerate}
 
 	\subsection{Procedimento}
+	De posse dos materiais, primeiramente fizemos a calibração do termopar, e para isso colocamos em um béquer água com gelo e dentro do calorímetro água fervente e, para alguns valores da temperatura $T$ que ia variando, verificavamos $\Delta V$ com o termopar, obtendo a seguinte tabela:
+	
+\begin{table}[!ht]
+	\caption{Valores obtidos de diferença de potencial $V$ elétrico em função da temperatura $T$}
+	\begin{center}\begin{tabular}{|c|c|}
+	\hline 
+	Temperatura ($T$)  & Diferença de Potencial ($\Delta V$)\tabularnewline
+	\hline 
+	$(8,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(4,84\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+	\hline 
+	$(8,00\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(4,45\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+	\hline 
+	$(7,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(4,02\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+	\hline 
+	$(7,00\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(3,82\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+	\hline 
+	$(6,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(3,52\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+	\hline 
+	$(6,00\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(3,23\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+	\hline 
+	$(5,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(2,95\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+	\hline 
+\end{tabular}\end{center}
+\end{table}
 
-		Procedimentos
+\begin{table}[!ht]
+	\caption{Valor da temperatura ($T_{gelo}$) do béquer contendo água e gelo}
+	\begin{center}
+	\begin{tabular}{|c|c|}
+	\hline
+	Temperatura da agua + gelo & $(2\pm5)\cdot10^{-1}\unit{^{\circ}C}$\tabularnewline
+	\hline 
+	\end{tabular}
+	\end{center}
+\end{table}
+	
+	Após a calibração do termopar, precisávamos encontrar a constante do tempo $\tau$, e para isso colocamos agua fervente no interior do calorímetro e verificamos a temperatura $T$ pelo tempo $t$, obtendo a seguinte tabela:
+	
+\begin{table}[!ht]
+	\begin{center}
+	\caption{Valor da temperatura ($T$) do calorímetro pelo tempo $t$}
+    \begin{tabular}{|l|l|}
+    \hline
+    Temperatura(C) & Tempo (min) \\ \hline
+    90             & 0           \\ \hline
+    87,5           & 1min 5s     \\ \hline
+    85             & 3min 58s    \\ \hline
+    82,5           & 6 min 2s    \\ \hline
+    80             & 9min 35s    \\ \hline
+    75             & 16min 48s   \\ \hline
+    70             & 26min 50s   \\ \hline
+    \end{tabular}
+    \end{center}
+\end{table}
 
-\section{Análise dos resultados}
-		
+\section{Análise dos resultados}	
 	\subsection{Gráfico de Calibração do Termopar}
-
 		\subsubsection{Achando a relação entre valores de$\Delta V$ e valores de $\Delta T$}
-			\begin{table}[H]
-				\caption{Valores obtidos de diferença de potencial elétrico em função da maior
-				temperatura}
-				\begin{center}\begin{tabular}{|c|c|}
-					\hline 
-					Temperatura ($T$)  & Diferença de Potencial ($\Delta V$)\tabularnewline
-					\hline 
-					$(8,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(4,84\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(8,00\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(4,45\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(7,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(4,02\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(7,00\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(3,82\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(6,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(3,52\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(6,00\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(3,23\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(5,50\pm0,05)\cdot10^{1}\unit{^{\circ}C}$  & $(2,95\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-				\end{tabular}\end{center}
-			\end{table}
+		À partir da Tabela 1 e da temperatura $T_{gelo}$ do bequer agua+gelo, tem-se que:
 
-
-			À partir dessa tabela e da menor temperatura $T_{gelo}=(2\pm5)\cdot10^{-1}\unit{^{\circ}C}$que
-			acontecia num bequer cheio de gelo tem-se que:
-
-			\begin{table}[H]
-				\caption{Calculo de $\Delta T$}
-
-
-				\begin{centering}\begin{tabular}{|c|}
-					\hline 
-					Diferença de Temperatura ($\Delta T$) \tabularnewline
-					\hline 
-					$\left((8,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
-					\hline 
-					$\left((8,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
-					\hline 
-					$\left((7,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
-					\hline 
-					$\left((7,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
-					\hline 
-					$\left((6,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
-					\hline 
-					$\left((6,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
-					\hline 
-					$\left((5,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
-					\hline 
-				\end{tabular}
+\begin{table}[H]
+	\caption{Calculo de $\Delta T$}
+	\begin{centering}\begin{tabular}{|c|}
+		\hline 
+		Diferença de Temperatura ($\Delta T$) \tabularnewline
+		\hline 
+		$\left((8,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
+		\hline 
+		$\left((8,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
+		\hline 
+		$\left((7,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
+		\hline 
+		$\left((7,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
+		\hline 
+		$\left((6,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
+		\hline 
+		$\left((6,00\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
+		\hline 
+		$\left((5,50\pm0,05)-(0,02\pm0,05)\right)\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
+		\hline 
+	\end{tabular}
 				$\Longleftrightarrow$
-				\begin{tabular}{|c|}
-					\hline 
-					Diferença de Temperatura ($\Delta T$) \tabularnewline
-					\hline 
-					$(8,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
-					\hline 
-					$(7,98\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
-					\hline 
-					$(7,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
-					\hline 
-					$(6,98\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
-					\hline 
-					$(6,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
-					\hline 
-					$(5,98\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
-					\hline 
-					$(5,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
-					\hline 
-				\end{tabular}\par\end{centering}
+	\begin{tabular}{|c|}
+		\hline 
+		Diferença de Temperatura ($\Delta T$) \tabularnewline
+		\hline 
+		$(8,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+		\hline 
+		$(7,98\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+		\hline 
+		$(7,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+		\hline 
+		$(6,98\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+		\hline 
+		$(6,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+		\hline 
+		$(5,98\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+		\hline 
+		$(5,48\pm0,05\sqrt{2})\cdot10^{1}\unit{K}$\tabularnewline
+		\hline 
+	\end{tabular}\par\end{centering}
 				\[
 				\Updownarrow
 				\]
-				\centering{}\begin{tabular}{|c|c|}
-					\hline 
-					Diferença de Temperatura ($\Delta T$)  & Diferença de Potencial ($\Delta V$)\tabularnewline
-					\hline 
-					$(8,48\pm0,07)\cdot10^{1}\unit{K}$  & $(4,84\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(7,98\pm0,07)\cdot10^{1}\unit{K}$  & $(4,45\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(7,48\pm0,07)\cdot10^{1}\unit{K}$  & $(4,02\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(6,98\pm0,07)\cdot10^{1}\unit{K}$  & $(3,82\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(6,48\pm0,07)\cdot10^{1}\unit{K}$  & $(3,52\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(5,98\pm0,07)\cdot10^{1}\unit{K}$  & $(3,23\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-					$(5,48\pm0,07)\cdot10^{1}\unit{K}$  & $(2,95\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
-					\hline 
-				\end{tabular}
-			\end{table}
-
+	\centering{}\begin{tabular}{|c|c|}
+		\hline 
+		Diferença de Temperatura ($\Delta T$)  & Diferença de Potencial ($\Delta V$)\tabularnewline
+		\hline 
+		$(8,48\pm0,07)\cdot10^{1}\unit{K}$  & $(4,84\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+		\hline 
+		$(7,98\pm0,07)\cdot10^{1}\unit{K}$  & $(4,45\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+		\hline 
+		$(7,48\pm0,07)\cdot10^{1}\unit{K}$  & $(4,02\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+		\hline 
+		$(6,98\pm0,07)\cdot10^{1}\unit{K}$  & $(3,82\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+		\hline 
+		$(6,48\pm0,07)\cdot10^{1}\unit{K}$  & $(3,52\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+		\hline 
+		$(5,98\pm0,07)\cdot10^{1}\unit{K}$  & $(3,23\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+		\hline 
+		$(5,48\pm0,07)\cdot10^{1}\unit{K}$  & $(2,95\pm0,01)\cdot10^{-3}\unit{V}$\tabularnewline
+		\hline 
+	\end{tabular}
+\end{table}
 		\subsubsection{Método dos Mínimos Quadrados}
 
-			Para realizar o método dos mínimos quadrados faremos $y=\Delta V$
-			e $x=\Delta T$
+			Para realizar o método dos mínimos quadrados faremos $y=\Delta V$ e $x=\Delta T$
 
 			Sabe-se que $\underset{y}{\underbrace{\Delta V}}=\underset{a}{\underbrace{\left(S_{a}(T)-S_{B}(T)\right)}}\underset{x}{\underbrace{\Delta T}}+\underset{b}{\underbrace{0}}$.
 
