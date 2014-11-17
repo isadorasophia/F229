@@ -4,7 +4,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=2cm,bmargin=3cm,lmargin=15mm,rmargin=15mm}
+\geometry{verbose,tmargin=2cm,bmargin=3cm,lmargin=3cm,rmargin=3cm} % margem cute
+
 \setlength{\parindent}{10mm}
 \usepackage{float}
 \usepackage{units}
@@ -57,11 +58,11 @@
 
 \begin{figure}[!ht]
 	\begin{centering}
-		\includegraphics[clip,scale=0.4]{\lyxdot \lyxdot /Exp6/logo-ifgw} 
+		\includegraphics[clip,scale=0.4]{logo-ifgw} 
 	\par\end{centering}
 	\vspace*{1cm}
 	\centering{}
-		\includegraphics[clip,scale=0.3]{\lyxdot \lyxdot /Exp6/logo-unicamp-name-line-blk-blk-0480} 
+		\includegraphics[clip,scale=0.3]{logo-unicamp-name-line-blk-blk-0480} 
 \end{figure}
 
 
@@ -100,7 +101,7 @@
 \subsubsection{Valores conhecidos}
 
 \begin{table}[H]
-	\caption{Diâmetros das esferas}
+%	\caption*{Diâmetros das esferas}
 	\centering{}%
 	\begin{tabular}{|c|c|}
 		\hline 
@@ -141,6 +142,7 @@
 \subsubsection{Valores obtidos experimentalmente}
 
 	\begin{table}[H]
+		\begin{adjustwidth}{-1cm}{-1cm}
 		\caption{Tempos de queda de cada esfera pra cada uma das $N=5$ medidas realizadas
 		(i.e. $t_{ki}$ é o tempo de queda da k-ésima esfera na i-ésima medição)}
 
@@ -216,6 +218,7 @@
 			\tabularnewline
 			\hline 
 		\end{tabular}
+		\end{adjustwidth}
 	\end{table}
 
 \section{Análise dos resultados}
@@ -228,7 +231,7 @@
 			\caption{Dados no S.I. com os símbolos associados}
 
 
-			\centering{}%
+			\centering{}
 			\begin{tabular}{|c|c|}
 				\hline 
 				Raio das esferas ($S\acute{\imath}mbolo$) & Valor \tabularnewline
@@ -243,7 +246,12 @@
 				\hline 
 				$r_{e}$ & $(2,0\pm0,3)\cdot10^{-3}\unit{m}$\tabularnewline
 				\hline 
-				\end{tabular}\hspace{1cm}\centering{}%
+			\end{tabular}
+
+		\end{table}
+
+		\begin{table}[H]
+				\centering{}
 				\begin{tabular}{|r|rl|}
 				\hline 
 				Dado ($S\acute{\imath}mbolo$) & Valor & \tabularnewline
@@ -355,7 +363,7 @@
 	\subsection{Cálculo do Fator de Correção de Ladenburg para Cada Esfera}
 
 		O fator de Ladenburg é dado pela fórmula:
-
+	
 		\[
 		K=\left(1+2,4\cdot\cfrac{r}{R}\right)\cdot\left(1+3,3\cdot\cfrac{r}{h}\right)
 		\]
@@ -364,16 +372,19 @@
 		cujo erro associado é dado por:
 
 		\[
-		\sigma_{K}=\sqrt{\left(\sigma_{r}\cdot\cfrac{\partial K}{\partial r}\right)^{2}+\left(\sigma_{R}\cdot\cfrac{\partial K}{\partial R}\right)^{2}+\left(\sigma_{h}\cdot\cfrac{\partial K}{\partial h}\right)^{2}}
+		\sigma_{K}=\sqrt{\left(\sigma_{r}\cdot\cfrac{\partial K}{\partial r}\right)^{2}+\left(\sigma_{R}\cdot\cfrac{\partial K}{\partial R}\right)^{2}+\left(\sigma_{h}\cdot\cfrac{\partial K}{\partial h}\right)^{2}
 		\]
 
-
+		\begin{adjustwidth}{-1cm}{-1cm}
 		\[
+		$
 		\sigma_{K}=\sqrt{\sigma_{h}^{2}\cdot10,89\cdot\cfrac{r^{2}}{h^{4}}\cdot\left(1+2,4\cdot\cfrac{r}{R}\right)^{2}+\sigma_{r}^{2}\cdot\left(\cfrac{1}{h}\left(3.3+7,92\cdot\cfrac{r}{R}\right)+\cfrac{1}{R}\left(2.4+7,92\cdot\cfrac{r}{h}\right)\right)^{2}+\sigma_{R}^{2}\cdot5,76\cdot\cfrac{r^{2}}{R^{4}}\cdot\left(1+3,3\cdot\cfrac{r}{h}\right)^{2}}
+		$
 		\]
+		\end{adjustwidth}
 
 
-		Portanto aplicando essa fórmula pra cada esfera tem-se que:
+		Portanto, aplicando essa fórmula pra cada esfera tem-se que:
 
 		\begin{table}[H]
 			\caption{Valores do Fator de Correção de Ladenburg, $K$, calculados à partir
