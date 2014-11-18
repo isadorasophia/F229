@@ -13,7 +13,7 @@
 \usepackage[english, brazil]{babel} %Para traduzir os textos
 \usepackage[utf8]{inputenc} %Para poder usar acentos
 \usepackage[a4paper]{geometry} %Para ajustar a parte geometrica da folha
-\geometry{verbose,tmargin=2cm,bmargin=3cm,lmargin=3cm,rmargin=3cm} % margem cute
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=3cm,rmargin=3cm} % margem cute
 \setlength{\parindent}{10mm}
 \usepackage{wrapfig} %Biblioteca Matematica/Grafica
 \usepackage{mathptmx} %Biblioteca Matematica/Grafica
@@ -37,7 +37,7 @@
 \makeatletter
 \providecommand{\tabularnewline}{\\} %define
 
-\title{Calorimetria \\ Experimento 6a} % main title
+\title{Calorimetria \\ Experimento 6 a} % main title
 \author{F 229 \\ \textsc{Grupo 1}}
 \date{19 de Novembro, 2014}
 
@@ -259,11 +259,12 @@
 \end{table}
 		\subsubsection{Método dos Mínimos Quadrados}
 
-			Para realizar o método dos mínimos quadrados faremos $y=\Delta V$ e $x=\Delta T$
-
-			Sabe-se que $\underset{y}{\underbrace{\Delta V}}=\underset{a}{\underbrace{\left(S_{a}(T)-S_{B}(T)\right)}}\underset{x}{\underbrace{\Delta T}}+\underset{b}{\underbrace{0}}$.
-
-			Como nesse caso o erro em $y=\Delta V$ é constante, o método dos mínimos quadrados usado será o que é dado pelas fórmulas:
+			Sabe-se que 
+			\begin{equation}
+				\underset{y}{\underbrace{\Delta V}}=\underset{a}{\underbrace{\left(S_{a}(T)-S_{B}(T)\right)}}\underset{x}{\underbrace{\Delta T}}+\underset{b}{\underbrace{0}}
+			\end{equation}
+			
+			Para realizar o método dos mínimos quadrados faremos $y=\Delta V$ e $x=\Delta T$. Como nesse caso o erro em $y=\Delta V$ é constante, o método dos mínimos quadrados usado será o que é dado pelas fórmulas:
 
 			\[
 			\begin{cases}
@@ -273,11 +274,9 @@
 			\]
 
 
-			Que pode ser calculado mais facilmente atravez de uma tabela auxiliar
-			como a seguinte:
+			Que pode ser calculado mais facilmente atravez de uma tabela auxiliar como a seguinte:
 			\begin{table}
 				\caption{Tabela auxiliar para o cálculo dos mínimos quadrados:}
-
 				\begin{center}\begin{tabular}{|c|c|c|c|c|}
 					\hline 
 					N & $y=\Delta V$ & $x=\Delta T$ & $xy$ & $x^{2}$\tabularnewline
@@ -321,12 +320,12 @@
 
 			Assim obtemos:
 
-			\[
+			\begin{equation}
 				\begin{cases}
 					a & =\left(6,15\pm0,04\right)\cdot10^{-5}\unit{\frac{V}{K}}\\
 					b & =\left(0\pm0\right)\cdot\unit{V}
 				\end{cases}
-			\]
+			\end{equation}
 
 		\subsubsection{Construção do Gráfico}
 
@@ -346,19 +345,15 @@
 
 			Começemos com a fórmula:
 
-			\[
-				Q_{resultante}={\displaystyle \sum Q_{parciais}=0}\Leftrightarrow
-			\]
+			$$Q_{resultante}={\displaystyle \sum Q_{parciais}=0}\Leftrightarrow$$
 
 
-			\[
+			\begin{equation}
 				Q_{calor\acute{\imath}metro}+Q_{\acute{a}gua_{fria}}+Q_{\acute{a}gua_{quente}}=0
-			\]
+			\end{equation}
 
 
-			Sendo $T_{f}$ a temperatura da água fria, $T_{q}$ a temperatura
-			da água quente, $T_{e}$a temperatura de equilibrio termodinâmico
-			e $C$ é a capacidade térmica do calorímetro:
+			Sendo $T_{f}$ a temperatura da água fria, $T_{q}$ a temperatura da água quente, $T_{e}$a temperatura de equilibrio termodinâmico e $C$ é a capacidade térmica do calorímetro:
 
 			\[
 			\begin{cases}

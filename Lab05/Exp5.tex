@@ -4,7 +4,7 @@
 \renewcommand{\ttdefault}{mathptmx}
 \usepackage[utf8]{inputenc} %Usar UTF8
 \usepackage[a4paper]{geometry} %Imprimir em a4
-\geometry{verbose}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=3cm,rmargin=3cm} %Aumenta um pouco a margem, principalmente a inferior
 \setlength{\parindent}{10mm}
 \usepackage{float}
 \usepackage{units}
@@ -90,7 +90,7 @@
 
 	\subsection{Procedimento}
 
-		Para realização do experimento, um tubo de vidro foi preenchido com uma mistura de agua de glicerina e, colocamos uma haste graduada de modo que pudéssemos saber a distancia da parte até a parte baixo e que quando as esferas atingissem a haste superior, elas ja estariam com sua velocidade limite.Pegamos 5 esferas metalicas maciças $a,b,c,d,e$ de diâmetros diferentes, cujos diâmetros estão expressos na Tabela 2 e a colocávamos dentro do liquido e cronometramos o tempo que elas demoravam para atingir a haste inferior, cujos os dados estão na Tabela 3.
+		Para realização do experimento, um tubo de vidro foi preenchido com uma mistura de agua de glicerina e, colocamos duas hastes, separadas por uma régua graduada de modo que pudéssemos saber a distancia da haste superior até a haste inferior e que quando as esferas atingissem a haste superior, elas ja estariam com sua velocidade limite. Pegamos 5 esferas metálicas maciças $a,b,c,d,e$ de diâmetros diferentes, cujos diâmetros estão expressos na Tabela 2 e a colocávamos dentro do liquido e cronometramos o tempo que elas demoravam para atingir a haste inferior, cujos os dados estão na Tabela 3.
 		
 		\begin{table}[!ht]
 			\caption{Dados sobre o tubo de agua com glicerina}
@@ -211,13 +211,13 @@
 	\subsection{Obtendo o tempo médio de queda para cada esfera}
 
 		Para cada esfera k, $k=a,\ldots,e$ tem-se que:
-
-		$$t_{k}\pm\sigma_{t_{k}}={\displaystyle \underset{t_{k}}{\underbrace{\left(\sum_{i=1}^{N}t_{ki}\right)}}\pm\underset{\sigma_{t_{k}}}{\underbrace{\sqrt{\underset{\sigma_{t_{k_{instrumental}}}^{2}}{\underbrace{0,01^{2}}}+\underset{\sigma_{t_{k_{estat\acute{\imath}stico}}}^{2}}{\underbrace{\cfrac{1}{N}\cdot\cfrac{1}{N-1}\cdot\sum_{i=1}^{N}\left(t_{k}-t_{ki}\right)^{2}}}}}}}$$
+		\begin{equation}
+		t_{k}\pm\sigma_{t_{k}}={\displaystyle \underset{t_{k}}{\underbrace{\left(\sum_{i=1}^{N}t_{ki}\right)}}\pm\underset{\sigma_{t_{k}}}{\underbrace{\sqrt{\underset{\sigma_{t_{k_{instrumental}}}^{2}}{\underbrace{0,01^{2}}}+\underset{\sigma_{t_{k_{estat\acute{\imath}stico}}}^{2}}{\underbrace{\cfrac{1}{N}\cdot\cfrac{1}{N-1}\cdot\sum_{i=1}^{N}\left(t_{k}-t_{ki}\right)^{2}}}}}}}
+		\end{equation}
 
 		Assim, aplicando essas fórmulas obtem-se:
 
-		\begin{table}[H]
-			\begin{adjustwidth}{-2.2cm}{-1cm}
+		\begin{table}[!ht]
 			\caption{Tempo de queda médio de cada esfera}
 			\centering{}%
 			\begin{tabular}{|c|rl|}
@@ -245,7 +245,6 @@
 				\tabularnewline
 				\hline 
 			\end{tabular}
-			\end{adjustwidth}
 		\end{table}
 
 
@@ -363,25 +362,36 @@
 					b & =\left(3,9\pm0,7\right)\cdot10^{-3}\cdot\unit{\unitfrac{m}{s}}
 				\end{cases}
 			\]
+			
+			Traçando o gráfico:
+			\begin{figure}[!ht]
+				\centering
+					\includegraphics[scale=0.747]{exp05-vcorrigida.png}
+				\caption{Gráfico de $v_{L}\times r^{2}$}
+			\end{figure}
 
 
 		\subsection{Obtenção do Coeficiente de Viscosidade ($\eta\pm\sigma_{\eta}$)}
 
 			Sabemos que 
-			\[
-				a=\cfrac{2}{9}\cdot\cfrac{\rho_{e}-\rho_{f}}{\eta}\cdot g\Leftrightarrow\eta=\cfrac{2}{9}\cdot\cfrac{\rho_{e}-\rho_{f}}{a}\cdot g=\cfrac{2}{9}\cdot\left(\rho_{e}-\rho_{f}\right)\cdot\cfrac{g}{a}
-			\]
-
+			$$a=\cfrac{2}{9}\cdot\cfrac{\rho_{e}-\rho_{f}}{\eta}\cdot g\Leftrightarrow$$
+		
+		\begin{equation}
+			\eta=\cfrac{2}{9}\cdot\cfrac{\rho_{e}-\rho_{f}}{a}\cdot g=\cfrac{2}{9}\cdot\left(\rho_{e}-\rho_{f}\right)\cdot\cfrac{g}{a}
+		\end{equation}
 
 			assim 
-			\[
-				\sigma_{\eta}=\sqrt{\left(\sigma_{a}\cdot\cfrac{\partial\eta}{\partial a}\right)^{2}+\left(\sigma_{g}\cdot\cfrac{\partial\eta}{\partial g}\right)^{2}}=\sqrt{\left(\sigma_{a}\cdot\left(-\cfrac{\eta}{a}\right)\right)^{2}+\left(\sigma_{g}\cdot\cfrac{\eta}{g}\right)^{2}}=\sqrt{\left(\sigma_{a}\cdot\cfrac{\eta}{a}\right)^{2}+\left(\sigma_{g}\cdot\cfrac{\eta}{g}\right)^{2}}=\eta\cdot\sqrt{\left(\cfrac{\sigma_{a}}{a}\right)^{2}+\left(\cfrac{\sigma_{g}}{g}\right)^{2}}
-			\]
+			
+			$$\sigma_{\eta}=\sqrt{\left(\sigma_{a}\cdot\cfrac{\partial\eta}{\partial a}\right)^{2}+\left(\sigma_{g}\cdot\cfrac{\partial\eta}{\partial g}\right)^{2}}=\sqrt{\left(\sigma_{a}\cdot\left(-\cfrac{\eta}{a}\right)\right)^{2}+\left(\sigma_{g}\cdot\cfrac{\eta}{g}\right)^{2}}=\sqrt{\left(\sigma_{a}\cdot\cfrac{\eta}{a}\right)^{2}+\left(\sigma_{g}\cdot\cfrac{\eta}{g}\right)^{2}} \Leftrightarrow$$
+			
+			\begin{equation}
+				\sigma_{\eta} = \eta\cdot\sqrt{\left(\cfrac{\sigma_{a}}{a}\right)^{2}+\left(\cfrac{\sigma_{g}}{g}\right)^{2}}
+			\end{equation}
 
 
 			portanto:
 
-			$\eta\pm\sigma_{\eta}=$
+			$$\eta\pm\sigma_{\eta}=$$
 
 
 		\subsection{Estimativa da Concentração de Glicerina}
@@ -390,4 +400,5 @@
 	\section{Conclusão}
 
 	Conclusão here 
+	
 \end{document}
