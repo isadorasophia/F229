@@ -1,19 +1,22 @@
 \documentclass[english,brazil]{article}
+
 \usepackage{mathptmx}
 \renewcommand{\ttdefault}{mathptmx}
-\usepackage[utf8]{inputenc}
-\usepackage[a4paper]{geometry}
+\usepackage[utf8]{inputenc} %Usar UTF8
+\usepackage[a4paper]{geometry} %Imprimir em a4
 \geometry{verbose}
 \setlength{\parindent}{10mm}
 \usepackage{float}
 \usepackage{units}
+%Bibliotecas para fazer formulas e transforma-las em "objetos"
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{graphicx}
+\usepackage{graphicx} % Poder inserir imagens
 \makeatletter
+\usepackage{changepage} %Para poder usar adjustwidth
 \providecommand{\tabularnewline}{\\}
 \newcommand{\lyxdot}{.}
-\usepackage[brazilian]{babel}
+\usepackage[brazilian]{babel} %Imprimir em português Ex. Tabela x
 \usepackage[11pt]{moresize}% different letters sizes
 \usepackage{caption}% to make personalized captions
 
@@ -46,264 +49,204 @@
 	%%Seria legal se alguém conseguir colocar os logos no footer da pagina, ou então no header...
 
 
-\begin{figure}[!ht]
-	\begin{minipage}[b]{0.45\linewidth}
-		\includegraphics[scale=0.25]{logo-unicamp-name-line-blk-blk-0480.jpg}
-	\end{minipage}
-	\hspace{0.5cm}
-	\begin{minipage}[b]{0.45\linewidth}
-		\includegraphics[scale=0.25]{logo-ifgw.png}
-	\end{minipage}
-\end{figure}
+	\begin{figure}[!ht]
+		\begin{minipage}[b]{0.45\linewidth}
+			\includegraphics[scale=0.25]{logo-unicamp-name-line-blk-blk-0480.jpg}
+		\end{minipage}
+		\hspace{0.5cm}
+		\begin{minipage}[b]{0.45\linewidth}
+			\includegraphics[scale=0.25]{logo-ifgw.png}
+		\end{minipage}
+	\end{figure}
 
 
 
 	\newpage{}
 
 
-	\section{Resumo}
+\section{Resumo}
 
-		Resumo here
-
-
-	\section{Objetivo}
-
-		Objetivo here
+	Resumo here
 
 
-	\section{Procedimentos e coleta de dados}
+\section{Objetivo}
+
+	Objetivo here
 
 
-		\subsection{Materiais utilizados}
-			\begin{enumerate}
-				\item Tubo de vidro com uma mistura de agua e glicerina 
-				\item Suporte com marcas graduadas 
-				\item Conjunto de esferas 
-				\item Paquímetro 
-				\item Micrômetro 
-				\item Cronômetro 
-				\item Termômetro de mercúrio 
-			\end{enumerate}
-
-		\subsection{Procedimento}
-
-			Cinco pequenas esferas de aço são colocadas com a menor velocidade
-			inicial conseguida na superfície da mistura de água mais glicerina.
+\section{Procedimentos e coleta de dados}
 
 
-		\subsection{Dados brutos:}
+	\subsection{Materiais utilizados}
+		\begin{enumerate}
+			\item Tubo de vidro com uma mistura de agua e glicerina 
+			\item Suporte com marcas graduadas 
+			\item Conjunto de esferas 
+			\item Paquímetro 
+			\item Micrômetro 
+			\item Cronômetro 
+			\item Termômetro de mercúrio 
+		\end{enumerate}
 
+	\subsection{Procedimento}
 
-			\subsubsection{Valores conhecidos}
+		Para realização do experimento, um tubo de vidro foi preenchido com uma mistura de agua de glicerina e, colocamos uma haste graduada de modo que pudéssemos saber a distancia da parte até a parte baixo e que quando as esferas atingissem a haste superior, elas ja estariam com sua velocidade limite.Pegamos 5 esferas metalicas maciças $a,b,c,d,e$ de diâmetros diferentes, cujos diâmetros estão expressos na Tabela 2 e a colocávamos dentro do liquido e cronometramos o tempo que elas demoravam para atingir a haste inferior, cujos os dados estão na Tabela 3.
+		
+		\begin{table}[!ht]
+			\caption{Dados sobre o tubo de agua com glicerina}
+			\centering{}%
+				\begin{tabular}{|r|rl|}
+					\hline 
+					Diametro do Tubo  & $(5,325\pm0,005)$  & \selectlanguage{english}%
+					$\cdot10^{-2}\unit{m}$\selectlanguage{brazil}%
+					\tabularnewline
+					\hline 
+					Diferença de altura das hastes  & $(3,000\pm0,005)$  & $\cdot10^{-1}\unit{m}$\tabularnewline
+					\hline 
+					Temperatura da mistura & $(2,60\pm0,05)$  & $\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
+					\hline 
+				\end{tabular}
+		\end{table}
+		
+		\begin{table}[!ht]
+			\caption{Diâmetros das esferas}
+			\centering{}%
+			\begin{tabular}{|c|c|}
+				\hline 
+				Esfera  & Diametro das Esferas \tabularnewline
+				\hline 
+				a  & $(2,0\pm0,5)\cdot10^{-3}\unit{m}$\tabularnewline
+				\hline 
+				b  & $(2,5\pm0,5)\cdot10^{-3}\unit{m}$\tabularnewline
+				\hline 
+				c  & $(3,0\pm0,5)\cdot10^{-3}\unit{m}$\tabularnewline
+				\hline 
+				d  & $(3,5\pm0,5)\cdot10^{-3}\unit{m}$\tabularnewline
+				\hline 
+				e  & $(4,0\pm0,5)\cdot10^{-3}\unit{m}$\tabularnewline
+				\hline 
+			\end{tabular}
+		\end{table}
 
-				\begin{table}[H]
-					\caption{Diâmetros das esferas}
+		\begin{table}[!ht]
+			\begin{adjustwidth}{-1.5cm}{-1cm}
+			\caption{Tempos de queda de cada esfera pra cada uma das $N=5$ medidas realizadas (i.e. $t_{ki}$ é o tempo de queda da k-ésima esfera na i-ésima medição)}
+			\centering{}%
+			\begin{tabular}{|c|cc|cc|cc|cc|cc|}
+				\hline 
+				$i$  & $t_{ai}$  &  & $t_{bi}$  &  & \selectlanguage{english}%
+				$t_{ci}$\selectlanguage{brazil}%
+				 &  & \selectlanguage{english}%
+				$t_{di}$\selectlanguage{brazil}%
+				 &  & \selectlanguage{english}%
+				$t_{ei}$\selectlanguage{brazil}%
+				 & \tabularnewline
+				\hline 
+				$1$  & $(1,713\pm0,001)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				 & $(1,146\pm0,001)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				 & $(8,19\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				 & $(6,06\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				 & $(4,87\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				\tabularnewline
+				\hline 
+				$2$  & $(1,718\pm0,001)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				 & $(1,150\pm0,001)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				 & $(8,19\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				 & $(6,28\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				 & $(4,78\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				\tabularnewline
+				\hline 
+				$3$  & $(1,753\pm0,001)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				 & $(1,150\pm0,001)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				 & $(8,21\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				 & $(6,06\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				 & $(4,75\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				\tabularnewline
+				\hline 
+				$4$  & $(1,734\pm0,001)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				 & $(1,147\pm0,001)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				 & $(8,22\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				 & $(6,12\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				 & $(4,85\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				\tabularnewline
+				\hline 
+				$5$  & $(1,722\pm0,001)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				 & $(1,138\pm0,001)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				 & $(8,17\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				 & $(6,25\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				 & $(4,72\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				\tabularnewline
+				\hline 
+			\end{tabular}
+			\end{adjustwidth}
+		\end{table}
 
+\section{Análise dos resultados}
 
-					\centering{}%
-					\begin{tabular}{|c|c|}
-						\hline 
-						Esfera  & Diametro das Esferas \tabularnewline
-						\hline 
-						a  & $(2,0\pm0,5)\unit{mm}$\tabularnewline
-						\hline 
-						b  & $(2,5\pm0,5)\unit{mm}$\tabularnewline
-						\hline 
-						c  & $(3,0\pm0,5)\unit{mm}$\tabularnewline
-						\hline 
-						d  & $(3,5\pm0,5)\unit{mm}$\tabularnewline
-						\hline 
-						e  & $(4,0\pm0,5)\unit{mm}$\tabularnewline
-						\hline 
-					\end{tabular}
-				\end{table}
+	\subsection{Obtendo o tempo médio de queda para cada esfera}
 
+		Para cada esfera k, $k=a,\ldots,e$ tem-se que:
 
-				\begin{table}[H]
-					\caption{Outros Dados}
+		$$t_{k}\pm\sigma_{t_{k}}={\displaystyle \underset{t_{k}}{\underbrace{\left(\sum_{i=1}^{N}t_{ki}\right)}}\pm\underset{\sigma_{t_{k}}}{\underbrace{\sqrt{\underset{\sigma_{t_{k_{instrumental}}}^{2}}{\underbrace{0,01^{2}}}+\underset{\sigma_{t_{k_{estat\acute{\imath}stico}}}^{2}}{\underbrace{\cfrac{1}{N}\cdot\cfrac{1}{N-1}\cdot\sum_{i=1}^{N}\left(t_{k}-t_{ki}\right)^{2}}}}}}}$$
 
+		Assim, aplicando essas fórmulas obtem-se:
 
-					\centering{}%
-						\begin{tabular}{|r|rl|}
-						\hline 
-						Dado  & Valor  & \tabularnewline
-						\hline 
-						Diametro do Tubo  & $(5,325\pm0,005)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{mm}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-						Altura  & $(3,000\pm0,005)$  & $\cdot10^{1}\unit{cm}$\tabularnewline
-						\hline 
-						Temperatura  & $(2,60\pm0,05)$  & $\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
-						\hline 
-					\end{tabular}
-				\end{table}
-
-			\subsubsection{Valores obtidos experimentalmente}
-
-				\begin{table}[H]
-				\caption{Tempos de queda de cada esfera pra cada uma das $N=5$ medidas realizadas
-				(i.e. $t_{ki}$ é o tempo de queda da k-ésima esfera na i-ésima medição)}
-
-
-				\centering{}%
-					\begin{tabular}{|c|cc|cc|cc|cc|cc|}
-						\hline 
-						$i$  & $t_{ai}$  &  & $t_{bi}$  &  & \selectlanguage{english}%
-						$t_{ci}$\selectlanguage{brazil}%
-						 &  & \selectlanguage{english}%
-						$t_{di}$\selectlanguage{brazil}%
-						 &  & \selectlanguage{english}%
-						$t_{ei}$\selectlanguage{brazil}%
-						 & \tabularnewline
-						\hline 
-						$1$  & $(1,713\pm0,001)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						 & $(1,146\pm0,001)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						 & $(8,19\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						 & $(6,06\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						 & $(4,87\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-						$2$  & $(1,718\pm0,001)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						 & $(1,150\pm0,001)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						 & $(8,19\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						 & $(6,28\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						 & $(4,78\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-						$3$  & $(1,753\pm0,001)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						 & $(1,150\pm0,001)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						 & $(8,21\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						 & $(6,06\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						 & $(4,75\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-						$4$  & $(1,734\pm0,001)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						 & $(1,147\pm0,001)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						 & $(8,22\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						 & $(6,12\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						 & $(4,85\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-						$5$  & $(1,722\pm0,001)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						 & $(1,138\pm0,001)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						 & $(8,17\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						 & $(6,25\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						 & $(4,72\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-					\end{tabular}
-				\end{table}
-
-
-	\section{Análise dos resultados}
-
-
-		\subsection{Tratamento inicial dos dados}
-
-
-			\subsubsection{Passando para o Sistema Internacional de Unidades}
-
-				\begin{table}[H]
-					\caption{Dados no S.I. com os símbolos associados}
-
-
-					\centering{}%
-					\begin{tabular}{|c|c|}
-						\hline 
-						Raio das esferas ($S\acute{\imath}mbolo$)  & Valor \tabularnewline
-						\hline 
-						$r_{a}$  & $(1,0\pm0,3)\cdot10^{-3}\unit{m}$\tabularnewline
-						\hline 
-						$r_{b}$  & $(1,3\pm0,3)\cdot10^{-3}\unit{m}$\tabularnewline
-						\hline 
-						$r_{c}$  & $(1,5\pm0,3)\cdot10^{-3}\unit{m}$\tabularnewline
-						\hline 
-						$r_{d}$  & $(1,8\pm0,3)\cdot10^{-3}\unit{m}$\tabularnewline
-						\hline 
-						$r_{e}$  & $(2,0\pm0,3)\cdot10^{-3}\unit{m}$\tabularnewline
-						\hline 
-						\end{tabular}\hspace{1cm}\centering{}%
-						\begin{tabular}{|r|rl|}
-						\hline 
-						Dado ($S\acute{\imath}mbolo$)  & Valor  & \tabularnewline
-						\hline 
-						Raio do Tubo ($R$)  & $(2,663\pm0,003)$  & \selectlanguage{english}%
-						$\cdot10^{-2}\unit{m}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-						Altura ($H$)  & $(3,000\pm0,005)$  & $\cdot10^{-1}\unit{m}$\tabularnewline
-						\hline 
-						Temperatura ($T$)  & $(2,60\pm0,05)$  & $\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
-						\hline 
-					\end{tabular}
-				\end{table}
-
-
-			\subsubsection{Obtendo o tempo médio de queda para cada esfera}
-
-				Para cada esfera k, $k=a,\ldots,e$ tem-se que:
-
-				$t_{k}\pm\sigma_{t_{k}}={\displaystyle \underset{t_{k}}{\underbrace{\left(\sum_{i=1}^{N}t_{ki}\right)}}\pm\underset{\sigma_{t_{k}}}{\underbrace{\sqrt{\underset{\sigma_{t_{k_{instrumental}}}^{2}}{\underbrace{0,01^{2}}}+\underset{\sigma_{t_{k_{estat\acute{\imath}stico}}}^{2}}{\underbrace{\cfrac{1}{N}\cdot\cfrac{1}{N-1}\cdot\sum_{i=1}^{N}\left(t_{k}-t_{ki}\right)^{2}}}}}}}$
-
-				Assim, aplicando essas fórmulas obtem-se:
-
-				\begin{table}[H]
-					\caption{Tempo de queda médio de cada esfera}
-
-
-					\centering{}%
-					\begin{tabular}{|c|rl|}
-						\hline 
-						Tempo de queda médio  & Valor  & \tabularnewline
-						\hline 
-						$t_{a}$  & $(1,728\pm0,007)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-						$t_{b}$  & $(1,146\pm0,002)$  & \selectlanguage{english}%
-						$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-						$t_{c}$  & $(8,20\pm0,01)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-						$t_{d}$  & $(6,15\pm0,05)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-						$t_{e}$  & $(4,79\pm0,03)$  & \selectlanguage{english}%
-						$\cdot\unit{s}$\selectlanguage{brazil}%
-						\tabularnewline
-						\hline 
-					\end{tabular}
-				\end{table}
+		\begin{table}[H]
+			\begin{adjustwidth}{-2.2cm}{-1cm}
+			\caption{Tempo de queda médio de cada esfera}
+			\centering{}%
+			\begin{tabular}{|c|rl|}
+				\hline 
+				Tempo de queda médio  & Valor  & \tabularnewline
+				\hline 
+				$t_{a}$  & $(1,728\pm0,007)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				\tabularnewline
+				\hline 
+				$t_{b}$  & $(1,146\pm0,002)$  & \selectlanguage{english}%
+				$\cdot10^{1}\unit{s}$\selectlanguage{brazil}%
+				\tabularnewline
+				\hline 
+				$t_{c}$  & $(8,20\pm0,01)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				\tabularnewline
+				\hline 
+				$t_{d}$  & $(6,15\pm0,05)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				\tabularnewline
+				\hline 
+				$t_{e}$  & $(4,79\pm0,03)$  & \selectlanguage{english}%
+				$\cdot\unit{s}$\selectlanguage{brazil}%
+				\tabularnewline
+				\hline 
+			\end{tabular}
+			\end{adjustwidth}
+		\end{table}
 
 
 
@@ -311,26 +254,23 @@
 
 			Sabemos que:
 
-			\[
-			v'_{L}=\cfrac{H}{t_{k}}
-			\]
-
+			\begin{equation}
+				v'_{L}=\cfrac{H}{t_{k}}
+			\end{equation}
 
 			e portanto
 
-			\[
-				\sigma_{v'_{L}}=\sqrt{\left(\sigma_{H}\cdot\cfrac{\partial v'_{L}}{\partial H}\right)^{2}+\left(\sigma_{t_{k}}\cdot\cfrac{\partial v'_{L}}{\partial t_{k}}\right)^{2}}
-			\]
+			$$\sigma_{v'_{L}}=\sqrt{\left(\sigma_{H}\cdot\cfrac{\partial v'_{L}}{\partial H}\right)^{2}+\left(\sigma_{t_{k}}\cdot\cfrac{\partial v'_{L}}{\partial t_{k}}\right)^{2}} = \sqrt{\left(\cfrac{\sigma_{H}}{t_{k}}\right)^{2}+\left(-H\cdot\cfrac{\sigma_{t_{k}}}{t_{k}^{2}}\right)^{2}} $$
+			
+			
 			\begin{equation}
-				=\sqrt{\left(\cfrac{\sigma_{H}}{t_{k}}\right)^{2}+\left(-H\cdot\cfrac{\sigma_{t_{k}}}{t_{k}^{2}}\right)^{2}}=\cfrac{\sqrt{\sigma_{H}^{2}\cdot t_{k}^{2}+H^{2}\cdot\sigma_{t_{k}}^{2}}}{t_{k}^{2}}\label{eq:erro em v'}
+				\sigma_{v'_{L}}=\cfrac{\sqrt{\sigma_{H}^{2}\cdot t_{k}^{2}+H^{2}\cdot\sigma_{t_{k}}^{2}}}{t_{k}^{2}}\label{eq:erro em v'}
 			\end{equation}
+			
 			assim, usando a fórmula obtemos:
 
 			\begin{table}[H]
-				\caption{Velocidade $v'_{L}$calculada atravez das fórmulas acima para cada
-				esfera}
-
-
+				\caption{Velocidade $v'_{L}$calculada atravez das fórmulas acima para cada esfera}
 				\centering{}%
 				\begin{tabular}{|c|rl|}
 					\hline 
@@ -364,27 +304,23 @@
 
 			O fator de Ladenburg é dado pela fórmula:
 
-			\[
+			\begin{equation}
 				K=\left(1+2,4\cdot\cfrac{r}{R}\right)\cdot\left(1+3,3\cdot\cfrac{r}{h}\right)
-			\]
-
+			\end{equation}
 
 			cujo erro associado é dado por:
 
-			\[
-				\sigma_{K}=\sqrt{\left(\sigma_{r}\cdot\cfrac{\partial K}{\partial r}\right)^{2}+\left(\sigma_{R}\cdot\cfrac{\partial K}{\partial R}\right)^{2}+\left(\sigma_{h}\cdot\cfrac{\partial K}{\partial h}\right)^{2}}
-			\]
+			$$\sigma_{K}=\sqrt{\left(\sigma_{r}\cdot\cfrac{\partial K}{\partial r}\right)^{2}+\left(\sigma_{R}\cdot\cfrac{\partial K}{\partial R}\right)^{2}+\left(\sigma_{h}\cdot\cfrac{\partial K}{\partial h}\right)^{2}}$$
 
-
-			$\hspace{-2cm}\sigma_{K}=\sqrt{\sigma_{h}^{2}\cdot10,89\cdot\cfrac{r^{2}}{h^{4}}\cdot\left(1+2,4\cdot\cfrac{r}{R}\right)^{2}+\sigma_{r}^{2}\cdot\left(\cfrac{1}{h}\left(3.3+7,92\cdot\cfrac{r}{R}\right)+\cfrac{1}{R}\left(2.4+7,92\cdot\cfrac{r}{h}\right)\right)^{2}+\sigma_{R}^{2}\cdot5,76\cdot\cfrac{r^{2}}{R^{4}}\cdot\left(1+3,3\cdot\cfrac{r}{h}\right)^{2}}$
+			\begin{equation}
+				\hspace{-2cm}\sigma_{K}=\sqrt{\sigma_{h}^{2}\cdot10,89\cdot\cfrac{r^{2}}{h^{4}}\cdot\left(1+2,4\cdot\cfrac{r}{R}\right)^{2}+\sigma_{r}^{2}\cdot\left(\cfrac{1}{h}\left(3.3+7,92\cdot\cfrac{r}{R}\right)+\cfrac{1}{R}\left(2.4+7,92\cdot\cfrac{r}{h}\right)\right)^{2}+\sigma_{R}^{2}\cdot5,76\cdot\cfrac{r^{2}}{R^{4}}\cdot\left(1+3,3\cdot\cfrac{r}{h}\right)^{2}}
+			\end{equation}
+			
 
 			Portanto aplicando essa fórmula pra cada esfera tem-se que:
 
 			\begin{table}[H]
-				\caption{Valores do Fator de Correção de Ladenburg, $K$, calculados à partir
-				dos raios das esferas, do raio do tubo e da altura de liquido}
-
-
+				\caption{Valores do Fator de Correção de Ladenburg, $K$, calculados à partir dos raios das esferas, do raio do tubo e da altura de liquido}
 				\centering{}%
 				\begin{tabular}{|c|c|c|}
 					\hline 
@@ -405,17 +341,12 @@
 
 		\subsection{Gráfico de $v_{L}\times r^{2}$}
 
-			Tendo a fórmula: \foreignlanguage{english}{ 
-			\[
-			\underset{y}{\underbrace{v{}_{L}}}=\underset{a}{\underbrace{\cfrac{2}{9}\cdot\cfrac{\rho_{e}-\rho_{f}}{\eta}\cdot g}}\cdot\underset{x}{\underbrace{r^{2}}}+\underset{b}{\underbrace{0}}
-			\]
-			}
+			Tendo a fórmula:
+			\begin{equation}
+				\underset{y}{\underbrace{v{}_{L}}}=\underset{a}{\underbrace{\cfrac{2}{9}\cdot\cfrac{\rho_{e}-\rho_{f}}{\eta}\cdot g}}\cdot\underset{x}{\underbrace{r^{2}}}+\underset{b}{\underbrace{0}}
+			\end{equation}
 
-			Percebemos que para a obtenção do coeficiente de viscosidade essa
-			fórmula é mais útil, porque não fica em função de $K$ portanto calcularemos
-			somente o gráfico de $v_{L}\times r^{2}$, assim, usando a fórmula
-			de mínimos quadrados para erros variáveis em $y$, primeiro calculamos
-			$w_{i}=\cfrac{1}{\sigma_{y_{i}}}$ depois:
+			Percebemos que para a obtenção do coeficiente de viscosidade essa fórmula é mais útil, porque não fica em função de $K$ portanto calcularemos somente o gráfico de $v_{L}\times r^{2}$, assim, usando a fórmula de mínimos quadrados para erros variáveis em $y$, primeiro calculamos $w_{i}=\cfrac{1}{\sigma_{y_{i}}}$ depois:
 
 			\[
 				\begin{cases}
@@ -423,7 +354,6 @@
 					b & =\frac{\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(y_{i}w_{i}\right)\cdot{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}w_{i}\right)-{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}y_{i}w_{i}\right){\scriptscriptstyle {\textstyle \overset{n}{\cdot\underset{i=1}{\sum}}}}\left(x_{i}w_{i}\right)\right)}{{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(w_{i}\right)\cdot{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}w_{i}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}w_{i}\right)\right)^{2}}\pm\sqrt{\cfrac{{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}w_{i}\right)}{{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(w_{i}\right)\cdot{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}w_{i}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}w_{i}\right)\right)^{2}}}
 				\end{cases}
 			\]
-
 
 			Achamos:
 
