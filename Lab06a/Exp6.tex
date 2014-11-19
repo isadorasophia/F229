@@ -341,61 +341,46 @@ Assim, o gráfico será plotado em função de $V \times T$. Além desse gráfic
 			\end{figure}
 
 	\subsection{Constante de Tempo do Calorímetro}
-	    	Mostra-se que a queda de temperatura $T$ no tempo $t$ é dada por:
-	    
-	    	\begin{equation}
-	    		{\displaystyle T=T_{0}\cdot e^{-\frac{t}{\tau}}+T_{a}}
-	    	\end{equation}
-	    
-	    
-	    	Em que $T_{a}$ é a temperatura ambiente e $\tau$é uma constante
-	    	de tempo.
-	    
-	    	Assim:
-	    
-	    	\begin{equation}
-	    		T-T_{a}=T_{0}\cdot e^{-\frac{t}{\tau}}\Leftrightarrow\ln\left(T-T_{a}\right)=\ln\left(T_{0}\cdot e^{-\frac{t}{\tau}}\right)=\ln T_{0}-\cfrac{t}{\tau}
-	    	\end{equation}
-	    
-	    
-	    	ou seja:
-	    
-	    	\begin{equation}
-	    		\underset{y}{\underbrace{\ln\left(T-T_{a}\right)}}=\underset{a}{\underbrace{-\cfrac{1}{\tau}}}\cdot\underset{x}{\underbrace{t}}+\underset{b}{\underbrace{\ln T_{0}}}
-	    	\end{equation}
-	    
-	    
-	    	portanto $\sigma_{y}=\sqrt{\left(\sigma_{T}\cfrac{\partial y}{\partial T}\right)^{2}+\left(\sigma_{T_{a}}\cfrac{\partial y}{\partial T_{a}}\right)^{2}}=\sqrt{\left(\cfrac{\sigma_{T}}{T-T_{a}}\right)^{2}+\left(-\cfrac{\sigma_{T_{a}}}{T-T_{a}}\right)^{2}}=\cfrac{\sqrt{\sigma_{T}^{^{2}}+\sigma_{T_{a}}^{^{2}}}}{|T-T_{a}|}$=
-	    
-	    	assim temos, pelo Método dos Mínimos Quadrados com erro em $y$ variável
-	    	que:
-	    
-	    	\[
-	    	\begin{cases}
-	    		a & =\frac{\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(w_{i}\right)\cdot{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}y_{i}w_{i}\right)-{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}w_{i}\right){\scriptscriptstyle {\textstyle \overset{n}{\cdot\underset{i=1}{\sum}}}}\left(y_{i}w_{i}\right)\right)}{{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(w_{i}\right)\cdot{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}w_{i}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}w_{i}\right)\right)^{2}}\pm\sqrt{\cfrac{{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(w_{i}\right)}{{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(w_{i}\right)\cdot{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}w_{i}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}w_{i}\right)\right)^{2}}}\\
-	    		b & =\frac{\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(y_{i}w_{i}\right)\cdot{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}w_{i}\right)-{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}y_{i}w_{i}\right){\scriptscriptstyle {\textstyle \overset{n}{\cdot\underset{i=1}{\sum}}}}\left(x_{i}w_{i}\right)\right)}{{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(w_{i}\right)\cdot{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}w_{i}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}w_{i}\right)\right)^{2}}\pm\sqrt{\cfrac{{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}w_{i}\right)}{{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(w_{i}\right)\cdot{\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}^{2}w_{i}\right)-\left({\displaystyle {\scriptscriptstyle {\textstyle \overset{n}{\underset{i=1}{\sum}}}}}\left(x_{i}w_{i}\right)\right)^{2}}}
-	    	\end{cases}
-	    	\]
-	    
-	    
-	    	\begin{figure}[!ht]
-	    		\begin{centering}
-	    		\includegraphics[scale=0.745]{exp06a-parte2} 
-	    	\par\end{centering}
-	    
-	    	\protect\caption{Gráfico da curva de calibração do termopar de $\Delta V$ por $\Delta T$}
-	    	\end{figure}
-	    
-	    
-	    	portanto, como $a=-\cfrac{1}{\tau}\Leftrightarrow\tau=-\cfrac{1}{a}$
-	    
-	    	assim: $\sigma_{\tau}=\sqrt{\left(\sigma_{\tau}\cfrac{\partial\tau}{\partial a}\right)^{2}}=\left|\cfrac{\sigma_{\tau}}{a^{^{2}}}\right|=$
-	    
-	    	e finalmente:
-	    
-	    	\begin{equation}
-	    		\tau\pm\sigma_{\tau}=
-	    	\end{equation}
+	Para acharmos a constante do tempo do calorímetro utilizamos a seguinte fórmula $ T = T_{0}e^{\frac{-t}{\tau}} + T_{a} $ , que linearizando-a, obtemos $ \ln (T - T_a) = \ln T_0 - \cfrac{t}{\tau}$ que pode ser entendida como:
+	\begin{equation}
+		\underset{y}{\underbrace{\ln (T - T_a)}} = \underset{b}{\underbrace{\ln T_0}} - \underset{a}{\underbrace{\cfrac{1}{\tau}}} \underset{x}{\underbrace{t}}
+	\end{equation}
+	
+	Fazendo o erro de y ,$\sigma y$ = $\sqrt{\bigg(\cfrac{1}{T}\bigg)^2 \cdot \sigma T^2 + \bigg(- \cfrac{1}{T_a}\bigg)^2 \cdot \sigma T_a^2}$, obtemos os valores da Tabela 7:
+	
+\begin{table}[!ht]
+	\begin{center}
+	\caption{Tabela auxiliar para a linearização e montagem do gráfico}
+	\begin{tabular}{|l|l|l|l|}
+    \hline
+    $ln (T-Ta)$ & $\sigma_{ln (T-Ta)}$ & t     & $\sigma_t$ \\ \hline
+    4,15                & 0,02                                 & 0,00  & 0,01  \tabularnewline \hline
+    4,11                & 0,02                                 & 1,50  & 0,01  \tabularnewline \hline
+    4,07                & 0,02                                 & 3,58  & 0,01  \tabularnewline \hline
+    4,03                & 0,02                                 & 6,20  & 0,01  \tabularnewline \hline
+    3,98                & 0,02                                 & 9,35  & 0,01  \tabularnewline \hline
+    3,88                & 0,02                                 & 16,48 & 0,01  \tabularnewline \hline
+    3,77                & 0,02                                 & 26,50 & 0,01  \tabularnewline \hline
+    \end{tabular}
+    \end{center}
+\end{table}
+
+
+	
+	
+	Utilizando esses valores foi possível através de uma regressão linear (Método dos mínimos quadrados) obter o coeficiente angular $a$ e coeficiente linear $b$:
+	
+\begin{figure}[!ht]
+	\begin{centering}
+		\includegraphics[scale=0.745]{exp06a-parte2.png}
+	\par\end{centering}
+	\caption{Gráfico da curva de $ln(T-T_a)$ por $t$}
+\end{figure}
+
+	$a \pm \sigma_a  =-0,0139824\pm0,0000007$ e $b \pm \sigma_b  =4,1257\pm0,0001$
+	
+	Tirando da equação (3) : $\tau = -\cfrac{1}{a}$ e $\sigma \tau = \sqrt{\cfrac{1}{a^4} \cdot \sigma a^2}$. Substituimos e obtemos o valor de $\tau$ e seu erro:
+	$$ \tau \pm \sigma_{\tau} = 71,518\pm0,004 $$
 
 
 	\subsection{Capacidade Térmica do Calorímetro}
