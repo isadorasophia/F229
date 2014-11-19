@@ -80,7 +80,7 @@ Entretanto, como estamos lidando com um meio viscoso em um tubo, a força viscos
 	v_L = K v_L ' = \cfrac{2}{9} \cdot \bigg[\cfrac{\rho - \rho '}{\eta}\bigg] \cdot g r^2
 \end{equation}
 
-Dispostos dessas equações, simulou-se a queda de diversas esferas no tubo de vidro - qualificando os valores de altura, tempo e propriedades da esfera. Com a manipulação desses dados, foi possível encontrar o coeficiente de viscosidade do meio $\rho$ com o valor de $8 \cdot 10^{-1}$ +/- $2 \cdot 10^{-1}$ Pa$\cdot$s, qualificando a eficiência do experimento e propriedades da viscosidade da mistura de glicerina e água.
+Dispostos dessas equações, simulou-se a queda de diversas esferas no tubo de vidro - qualificando os valores de altura, tempo e propriedades da esfera. Com a manipulação desses dados, foi possível encontrar o coeficiente de viscosidade do meio $\rho$ com o valor de $8 \cdot 10^{-1}$ +/- $2 \cdot 10^{-1}$ Pa$\cdot$s, qualificando as propriedades da viscosidade da mistura de glicerina e água e que, por sua vez, permitiu concluir uma concentracão de água na mistura de $(95\pm5)\%$.
 
 \section{Objetivo}
 
@@ -423,26 +423,26 @@ Dispostos dessas equações, simulou-se a queda de diversas esferas no tubo de v
 
 		\subsection{Estimativa da Concentração de Glicerina}
 		
-			Para uma melhor estimativa devemos achar este valor na escala logarítmica,
-			ou seja, queremos $x$, tal que$10^{x\pm\sigma_{x}}=\eta\pm\sigma_{\eta}$.
+			Para uma melhor estimativa devemos achar este valor na escala logarítmica, ou seja, queremos $x$, tal que$10^{x\pm\sigma_{x}}=\eta\pm\sigma_{\eta}$.
+
 			Assim, se $10^{x}=\eta$, então $x=\log_{10}\eta$ e $\sigma_{x}=\sqrt{\left(\sigma_{\eta}\cfrac{\partial x}{\partial\eta}\right)^{2}}=\left|\sigma_{\eta}\cfrac{\partial x}{\partial\eta}\right|=\left|\sigma_{\eta}\cfrac{\partial\cfrac{\ln\eta}{\ln10}}{\partial\eta}\right|=\cfrac{1}{\ln10}\left|\sigma_{\eta}\cfrac{\partial\ln\eta}{\partial\eta}\right|=\cfrac{\sigma_{\eta}}{\ln10}\cdot\cfrac{1}{\eta}=\left(\ln10\right)^{-1}\cdot\cfrac{\sigma_{\eta}}{\eta}$.
 			Ou seja: $x\pm\sigma_{x}=2,89\pm0,09$.
 
-			Assim, se acordo com a figura:
+			Assim, de acordo com a figura:
 
 			\begin{figure}[!ht]
 				\centering
-					\includegraphics[scale=0.747]{Estimativa.png}
+					\includegraphics[scale=0.3]{graf_png.png}
 				\caption{Gráfico fornecido para a estimativa da concentração de glicerina}
 			\end{figure}
 
-			Podemos estimar uma concentração de glicerina de: $(95\pm5)\%$, cujo
-			erro se explica pela baixa ``resolução'' das curvas de nível de
-			concentração.
+			Podemos estimar uma concentração de glicerina de: $(95\pm5)\%$, cujo erro se explica pela baixa "resolução'' das curvas de nível de concentração.
 
 
 	\section{Conclusão}
 
-	Após a conclusão do experimento, pode-se concluir
+	Diante das condições experimentais, o valor encontrado para $\rho$, coeficiente de viscosidade da mistura, de $8 \cdot 10^{-1}$ +/- $2 \cdot 10^{-1}$ Pa$\cdot$s condiz com os gráficos previamente dispostos - com uma margem de erro considerável no resultado. Tal margem de erro decorreu dos possíveis fatores desprezados ou erros instrumentais ao longo do experimento: como, por exemplo, a temperatura ambiente estimada de 26 $^{\circ}$C, o atraso em relação ao cronômetro (que, no caso, era feito manualmente, assim que a esfera ultrapassava o limite desejado), as colisões da esfera com bolhas de ar durante sua queda no tubo de vidro e erros instrumentais das medidas ao longo do experimento.
+
+	A concentração de $(95\pm5)\%$ também pareceu plausível, mas como ela está limitada ao valor anteriormente encontrado para $\rho$ não há como utilizá-la como parâmetro apurado para qualificar o sucesso do experimento, além de seu parâmetro de erro estar associado a leitura do gráfico fornecido. Entretanto, ela foi satisfatória e condiz com as condições experimentais de uma forma geral.
 	
 \end{document}
