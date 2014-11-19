@@ -408,12 +408,37 @@ Dispostos dessas equações, simulou-se a queda de diversas esferas no tubo de v
 			\end{equation}
 
 
-			portanto:
+			\begin{equation}\[
+			\eta\pm\sigma_{\eta}=\left(8\pm2\right)\cdot10^{-1}\unit{Pa\cdot s=\left(8\pm2\right)\cdot10^{2}\unit{\cdot mPa\cdot s}}
+			\]\end{equation}
+
+
+			mas o gráfico dado para comparação está em escala logarítmica, portanto
+			queremos $x$, tal que$10^{x\pm\sigma_{x}}=\eta\pm\sigma_{\eta}$.
+			Assim, se $10^{x}=\eta$, então $x=\log_{10}\eta$ e $\sigma_{x}=\sqrt{\left(\sigma_{\eta}\cfrac{\partial x}{\partial\eta}\right)^{2}}=\left|\sigma_{\eta}\cfrac{\partial x}{\partial\eta}\right|=\left|\sigma_{\eta}\cfrac{\partial\cfrac{\ln\eta}{\ln10}}{\partial\eta}\right|=\cfrac{1}{\ln10}\left|\sigma_{\eta}\cfrac{\partial\ln\eta}{\partial\eta}\right|=\cfrac{\sigma_{\eta}}{\ln10}\cdot\cfrac{1}{\eta}=\ln^{-1}10\cdot\cfrac{\sigma_{\eta}}{\eta}$.
+			Ou seja: $x\pm\sigma_{x}=2,89\pm0,09$
 
 			$$\eta\pm\sigma_{\eta}=$$
 
 
 		\subsection{Estimativa da Concentração de Glicerina}
+		
+			Para uma melhor estimativa devemos achar este valor na escala logarítmica,
+			ou seja, queremos $x$, tal que$10^{x\pm\sigma_{x}}=\eta\pm\sigma_{\eta}$.
+			Assim, se $10^{x}=\eta$, então $x=\log_{10}\eta$ e $\sigma_{x}=\sqrt{\left(\sigma_{\eta}\cfrac{\partial x}{\partial\eta}\right)^{2}}=\left|\sigma_{\eta}\cfrac{\partial x}{\partial\eta}\right|=\left|\sigma_{\eta}\cfrac{\partial\cfrac{\ln\eta}{\ln10}}{\partial\eta}\right|=\cfrac{1}{\ln10}\left|\sigma_{\eta}\cfrac{\partial\ln\eta}{\partial\eta}\right|=\cfrac{\sigma_{\eta}}{\ln10}\cdot\cfrac{1}{\eta}=\left(\ln10\right)^{-1}\cdot\cfrac{\sigma_{\eta}}{\eta}$.
+			Ou seja: $x\pm\sigma_{x}=2,89\pm0,09$.
+
+			Assim, se acordo com a figura:
+
+			\begin{figure}[!ht]
+				\centering
+					\includegraphics[scale=0.747]{Estimativa.png}
+				\caption{Gráfico fornecido para a estimativa da concentração de glicerina}
+			\end{figure}
+
+			Podemos estimar uma concentração de glicerina de: $(95\pm5)\%$, cujo
+			erro se explica pela baixa ``resolução'' das curvas de nível de
+			concentração.
 
 
 	\section{Conclusão}
