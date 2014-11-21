@@ -219,74 +219,124 @@
 
 		\subsection{Identificação dos Metais usando calor específico.}
 
-			Evoluindo a fórmula:$\sum Q=0$, já que o sistema é quase fechado,
-			tem-se, para cada metal:
+			\subsubsection{Achando o calor específico de cada metal}
+				Evoluindo a fórmula:$\sum Q=0$, já que o sistema é quase fechado,
+				tem-se, para cada metal:
 
-			\begin{equation}
-				Q_{calor\acute{\imath}metro}+Q_{\acute{a}gua}+Q_{metal}=0
-			\end{equation}
-
-
-			\[
-				C\cdot\left(T_{e}-T_{a}\right)+c_{a}m_{a}\left(T_{e}-T_{a}\right)+c_{M}m_{M}\left(T_{e}-T_{q}\right)=0
-			\]
+				\begin{equation}
+					Q_{calor\acute{\imath}metro}+Q_{\acute{a}gua}+Q_{metal}=0
+				\end{equation}
 
 
-			\[
-				\left(T_{e}-T_{a}\right)\cdot\left(C+c_{a}m_{a}\right)=c_{M}m_{M}\left(T_{q}-T_{e}\right)
-			\]
+				\[
+					C\cdot\left(T_{e}-T_{a}\right)+c_{a}m_{a}\left(T_{e}-T_{a}\right)+c_{M}m_{M}\left(T_{e}-T_{q}\right)=0
+				\]
 
 
-			\begin{equation}
-				c_{M}=\cfrac{C+c_{a}m_{a}}{m_{M}}\cdot\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\label{eq:c_m}
-			\end{equation}
+				\[
+					\left(T_{e}-T_{a}\right)\cdot\left(C+c_{a}m_{a}\right)=c_{M}m_{M}\left(T_{q}-T_{e}\right)
+				\]
 
 
-			Assim, fazendo $\Delta T_{e\rightarrow q}=T_{q}-T_{e}$ e $\Delta T_{a\rightarrow e}=T_{e}-T_{a}$
-			o erro da equação \eqref{eq:c_m} é dado por:
-
-		    
-		    \begin{equation}
-				\hspace{-1,5cm}
-				\sigma_{c_{M}}^{2}=\left(\sigma_{C}\cdot\cfrac{\partial c_{M}}{\partial C}\right)^{2}+\left(\sigma_{m_{a}}\cdot\cfrac{\partial c_{M}}{\partial m_{a}}\right)^{2}+\left(\sigma_{m_{M}}\cdot\cfrac{\partial c_{M}}{\partial m_{M}}\right)^{2}+\left(\sigma_{\Delta T_{e\rightarrow M}}\cdot\cfrac{\partial c_{M}}{\partial\left(\Delta T_{e\rightarrow q}\right)}\right)^{2}+\left(\sigma_{\Delta T_{a\rightarrow e}}\cdot\cfrac{\partial c_{M}}{\partial\left(\Delta T_{a\rightarrow e}\right)}\right)^{2}
-			\end{equation}
+				\begin{equation}
+					c_{M}=\cfrac{C+c_{a}m_{a}}{m_{M}}\cdot\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\label{eq:c_m}
+				\end{equation}
 
 
-			\[
-				\sigma_{c_{M}}^{2}=\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\cdot\cfrac{\sigma_{C}}{m_{M}}\right)^{2}+\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\cdot\cfrac{\sigma_{m_{a}}\cdot c_{a}}{m_{M}}\right)^{2}+\left(c_{M}\cdot\cfrac{\sigma_{m_{M}}}{m_{M}}\right)^{2}+\left(c_{M}\cdot\cfrac{\sigma_{\Delta T_{e\rightarrow M}}}{\Delta T_{e\rightarrow q}}\right)^{2}+\left(c_{M}\cdot\cfrac{\sigma_{\Delta T_{a\rightarrow e}}}{\Delta T_{a\rightarrow e}}\right)^{2}
-			\]
+				Assim, fazendo $\Delta T_{e\rightarrow q}=T_{q}-T_{e}$ e $\Delta T_{a\rightarrow e}=T_{e}-T_{a}$
+				o erro da equação \eqref{eq:c_m} é dado por:
+
+			    
+			    \begin{equation}
+					\hspace{-1,5cm}
+					\sigma_{c_{M}}^{2}=\left(\sigma_{C}\cdot\cfrac{\partial c_{M}}{\partial C}\right)^{2}+\left(\sigma_{m_{a}}\cdot\cfrac{\partial c_{M}}{\partial m_{a}}\right)^{2}+\left(\sigma_{m_{M}}\cdot\cfrac{\partial c_{M}}{\partial m_{M}}\right)^{2}+\left(\sigma_{\Delta T_{e\rightarrow M}}\cdot\cfrac{\partial c_{M}}{\partial\left(\Delta T_{e\rightarrow q}\right)}\right)^{2}+\left(\sigma_{\Delta T_{a\rightarrow e}}\cdot\cfrac{\partial c_{M}}{\partial\left(\Delta T_{a\rightarrow e}\right)}\right)^{2}
+				\end{equation}
 
 
-			\begin{equation}
-				\sigma_{c_{M}}=\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\right)\cdot\cfrac{\sqrt{\sigma_{C}^{2}+\left(\sigma_{m_{a}}c_{a}\right)^{2}}}{m_{M}^{2}}+c_{m}\cdot\sqrt{\cfrac{\sigma_{m_{M}}^{2}}{m_{M}^{2}}+\cfrac{\sigma_{\Delta T}^{2}}{\left(T_{q}-T_{e}\right)^{2}}+\cfrac{\sigma_{\Delta T}^{2}}{\left(T_{e}-T_{a}\right)^{2}}}
-			\end{equation}
+				\[
+					\sigma_{c_{M}}^{2}=\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\cdot\cfrac{\sigma_{C}}{m_{M}}\right)^{2}+\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\cdot\cfrac{\sigma_{m_{a}}\cdot c_{a}}{m_{M}}\right)^{2}+\left(c_{M}\cdot\cfrac{\sigma_{m_{M}}}{m_{M}}\right)^{2}+\left(c_{M}\cdot\cfrac{\sigma_{\Delta T_{e\rightarrow M}}}{\Delta T_{e\rightarrow q}}\right)^{2}+\left(c_{M}\cdot\cfrac{\sigma_{\Delta T_{a\rightarrow e}}}{\Delta T_{a\rightarrow e}}\right)^{2}
+				\]
 
 
-			Lembrando da parte A desse experimento tem-se que:
-
-			\begin{equation}
-				C=1,8\pm0,8\unit{\frac{cal}{K}=1,8\pm0,8}\frac{cal}{^{\circ}C}
-			\end{equation}
+				\begin{equation}
+					\sigma_{c_{M}}=\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\right)\cdot\cfrac{\sqrt{\sigma_{C}^{2}+\left(\sigma_{m_{a}}c_{a}\right)^{2}}}{m_{M}^{2}}+c_{m}\cdot\sqrt{\cfrac{\sigma_{m_{M}}^{2}}{m_{M}^{2}}+\cfrac{\sigma_{\Delta T}^{2}}{\left(T_{q}-T_{e}\right)^{2}}+\cfrac{\sigma_{\Delta T}^{2}}{\left(T_{e}-T_{a}\right)^{2}}}
+				\end{equation}
 
 
-			Assim obtem-se:
+				Lembrando da parte A desse experimento tem-se que:
 
-			\begin{table}[!ht]
-				\caption{Valores calculados de $c_{M}\pm\sigma_{c_{M}}$ para cada metal}
+				\begin{equation}
+					C=1,8\pm0,8\unit{\frac{cal}{K}=1,8\pm0,8}\frac{cal}{^{\circ}C}
+				\end{equation}
 
-				\centering{}%
-				\begin{tabular}{|c|rl|}
-					\cline{2-3} 
-					\multicolumn{1}{c|}{} & \multicolumn{2}{c|}{$c_{M}\pm\sigma_{c_{M}}$}\tabularnewline
-					\hline 
-					Para o metal $a$ & $\left(1,1\pm0,3\right)$ & $\cdot10^{-1}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
-					\hline 
-					Para o metal $b$ & $\left(4,3\pm0,4\right)$ & $\cdot10^{-1}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
-					\hline 
-					Para o metal $c$ & $\left(5\pm2\right)$ & $\cdot10^{-2}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
-					\hline 
-				\end{tabular}
-			\end{table}
+
+				Assim obtem-se:
+
+				\begin{table}[!ht]
+					\caption{Valores calculados de $c_{M}\pm\sigma_{c_{M}}$ para cada metal}
+
+					\centering{}%
+					\begin{tabular}{|c|rl|}
+						\cline{2-3} 
+						\multicolumn{1}{c|}{} & \multicolumn{2}{c|}{$c_{M}\pm\sigma_{c_{M}}$}\tabularnewline
+						\hline 
+						Para o metal $a$ & $\left(1,1\pm0,3\right)$ & $\cdot10^{-1}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
+						\hline 
+						Para o metal $b$ & $\left(4,3\pm0,4\right)$ & $\cdot10^{-1}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
+						\hline 
+						Para o metal $c$ & $\left(5\pm2\right)$ & $\cdot10^{-2}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
+						\hline 
+					\end{tabular}
+				\end{table}
+
+			\subsubsection{Comparando o valor encontrado com o teórico esperado}
+
+				Nos foi fornecido o nome dos metais, para sabermos se o experimento
+				teve sucesso por isso tem-se a relação:
+
+				\begin{table}[!ht]
+					\caption{Nome dos metais}
+
+					\centering{}%
+					\begin{tabular}{|c|c|}
+					\hline Símbolo atribuido & Metal\tabularnewline
+					\hline a & Cobre\tabularnewline
+					\hline b & Prata\tabularnewline
+					\hline c & Prata\tabularnewline \hline 
+					\end{tabular}
+				\end{table}
+
+
+				Assim:
+
+				\begin{table}[!ht]
+					\caption{Nome dos metais}
+
+					\centering{}%
+					\begin{tabular}{|c|c|rl|c|}
+						\hline ímbolo & Metal & \multicolumn{2}{c|}{$c_{M}$obtido} & $c_{M}$teórico\tabularnewline
+						\hline  & Cobre & $\left(1,1\pm0,3\right)$  & $\cdot10^{-1}\unitfrac{cal}{g\cdot^{\circ}C}$ & $9,3\cdot10^{-2}$\tabularnewline
+						\hline  & Prata & $\left(4,3\pm0,4\right)$  & $\cdot10^{-1}\unitfrac{cal}{g\cdot^{\circ}C}$ & $5,6\cdot10^{-2}$\tabularnewline
+						\hline  & Prata & $\left(5\pm2\right)$  & $\cdot10^{-2}\unitfrac{cal}{g\cdot^{\circ}C}$ & $5,6\cdot10^{-2}$\tabularnewline
+						\hline 
+					\end{tabular}
+				\end{table}
+
+
+				Ou seja, com excessão do segundo metal, $b$, os outros valores obtidos
+				estão dentro da faixa de erro
+
+
+			\subsubsection{Justificativa para o erro:}
+
+				O valor do segundo metal não estar de acordo com o esperado, pode
+				ser explicado por:
+				\begin{enumerate}
+					\item Imperfeição do calorímetro
+					\item ...
+				\end{enumerate}
+
+		\subsection{Gelo}
 
 
 	\section{Conclusão}
