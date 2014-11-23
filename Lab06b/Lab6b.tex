@@ -129,11 +129,16 @@
 	\subsection{Procedimento}
 
 		De posse dos materiais, primeiramente nós medimos a massa do copo do calorímetro vazio que será utilizada em todo o experimento para calcular a massa de água no calorímetro.			
+		
 		Para a obtenção dessa massa de água, fizemos: $m_{a}=m_{c+\varnothing}-m_{c+a}$	cujo erro fica: $\sigma_{m_{a}}=\sigma_{m}\cdot\sqrt{2}$, já que as massas $m_{c+\varnothing}$ e $m_{c+a}$ têm o mesmo erro instrumental, $\sigma_{m}$ .
+		
+		É importante ressaltar que, durante o experimento, o calor específico da água ($c_a$) foi considerado como 1 $\unitfrac{cal}{g \cdot ^{\circ}C}$ e o calor específico do gelo ($c_g$) como 0,5 $\unitfrac{cal}{g \cdot ^{\circ}C}$
 
 		\subsubsection{Parte 1: Obtenção do calor específico dos metais}
 			Para cada um dos metais a serem identificados, medimos a massa do metal, a massa do copo do calorímetro com água, a temperatura dessa água no copo do calorímetro, que em alguns casos teve que ser resfriada com gelo, a temperatura do metal e a temperatura deequilíbrio.
+			
 			Para medir a temperatura do metal, primeiro colocamos água no béquer e esquentamos esta água até a fervura (a temperatura aqui não é relevante e portanto nem foi medida), à seguir, transferimos essa água do béquer para a garrafa térmica e colocamos o metal junto, esperamos até o que julgamos ser o equilíbrio entre o metal e esta água quente do béquer e medimos essa temperatura.
+			
 			Para medir a temperatura de equilíbrio, colocamos o metal já aquecido dentro do copo do calorímetro com água fria e colocamos esse conjunto no calorímetro. Esperamos novamente até o que julgamos ser o equilíbrio do sistema e medimos essa temperatura. Os valores obtidos para esses dados podem ser visualizados na tabela a seguir: 
 
 			\begin{table}[!ht]
@@ -165,8 +170,10 @@
 			\end{table}
 
 		\subsubsection{Parte 2: Calor latente de fusão do gelo}
-			Para realizar o cálculo que aproximo o calor latente de fusão do gelo, foi necessário, inicialmente, medir a massa da água e sua temperatura inicial, a massa de gelo e sua temperatura inicial (que foi suposta como 0 $^{\circ}C$, diante de seu estado físico na eminência do processo de fusão).
+			Para realizar o cálculo que aproximo o calor latente de fusão do gelo, foi necessário, inicialmente, medir a massa da água e sua temperatura inicial e a massa de gelo e sua temperatura inicial.
+			
 			Em seguida, foi elaborado um sistema no calorímetro com a água e o gelo, que se finalizou com o gelo derretendo completamente - sendo medido, nesse instante, a sua temperatura de equilíbrio.
+			
 			Dipostos desses procedimentos, concluiu-se os dados suficientes para aproximar o calor latente de fusão do gelo. Os valores obtidos para esses dados podem ser visualizados na tabela a seguir:
 			
 			\newpage{}
@@ -198,7 +205,7 @@
 					\hline 
 					Massa de gelo & $m_{g}$  & $\left(6,63\pm0,01\right)$ & $\cdot10^{1}\unit{g}$ \tabularnewline
 					\hline 
-					Temperatura do gelo  & $T_{g}$  & $\left(0,00\pm0,5\right)$ & $\cdot10^{0}\unit{^{\circ}C}$ \tabularnewline
+					Temperatura do gelo  & $T_{g}$  & $\left(-3,00\pm0,5\right)$ & $\cdot10^{0}\unit{^{\circ}C}$ \tabularnewline
 					\hline 
 					Temperatura de equilíbrio  & $T_{e}$  & $\left(2,30\pm0,05\right)$ & $\cdot10^{1}\unit{^{\circ}C}$ \tabularnewline
 					\hline 
@@ -347,15 +354,17 @@
 				\end{enumerate}
 
 		\subsection{Calor latente de fusão do gelo}
-			Sabendo que 
+			Sabendo que:
 			\begin{equation}
-				Q_{calorimetro} + Q_{gelo} + Q_{fusão} + Q_{gelo-agua} + Q_{agua} = 0
+				Q_{Calor\acute{i}metro} + Q_{\acute{A}gua} + Q_{Gelo} + Q_{Fus\tilde{a}o} + Q_{Gelo \rightarrow \acute{A}gua} = 0
 			\end{equation}
-			ou seja:
 			
-			$$ C_{c}\Delta T + m_{gelo}c_{gelo}\Delta T + m_{gelo}L_{f} + m_{gelo}c_{agua}\Delta T + m_{agua}c_{agua}\Delta T = 0 \leftrightarrow L_{f} = -(T_{f}-T_{a})(C_{c}+m_{a}c_{a}) - m_{g}c_{a}$$
- IMCOMPLETO !!! TERMINO MAIS TARDE
-
+			...ou seja:
+			\hspace{-2cm}%
+			$$ - C_{c}\Delta T - m_{\acute{A}gua}c_{\acute{A}gua}\Delta T + m_{Gelo}c_{Gelo}\Delta T +  m_{Gelo}L_{f} + m_{Gelo}c_{\acute{A}gua}\Delta T = 0 \leftrightarrow$$
+			
+			  $$L_{f} = \cfrac{-(T_{e}-T_{a})(C_{c}+m_{a}c_{a}) + m_{g}c_{a}T{e} + m_{g}c_{g}(-T_{g})}{M_g}$$
+			
 	\section{Conclusão}
 
 		Conlusão Here 
