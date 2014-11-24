@@ -36,7 +36,8 @@
 %Fim dos Packages do Lyx
 
 \makeatletter
-\providecommand{\tabularnewline}{\\} %define
+\providecommand{\left(}{(} %define
+\providecommand{\right)}{)} %define
 
 \title{Experimento 6:  Parte B \\ Calorimetria} % main title
 \author{F 229 \\ \textsc{Grupo 1}}
@@ -80,138 +81,137 @@
 	\newpage{}
 
 
-\section{Resumo}
+	\section{Resumo}
 
-	Neste experimento, estudamos o calorímetro, um instrumento usado na	medição de processos que envolvam trocam de calor, ou seja, mudança	de temperatura, estado ou qualquer outro processo que seja alterado pelo calor no sistema.
-	Nesta segunda parte, estudamos e determinamos o calor específico de	três metais distintos e o calor latente de fusão do gelo. Dadas equações já conhecidas do ramo da Calorimetria, obtivemos as equações finais que, no contexto do experimento, foram capazes de relacionar essas grandezas. Valendo-nos de tais leis e dos materiais disponíveis (calorímetro, termômetro e água a diferentes temperaturas), fomos capazes de encontrar os valores procurados, determinando diversas temperaturas de interesse (em estados iniciais e no equilíbrio térmico) e levando em consideração os erros inerentes a toda medição e ao uso de equipamentos reais.
+		Neste experimento, estudamos o calorímetro, um instrumento usado na	medição de processos que envolvam trocam de calor, ou seja, mudança	de temperatura, estado ou qualquer outro processo que seja alterado pelo calor no sistema.
+		Nesta segunda parte, estudamos e determinamos o calor específico de	três metais distintos e o calor latente de fusão do gelo. Dadas equações já conhecidas do ramo da Calorimetria, obtivemos as equações finais que, no contexto do experimento, foram capazes de relacionar essas grandezas. Valendo-nos de tais leis e dos materiais disponíveis (calorímetro, termômetro e água a diferentes temperaturas), fomos capazes de encontrar os valores procurados, determinando diversas temperaturas de interesse (em estados iniciais e no equilíbrio térmico) e levando em consideração os erros inerentes a toda medição e ao uso de equipamentos reais.
 
-\section{Objetivo}
+	\section{Objetivo}
 
-	Esta segunda parte do expermiento tem como objetivo o estudo e a determinação do calor específico de 3 metais ($c_{M1},c_{M2},c_{M3}$) e do calor latente de fusão do gelo ($L_{Gelo}$). Para tal, conta-se com um calorímetro, um termômetro e água a diferentes temperaturas de modo a encontrarmos as grandezas procuradas através de equações conhecidas,	tais como:
+		Esta segunda parte do expermiento tem como objetivo o estudo e a determinação do calor específico de 3 metais ($c_{M1},c_{M2},c_{M3}$) e do calor latente de fusão do gelo ($L_{Gelo}$). Para tal, conta-se com um calorímetro, um termômetro e água a diferentes temperaturas de modo a encontrarmos as grandezas procuradas através de equações conhecidas,	tais como:
 
-		\begin{equation}
-			Q=mc\Delta T
-			\label{eq:calor transferido em funcao de c}
-		\end{equation}
-
-
-		\begin{equation}
-			Q=mL
-			\label{eq:calor latente de fusao}
-		\end{equation}
+			\begin{equation}
+				Q=mc\Delta T
+				\label{eq:calor transferido em funcao de c}
+			\end{equation}
 
 
-	Onde, em \eqref{eq:calor transferido em funcao de c}, $Q$ corresponde ao calor transferido ou recebido por um material, dada uma massa $m$,	uma variação de temperatura $\Delta T$ e seu calor específico, $c$.	Em \eqref{eq:calor latente de fusao}, $Q$ também corresponde ao calor transferido por um material, porém no contexto de uma mudança de fase, em função de uma massa $m$ e um coeficiente de calor de latencia de variação do estado físico, que no nosso caso será a fusão, chamaremos esse coeficiente de $L$.
+			\begin{equation}
+				Q=mL
+				\label{eq:calor latente de fusao}
+			\end{equation}
 
-\section{Procedimentos e coleta de dados}
-	
-	\subsection{Materiais utilizados}
-		Para realizar o experimento necessitamos dos seguintes materiais:
+
+		Onde, em \eqref{eq:calor transferido em funcao de c}, $Q$ corresponde ao calor transferido ou recebido por um material, dada uma massa $m$,	uma variação de temperatura $\Delta T$ e seu calor específico, $c$.	Em \eqref{eq:calor latente de fusao}, $Q$ também corresponde ao calor transferido por um material, porém no contexto de uma mudança de fase, em função de uma massa $m$ e um coeficiente de calor de latencia de variação do estado físico, que no nosso caso será a fusão, chamaremos esse coeficiente de $L$.
+
+	\section{Procedimentos e coleta de dados}
 		
-		\begin{enumerate}
-			\item Balança analítica 
-			\item Calorímetro contendo:
-				\begin{enumerate}
-					\item Copo 
-					\item Alça 
-					\item Suporte 
-					\item Isolamento 
-					\item Tampa
-				\end{enumerate}
-			\item Três metais a serem identificados 
-			\item Aquecedor 
-			\item Gelo 
-			\item Garrafa térmica 
-			\item Béquer 
-			\item Termômetro de mercúrio 
-		\end{enumerate}
-		
-	\subsection{Procedimento}
-
-		De posse dos materiais, primeiramente nós medimos a massa do copo do calorímetro vazio que será utilizada em todo o experimento para calcular a massa de água no calorímetro.			
-		
-		Para a obtenção dessa massa de água, fizemos: $m_{a}=m_{c+\varnothing}-m_{c+a}$	cujo erro fica: $\sigma_{m_{a}}=\sigma_{m}\cdot\sqrt{2}$, já que as massas $m_{c+\varnothing}$ e $m_{c+a}$ têm o mesmo erro instrumental, $\sigma_{m}$ .
-		
-		É importante ressaltar que, durante o experimento, o calor específico da água ($c_a$) foi considerado como 1 $\unitfrac{cal}{g \cdot ^{\circ}C}$ e o calor específico do gelo ($c_g$) como 0,5 $\unitfrac{cal}{g \cdot ^{\circ}C}$
-
-		\subsubsection{Parte 1: Obtenção do calor específico dos metais}
-			Para cada um dos metais a serem identificados, medimos a massa do metal, a massa do copo do calorímetro com água, a temperatura dessa água no copo do calorímetro, que em alguns casos teve que ser resfriada com gelo, a temperatura do metal e a temperatura deequilíbrio.
+		\subsection{Materiais utilizados}
+			Para realizar o experimento necessitamos dos seguintes materiais:
 			
-			Para medir a temperatura do metal, primeiro colocamos água no béquer e esquentamos esta água até a fervura (a temperatura aqui não é relevante e portanto nem foi medida), à seguir, transferimos essa água do béquer para a garrafa térmica e colocamos o metal junto, esperamos até o que julgamos ser o equilíbrio entre o metal e esta água quente do béquer e medimos essa temperatura.
+			\begin{enumerate}
+				\item Balança analítica 
+				\item Calorímetro contendo:
+					\begin{enumerate}
+						\item Copo 
+						\item Alça 
+						\item Suporte 
+						\item Isolamento 
+						\item Tampa
+					\end{enumerate}
+				\item Três metais a serem identificados 
+				\item Aquecedor 
+				\item Gelo 
+				\item Garrafa térmica 
+				\item Béquer 
+				\item Termômetro de mercúrio 
+			\end{enumerate}
 			
-			Para medir a temperatura de equilíbrio, colocamos o metal já aquecido dentro do copo do calorímetro com água fria e colocamos esse conjunto no calorímetro. Esperamos novamente até o que julgamos ser o equilíbrio do sistema e medimos essa temperatura. Os valores obtidos para esses dados podem ser visualizados na tabela a seguir: 
+		\subsection{Procedimento}
 
-			\begin{table}[!ht]
-				\caption{Valores medidos experimentalmente conforme expresso acima para a obtenção do calor especifico dos metais}
-				\hspace{-2,3cm}%
-				\begin{tabular}{|c|c|rl|rl|rl|}
-					\hline 
-					Dado Medido  & %
-					\begin{tabular}{c}
-						Símbolo \tabularnewline
-						Associado\tabularnewline
-					\end{tabular} & \multicolumn{2}{c|}{Para o metal $a$} & \multicolumn{2}{c|}{Para o metal $b$} & \multicolumn{2}{c|}{Para o metal $c$}\tabularnewline
-					\hline 
-					Massa do copo vazio  & $m_{c+\varnothing}$  & $\left(5,970\pm0,001\right)$  & $\cdot10^{1}\unit{g}$  & $\left(5,970\pm0,001\right)$  & $\cdot10^{1}\unit{g}$  & $\left(5,970\pm0,001\right)$  & $\cdot10^{1}\unit{g}$\tabularnewline
-					\hline 
-					Massa do copo com água  & $m_{c+a}$  & $\left(2,4420\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$  & $\left(2,1320\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$  & $\left(2,1260\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$\tabularnewline
-					\hline 
-					Massa de água  & $m_{a}$  & $\left(1,8250\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$  & $\left(1,5350\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$  & $\left(1,529\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$\tabularnewline
-					\hline 
-					Temperatura da água  & $T_{a}$  & $\left(2,00\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$  & $\left(1,30\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$  & $\left(2,10\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
-					\hline 
-					Temperatura do metal  & $T_{q}$  & $\left(8,00\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$  & $\left(8,00\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$  & $\left(8,20\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
-					\hline 
-					Massa do metal  & $m_{M}$  & $\left(9,090\pm0,001\right)$  & $\cdot10^{1}\unit{g}$  & $\left(4,200\pm0,001\right)$  & $\cdot10^{1}\unit{g}$  & $\left(1,0120\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$\tabularnewline
-					\hline 
-					Temperatura de equilíbrio  & $T_{e}$  & $\left(2,30\pm0,05\right)$  & $\cdot10^{1}\unit{\unit{^{\circ}C}}$  & $\left(2,00\pm0,05\right)$  & $\cdot10^{1}\unit{\unit{^{\circ}C}}$  & $\left(2,30\pm0,05\right)$  & $\cdot10^{1}\unit{\unit{^{\circ}C}}$\tabularnewline
-					\hline 
-				\end{tabular}
-			\end{table}
-
-		\subsubsection{Parte 2: Calor latente de fusão do gelo}
-			Para realizar o cálculo que aproximo o calor latente de fusão do gelo, foi necessário, inicialmente, medir a massa da água e sua temperatura inicial e a massa de gelo e sua temperatura inicial.
+			De posse dos materiais, primeiramente nós medimos a massa do copo do calorímetro vazio que será utilizada em todo o experimento para calcular a massa de água no calorímetro.			
 			
-			Em seguida, foi elaborado um sistema no calorímetro com a água e o gelo, que se finalizou com o gelo derretendo completamente - sendo medido, nesse instante, a sua temperatura de equilíbrio.
+			Para a obtenção dessa massa de água, fizemos: $m_{a}=m_{c+\varnothing}-m_{c+a}$	cujo erro fica: $\sigma_{m_{a}}=\sigma_{m}\cdot\sqrt{2}$, já que as massas $m_{c+\varnothing}$ e $m_{c+a}$ têm o mesmo erro instrumental, $\sigma_{m}$ .
 			
-			Dipostos desses procedimentos, concluiu-se os dados suficientes para aproximar o calor latente de fusão do gelo. Os valores obtidos para esses dados podem ser visualizados na tabela a seguir:
-			
-			\newpage{}
-			
-			\begin{table}[!ht]
-				\caption{Valores medidos experimentalmente conforme expresso acima para a obtenção do calor latente de fusão do gelo}
+			É importante ressaltar que, durante o experimento, o calor específico da água ($c_a$) foi considerado como 1 $\unitfrac{cal}{g \cdot ^{\circ}C}$ e o calor específico do gelo ($c_g$) como 0,5 $\unitfrac{cal}{g \cdot ^{\circ}C}$
+
+			\subsubsection{Parte 1: Obtenção do calor específico dos metais}
+				Para cada um dos metais a serem identificados, medimos a massa do metal, a massa do copo do calorímetro com água, a temperatura dessa água no copo do calorímetro, que em alguns casos teve que ser resfriada com gelo, a temperatura do metal e a temperatura deequilíbrio.
+				
+				Para medir a temperatura do metal, primeiro colocamos água no béquer e esquentamos esta água até a fervura (a temperatura aqui não é relevante e portanto nem foi medida), à seguir, transferimos essa água do béquer para a garrafa térmica e colocamos o metal junto, esperamos até o que julgamos ser o equilíbrio entre o metal e esta água quente do béquer e medimos essa temperatura.
+				
+				Para medir a temperatura de equilíbrio, colocamos o metal já aquecido dentro do copo do calorímetro com água fria e colocamos esse conjunto no calorímetro. Esperamos novamente até o que julgamos ser o equilíbrio do sistema e medimos essa temperatura. Os valores obtidos para esses dados podem ser visualizados na tabela a seguir: 
+
+				\begin{table}[!ht]
+					\caption{Valores medidos experimentalmente conforme expresso acima para a obtenção do calor especifico dos metais}
+					\hspace{-2,3cm}%
+					\begin{tabular}{|c|c|rl|rl|rl|}
+						\hline 
+						Dado Medido  & %
+						\begin{tabular}{c}
+							Símbolo \tabularnewline
+							Associado\tabularnewline
+						\end{tabular} & \multicolumn{2}{c|}{Para o metal $a$} & \multicolumn{2}{c|}{Para o metal $b$} & \multicolumn{2}{c|}{Para o metal $c$}\tabularnewline
+						\hline 
+						Massa do copo vazio  & $m_{c+\varnothing}$  & $\left(5,970\pm0,001\right)$  & $\cdot10^{1}\unit{g}$  & $\left(5,970\pm0,001\right)$  & $\cdot10^{1}\unit{g}$  & $\left(5,970\pm0,001\right)$  & $\cdot10^{1}\unit{g}$\tabularnewline
+						\hline 
+						Massa do copo com água  & $m_{c+a}$  & $\left(2,4420\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$  & $\left(2,1320\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$  & $\left(2,1260\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$\tabularnewline
+						\hline 
+						Massa de água  & $m_{a}$  & $\left(1,8250\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$  & $\left(1,5350\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$  & $\left(1,529\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$\tabularnewline
+						\hline 
+						Temperatura da água  & $T_{a}$  & $\left(2,00\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$  & $\left(1,30\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$  & $\left(2,10\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
+						\hline 
+						Temperatura do metal  & $T_{q}$  & $\left(8,00\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$  & $\left(8,00\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$  & $\left(8,20\pm0,05\right)$  & $\cdot10^{1}\unit{^{\circ}C}$\tabularnewline
+						\hline 
+						Massa do metal  & $m_{M}$  & $\left(9,090\pm0,001\right)$  & $\cdot10^{1}\unit{g}$  & $\left(4,200\pm0,001\right)$  & $\cdot10^{1}\unit{g}$  & $\left(1,0120\pm0,0001\right)$  & $\cdot10^{2}\unit{g}$\tabularnewline
+						\hline 
+						Temperatura de equilíbrio  & $T_{e}$  & $\left(2,30\pm0,05\right)$  & $\cdot10^{1}\unit{\unit{^{\circ}C}}$  & $\left(2,00\pm0,05\right)$  & $\cdot10^{1}\unit{\unit{^{\circ}C}}$  & $\left(2,30\pm0,05\right)$  & $\cdot10^{1}\unit{\unit{^{\circ}C}}$\tabularnewline
+						\hline 
+					\end{tabular}
+				\end{table}
+
+			\subsubsection{Parte 2: Calor latente de fusão do gelo}
+				Para realizar o cálculo que aproximo o calor latente de fusão do gelo, foi necessário, inicialmente, medir a massa da água e sua temperatura inicial e a massa de gelo e sua temperatura inicial.
+				
+				Em seguida, foi elaborado um sistema no calorímetro com a água e o gelo, que se finalizou com o gelo derretendo completamente - sendo medido, nesse instante, a sua temperatura de equilíbrio.
+				
+				Dipostos desses procedimentos, concluiu-se os dados suficientes para aproximar o calor latente de fusão do gelo. Os valores obtidos para esses dados podem ser visualizados na tabela a seguir:
+				
+				\newpage{}
+				
+				\begin{table}[!ht]
+					\caption{Valores medidos experimentalmente conforme expresso acima para a obtenção do calor latente de fusão do gelo}
 
 
-				\centering{}%
-				\begin{tabular}{|c|c|rl|}
-					\hline 
-					Dado Medido  & %
-					\begin{tabular}{c}
-						Símbolo \tabularnewline
-						Associado\tabularnewline
-					\end{tabular} & \multicolumn{2}{c|}{Resultados} \tabularnewline
-					\hline 
-					Massa do copo vazio  & $m_{c+\varnothing}$  & $\left(5,970\pm0,001\right)$ & $\cdot10^{1}\unit{g}$   \tabularnewline
-					\hline 
-					Massa do copo com água  & $m_{c+a}$  & $\left(1,9080\pm0,0001\right)$ & $\cdot10^{2}\unit{g}$   \tabularnewline
-					\hline 
-					Massa de água  & $m_{a}$  & $\left(1,3110\pm0,0001\right)$ & $\cdot10^{2}\unit{g}$ \tabularnewline
-					\hline 
-					Temperatura da água  & $T_{a}$  & $\left(3,90\pm0,05\right)$ & $\cdot10^{1}\unit{^{\circ}C}$ \tabularnewline
-					\hline 
-					Massa do béquer vazio  & $m_{b+\varnothing}$  & $\left(5,82\pm0,01\right)$ & $\cdot10^{1}\unit{g}$ \tabularnewline
-					\hline 
-					Massa do béquer com gelo  & $m_{b+a}$  & $\left(1,245\pm0,001\right)$ & $\cdot10^{2}\unit{g}$ \tabularnewline
-					\hline 
-					Massa de gelo & $m_{g}$  & $\left(6,63\pm0,01\right)$ & $\cdot10^{1}\unit{g}$ \tabularnewline
-					\hline 
-					Temperatura do gelo  & $T_{g}$  & $\left(-3,00\pm0,5\right)$ & $\cdot10^{0}\unit{^{\circ}C}$ \tabularnewline
-					\hline 
-					Temperatura de equilíbrio  & $T_{e}$  & $\left(2,30\pm0,05\right)$ & $\cdot10^{1}\unit{^{\circ}C}$ \tabularnewline
-					\hline 
-				\end{tabular}
-			\end{table}
-
+					\centering{}%
+					\begin{tabular}{|c|c|rl|}
+						\hline 
+						Dado Medido  & %
+						\begin{tabular}{c}
+							Símbolo \tabularnewline
+							Associado\tabularnewline
+						\end{tabular} & \multicolumn{2}{c|}{Resultados} \tabularnewline
+						\hline 
+						Massa do copo vazio  & $m_{c+\varnothing}$  & $\left(5,970\pm0,001\right)$ & $\cdot10^{1}\unit{g}$   \tabularnewline
+						\hline 
+						Massa do copo com água  & $m_{c+a}$  & $\left(1,9080\pm0,0001\right)$ & $\cdot10^{2}\unit{g}$   \tabularnewline
+						\hline 
+						Massa de água  & $m_{a}$  & $\left(1,3110\pm0,0001\right)$ & $\cdot10^{2}\unit{g}$ \tabularnewline
+						\hline 
+						Temperatura da água  & $T_{a}$  & $\left(3,90\pm0,05\right)$ & $\cdot10^{1}\unit{^{\circ}C}$ \tabularnewline
+						\hline 
+						Massa do béquer vazio  & $m_{b+\varnothing}$  & $\left(5,82\pm0,01\right)$ & $\cdot10^{1}\unit{g}$ \tabularnewline
+						\hline 
+						Massa do béquer com gelo  & $m_{b+a}$  & $\left(1,245\pm0,001\right)$ & $\cdot10^{2}\unit{g}$ \tabularnewline
+						\hline 
+						Massa de gelo & $m_{g}$  & $\left(6,63\pm0,01\right)$ & $\cdot10^{1}\unit{g}$ \tabularnewline
+						\hline 
+						Temperatura do gelo  & $T_{g}$  & $\left(-3,00\pm0,5\right)$ & $\cdot10^{0}\unit{^{\circ}C}$ \tabularnewline
+						\hline 
+						Temperatura de equilíbrio  & $T_{e}$  & $\left(2,30\pm0,05\right)$ & $\cdot10^{1}\unit{^{\circ}C}$ \tabularnewline
+						\hline 
+					\end{tabular}
+				\end{table}
 
 	\section{Análise dos resultados}
 
@@ -244,46 +244,63 @@
 				o erro da equação \eqref{eq:c_m} é dado por:
                 
                 \begin{equation}
-                \hspace{-1,5cm}%
-				\sigma_{c_{M}}^{2}=\left(\sigma_{C}\cdot\cfrac{\partial c_{M}}{\partial C}\right)^{2}+\left(\sigma_{m_{a}}\cdot\cfrac{\partial c_{M}}{\partial m_{a}}\right)^{2}+\left(\sigma_{m_{M}}\cdot\cfrac{\partial c_{M}}{\partial m_{M}}\right)^{2}+\left(\sigma_{\Delta T_{e\rightarrow M}}\cdot\cfrac{\partial c_{M}}{\partial\left(\Delta T_{e\rightarrow q}\right)}\right)^{2}+\left(\sigma_{\Delta T_{a\rightarrow e}}\cdot\cfrac{\partial c_{M}}{\partial\left(\Delta T_{a\rightarrow e}\right)}\right)^{2}
+	                \hspace{-1,5cm}%
+					\sigma_{c_{M}}^{2}=
+					\left(\sigma_{C}\cdot\cfrac{\partial c_{M}}{\partial C}\right)^{2}+
+					\left(\sigma_{m_{a}}\cdot\cfrac{\partial c_{M}}{\partial m_{a}}\right)^{2}+
+					\left(\sigma_{m_{M}}\cdot\cfrac{\partial c_{M}}{\partial m_{M}}\right)^{2}+
+					\left(\sigma_{\Delta T_{e\rightarrow M}}\cdot\cfrac{\partial c_{M}}{\partial
+					\left(\Delta T_{e\rightarrow q}\right)}\right)^{2}+
+					\left(\sigma_{\Delta T_{a\rightarrow e}}\cdot\cfrac{\partial c_{M}}{\partial
+					\left(\Delta T_{a\rightarrow e}\right)}\right)^{2}
 				\end{equation}
 
 
 				\[
-				\sigma_{c_{M}}^{2}=\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\cdot\cfrac{\sigma_{C}}{m_{M}}\right)^{2}+\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\cdot\cfrac{\sigma_{m_{a}}\cdot c_{a}}{m_{M}}\right)^{2}+\left(c_{M}\cdot\cfrac{\sigma_{m_{M}}}{m_{M}}\right)^{2}+\left(c_{M}\cdot\cfrac{\sigma_{\Delta T_{e\rightarrow M}}}{\Delta T_{e\rightarrow q}}\right)^{2}+\left(c_{M}\cdot\cfrac{\sigma_{\Delta T_{a\rightarrow e}}}{\Delta T_{a\rightarrow e}}\right)^{2}
+					\sigma_{c_{M}}^{2}=
+					\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\cdot\cfrac{\sigma_{C}}{m_{M}}\right)^{2}+
+					\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\cdot\cfrac{\sigma_{m_{a}}\cdot c_{a}}{m_{M}}\right)^{2}+
+					\left(c_{M}\cdot\cfrac{\sigma_{m_{M}}}{m_{M}}\right)^{2}+
+					\left(c_{M}\cdot\cfrac{\sigma_{\Delta T_{e\rightarrow M}}}{\Delta T_{e\rightarrow q}}\right)^{2}+
+					\left(c_{M}\cdot\cfrac{\sigma_{\Delta T_{a\rightarrow e}}}{\Delta T_{a\rightarrow e}}\right)^{2}
 				\]
 
 
 				\begin{equation}
-				\sigma_{c_{M}}=\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\right)\cdot\cfrac{\sqrt{\sigma_{C}^{2}+\left(\sigma_{m_{a}}c_{a}\right)^{2}}}{m_{M}^{2}}+c_{m}\cdot\sqrt{\cfrac{\sigma_{m_{M}}^{2}}{m_{M}^{2}}+\cfrac{\sigma_{\Delta T}^{2}}{\left(T_{q}-T_{e}\right)^{2}}+\cfrac{\sigma_{\Delta T}^{2}}{\left(T_{e}-T_{a}\right)^{2}}}
+					\sigma_{c_{M}}=
+					\left(\cfrac{T_{e}-T_{a}}{T_{q}-T_{e}}\right)\cdot\cfrac{\sqrt{\sigma_{C}^{2}+
+					\left(\sigma_{m_{a}}c_{a}\right)^{2}}}{m_{M}^{2}}+c_{m}\cdot
+					\sqrt{\cfrac{\sigma_{m_{M}}^{2}}{m_{M}^{2}}+\cfrac{\sigma_{\Delta T}^{2}}{
+					\left(T_{q}-T_{e}\right)^{2}}+\cfrac{\sigma_{\Delta T}^{2}}{
+					\left(T_{e}-T_{a}\right)^{2}}}
 				\end{equation}
 
 
 				Lembrando da parte A desse experimento, têm-se que:
 
 				\begin{equation}
-				C=\left(1,8\pm0,8\right)\unit{\cdot10\cdot\frac{cal}{K}=\left(1,8\pm0,8\right)\cdot10\cdot}\frac{cal}{^{\circ}C}
+					C=\left(1,8\pm0,8\right)\unit{\cdot10\cdot\frac{cal}{K}=\left(1,8\pm0,8\right)\cdot10\cdot}\frac{cal}{^{\circ}C}
 				\end{equation}
 
 
 				Assim obtém-se:
 
 				\begin{table}[!ht]
-				\caption{Valores calculados de $c_{M}\pm\sigma_{c_{M}}$ para cada metal}
+					\caption{Valores calculados de $c_{M}\pm\sigma_{c_{M}}$ para cada metal}
 
 
-				\centering{}%
-				\begin{tabular}{|c|rl|}
-				\cline{2-3} 
-				\multicolumn{1}{c|}{} & \multicolumn{2}{c|}{$c_{M}\pm\sigma_{c_{M}}$}\tabularnewline
-				\hline 
-				Para o metal $a$  & $\left(1,2\pm0,3\right)$  & $\cdot10^{-1}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
-				\hline 
-				Para o metal $b$  & $\left(4,8\pm0,5\right)$  & $\cdot10^{-1}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
-				\hline 
-				Para o metal $c$  & $\left(6\pm2\right)$  & $\cdot10^{-2}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
-				\hline 
-				\end{tabular}
+					\centering{}%
+					\begin{tabular}{|c|rl|}
+						\cline{2-3} 
+						\multicolumn{1}{c|}{} & \multicolumn{2}{c|}{$c_{M}\pm\sigma_{c_{M}}$}\tabularnewline
+						\hline 
+						Para o metal $a$  & $\left(1,2\pm0,3\right)$  & $\cdot10^{-1}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
+						\hline 
+						Para o metal $b$  & $\left(4,8\pm0,5\right)$  & $\cdot10^{-1}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
+						\hline 
+						Para o metal $c$  & $\left(6\pm2\right)$  & $\cdot10^{-2}\unitfrac{cal}{g\cdot^{\circ}C}$\tabularnewline
+						\hline 
+					\end{tabular}
 				\end{table}
 
 			\subsubsection{Análise crítica dos resultados}
@@ -361,21 +378,36 @@
 			
 			...ou seja:
 			\hspace{-2cm}%
-			$$ C_{c}\Delta T + m_{\acute{A}gua}c_{\acute{A}gua}\Delta T + m_{Gelo}c_{Gelo}\Delta T +  m_{Gelo}L_{f} + m_{Gelo}c_{\acute{A}gua}\Delta T = 0 \leftrightarrow$$
+			$$ C\Delta T + m_{\acute{A}gua}c_{\acute{A}gua}\Delta T + m_{Gelo}c_{Gelo}\Delta T +  m_{Gelo}L_{f} + m_{Gelo}c_{\acute{A}gua}\Delta T = 0 \leftrightarrow$$
 			
+			
+
 			\begin{equation}
-			 	L_{f} = -\cfrac{(T_{e}-T_{a})(C_{c}+m_{a}c_{a}) + m_{g}c_{a}T_{e} + m_{g}c_{g}(-T_{g})}{m_g}
+			 	L_{f}=\cfrac{\left(T_{a}-T_{e}\right)\left(C+m_{a} \cdot c_{a}\right)}{m_{g}} + c_{g} \cdot T_{g} - c_{a} \cdot T_{e}
 			\end{equation}
 			  
 			com erro dado por erro dado por:
 			  
-			$\sigma_{L_{f}}^{2} = (\cfrac{\partial L_{f}}{\partial m_a} \cdot \sigma m_{a})^2 + (\cfrac{\partial L_{f}}{\partial m_g} \cdot \sigma m_{g})^2 + (\cfrac{\partial L_{f}}{\partial \Delta T} \cdot \sigma \Delta T)^2 + (\cfrac{\partial L_{f}}{\partial C_c} \cdot \sigma C_c)^2 + (\cfrac{\partial L_{f}}{\partial c_a} \cdot \sigma c_{a})^2 + (\cfrac{\partial L_{f}}{\partial c_g} \cdot \sigma c_{g})^2$
-			  
-			mas $\sigma c_{g},\sigma c_{a}, \sigma C_{c}, \sigma \Delta T,$ é 0, então
+		$
+			\sigma_{L_{f}}^{2}=
+				\left(\sigma_{T_{g}}\cdot\cfrac{\partial L_{f}}{\partial T_{g}}\right)^{2}+
+				\left(\sigma_{T_{e}}\cdot\cfrac{\partial L_{f}}{\partial T_{e}}\right)^{2}+
+				\left(\sigma_{T_{a}}\cdot\cfrac{\partial L_{f}}{\partial T_{a}}\right)^{2}+
+				\left(\sigma_{m_{a}}\cdot\cfrac{\partial L_{f}}{\partial m_{a}}\right)^{2}+
+				\left(\sigma_{m_{g}}\cdot\cfrac{\partial L_{f}}{\partial m_{g}}\right)^{2}+
+				\left(\sigma_{C}\cdot\cfrac{\partial L_{f}}{\partial C}\right)^{2}
+		$
+
+			$ =
+				\left(\sigma_{T_{g}}\cdot c_{g}\right)^{2}+\left(\sigma_{T_{e}}\cdot\cfrac{C+c_{a}\cdot
+				\left(m_{a}+m_{g}\right)}{m_{g}}\right)^{2}+\left(\sigma_{T_{a}}\cdot\cfrac{C+m_{a}c_{a}}{m_{g}}\right)^{2}+
+				\left(\sigma_{m_{a}}\cdot c_{a}\cdot\cfrac{T_{a}-T_{e}}{m_{g}}\right)^{2}+
+				\left(L_{f}\cdot\cfrac{\sigma_{m_{g}}}{m_{g}}\right)^{2}+
+				\left(\sigma_{C}\cdot\cfrac{T_{a}-T_{e}}{m_{g}}\right)^{2}
+			$
+ 
+ 
 			
-			\begin{equation}  
-				\sigma_{L_{f}}^{2} = (\cfrac{\partial L_{f}}{\partial m_a} \cdot \sigma m_{a})^2 + (\cfrac{\partial L_{f}}{\partial m_g} \cdot \sigma m_{g})^2
-			\end{equation}
 			
 			Utilizando os valores obtidos experimentalmente da Tabela 2:
 			  
